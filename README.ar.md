@@ -107,7 +107,7 @@ pip install threagile-builder
 
 ## يبني
 
--   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
+-   جميع أهداف البناء تستخدم[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
@@ -115,7 +115,7 @@ pip install threagile-builder
 
 ## رخصة
 
-`threagile-buider`يتم توزيعها بموجب شروط[مع](https://spdx.org/licenses/MIT.html)رخصة.
+`threagile-builder`يتم توزيعها بموجب شروط[مع](https://spdx.org/licenses/MIT.html)رخصة.
 
 ## 100- مقدمة
 
