@@ -26,6 +26,8 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory.
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -96,7 +98,7 @@ Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:5000/metrics`
 -   [Versiebron](#version-source)
 -   [Omgevingen](#environments)
 -   [Bouwen](#build)
--   [License](#license)
+-   [Licentie](#license)
 
 ## Installatie
 
@@ -131,7 +133,7 @@ Zien[README.md](./100/README.md)
 
 ## 200 - Vereisten
 
-See [README.md](./200/README.md)
+Zien[README.md](./200/README.md)
 
 ## 300 - Onze applicatie bouwen
 
