@@ -20,7 +20,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app.py
     ```
-2.  Software dependencies
+2.  Dépendances logicielles
 3.  Dernières versions
 4.  Références API
 
@@ -35,7 +35,7 @@ $ hatch build
 
 Pour exécuter l'application, utilisez :
 
-Linux:
+Linux :
 
 ```bash
 export SECRET_KEY="secret"
