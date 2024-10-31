@@ -2,10 +2,10 @@
 
 # 威脅建造者
 
-> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
+> A [基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io) YAML files
 
 -   [詞彙表](./GLOSSARY.md)
--   [參考](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 
 **執行摘要**
 
@@ -14,7 +14,7 @@
 1.  安裝過程：
     ```bash
     cd threagile-builder
-    pipx install -r requirements.txt
+    pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
 2.  軟體依賴性

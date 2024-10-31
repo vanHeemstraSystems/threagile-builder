@@ -14,7 +14,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 1.  Processus d'installation :
     ```bash
     cd threagile-builder
-    pipx install -r requirements.txt
+    pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
 2.  Dépendances logicielles

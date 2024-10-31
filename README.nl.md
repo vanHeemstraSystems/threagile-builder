@@ -5,7 +5,7 @@ threagile-bouwer
 > A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[ragiel](https://threagile.io)YAML-bestanden
 
 -   [Glossarium](./GLOSSARY.md)
--   [References](./REFERENCES.md)
+-   [Referenties](./REFERENCES.md)
 
 **Samenvatting**
 
@@ -14,16 +14,16 @@ Uw code op uw eigen systeem operationeel krijgen.
 1.  Installatieproces:
     ```bash
     cd threagile-builder
-    pipx install -r requirements.txt
+    pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
 2.  Software-afhankelijkheden
 3.  Nieuwste releases
-4.  API references
+4.  API-referenties
 
 # Bouwen en testen
 
-To build your code, use:
+Om uw code samen te stellen, gebruikt u:
 
 ```bash
 $ cd threagile-builder
@@ -69,7 +69,7 @@ Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openap
 
 Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:5000/metrics`.
 
-## 100 - Inleiding
+## 100 - Introduction
 
 Zien[README.md](./100/README.md)
 
@@ -79,8 +79,8 @@ Zien[README.md](./200/README.md)
 
 ## 300 - Onze applicatie bouwen
 
-See [README.md](./300/README.md)
+Zien[README.md](./300/README.md)
 
 ## 400 - Conclusie
 
-See [README.md](./400/README.md)
+Zien[README.md](./400/README.md)

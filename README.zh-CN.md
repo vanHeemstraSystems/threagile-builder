@@ -14,7 +14,7 @@
 1.  安装过程：
     ```bash
     cd threagile-builder
-    pipx install -r requirements.txt
+    pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
 2.  软件依赖性

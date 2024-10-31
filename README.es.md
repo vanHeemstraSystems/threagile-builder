@@ -14,7 +14,7 @@ Poner en funcionamiento su código en su propio sistema.
 1.  Proceso de instalación:
     ```bash
     cd threagile-builder
-    pipx install -r requirements.txt
+    pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
 2.  Dependencias de software
@@ -38,7 +38,7 @@ Linux:
 export SECRET_KEY="secret"
 ```
 
-Windows:
+Ventanas:
 
 ```bash
 setx SECRET_KEY secret
@@ -71,7 +71,7 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:5000/metrics`.
 
 ## 100 - Introducción
 
-Ver[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - Requisitos
 
