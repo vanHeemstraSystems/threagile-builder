@@ -10,7 +10,7 @@ thregile-बिल्डर
 
 * * *
 
-> ए[ब्लॉक आधारित](https://developers.google.com/blockly) no-code web application to create [threagile](https://threagile.io)वाईएएमएल फ़ाइलें
+> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
@@ -19,7 +19,7 @@ thregile-बिल्डर
 
 अपना कोड तैयार करना और अपने सिस्टम पर चलाना।
 
-**Note**: सुनिश्चित करें कि आप इसे पूरा करते हैं[आवश्यकताएं](./200/README.md).
+**टिप्पणी**: सुनिश्चित करें कि आप इसे पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
 1.  स्थापना प्रक्रिया:
     ```bash
@@ -31,7 +31,7 @@ thregile-बिल्डर
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
+    (threagile-builder) $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
@@ -39,7 +39,7 @@ thregile-बिल्डर
     (threagile-builder) $ exit # type `exit` to leave the environment
     $ hatch run python src/threagile_builder/app.py # The `run` command allows you to execute commands in an environment as if you had already entered it. 
     ```
-2.  Software dependencies
+2.  सॉफ़्टवेयर निर्भरताएँ
 3.  नवीनतम रिलीज़
 4.  एपीआई संदर्भ
 5.  निर्माण और परीक्षण:
@@ -75,14 +75,14 @@ thregile-बिल्डर
 
     फिर, नेविगेट करें`http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
 
-    परीक्षण चलाने के लिए, उपयोग करें:
+    To run tests, use:
 
     ```bash
     $ cd threagile-builder
     $ pytest tests/
     ```
 
-# API Documentation
+# एपीआई दस्तावेज़ीकरण
 
 पर नेविगेट करें`http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
 
@@ -125,7 +125,7 @@ pip install threagile-builder
 
 ## लाइसेंस
 
-`threagile-builder` is distributed under the terms of the [साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
+`threagile-builder`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
 
 ## 100 - परिचय
 

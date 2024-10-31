@@ -19,7 +19,7 @@ Threagile-Builder
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
-**Note**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
+**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
 1.  Installationsprozess:
     ```bash
@@ -31,7 +31,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
+    (threagile-builder) $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
