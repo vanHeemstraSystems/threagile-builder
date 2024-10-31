@@ -10,7 +10,7 @@ threagile-bouwer
 
 * * *
 
-> A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[ragiel](https://threagile.io)YAML-bestanden
+> A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[threagile](https://threagile.io)YAML-bestanden
 
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
@@ -19,7 +19,7 @@ threagile-bouwer
 
 Uw code op uw eigen systeem operationeel krijgen.
 
-**Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
+**Opmerking**: Zorg ervoor dat u voldoet aan de[requirements](./200/README.md).
 
 1.  Installatieproces:
     ```bash
@@ -133,7 +133,7 @@ Zien[README.md](./200/README.md)
 
 ## 300 - Onze applicatie bouwen
 
-Zien[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400 - Conclusie
 

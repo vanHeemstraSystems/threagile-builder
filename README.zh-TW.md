@@ -35,7 +35,7 @@
     # ...
     (threagile-builder) $ hatch run src/threagile_builder/app.py
     ```
-2.  Software dependencies
+2.  軟體依賴性
 3.  最新版本
 4.  API參考
 5.  建置和測試：
@@ -84,7 +84,7 @@
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 

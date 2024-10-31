@@ -17,7 +17,7 @@ constructor-threagil
 
 **Resumen ejecutivo**
 
-Poner en funcionamiento su código en su propio sistema.
+Cómo poner en marcha su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -47,7 +47,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch build
     ```
 
-    Para ejecutar la aplicación, utilice:
+    To run the application, use:
 
     Linux:
 
@@ -92,7 +92,7 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:5000/metrics`.
 
 -   [Instalación](#installation)
 -   [Fuente de la versión](#version-source)
--   [Ambientes](#environments)
+-   [Environments](#environments)
 -   [Construir](#build)
 -   [Licencia](#license)
 
@@ -108,20 +108,20 @@ pip install threagile-builder
 
 ## Ambientes
 
--   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
 -   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
--   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
+-   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[Mypyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
     -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
 
 ## Licencia
 
-`threagile-builder`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html)licencia.
+`threagile-builder`se distribuye bajo los términos del[MIT](https://spdx.org/licenses/MIT.html)licencia.
 
 ## 100 - Introducción
 
