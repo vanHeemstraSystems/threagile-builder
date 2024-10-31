@@ -72,7 +72,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ pytest tests/
     ```
 
-# Documentación API
+# API Documentation
 
 Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
 
