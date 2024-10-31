@@ -1,4 +1,4 @@
-threagile-builder
+威脅建造者
 
 # 威脅建造者
 
@@ -17,7 +17,7 @@ threagile-builder
 
 **執行摘要**
 
-Getting your code up and running on your own system.
+在您自己的系統上啟動並運行您的程式碼。
 
 **筆記**: 確保您滿足[要求](./200/README.md).
 
@@ -31,7 +31,7 @@ Getting your code up and running on your own system.
     ```
 2.  軟體依賴性
 3.  最新版本
-4.  API參考
+4.  API references
 5.  建置和測試：
 
     要建立您的程式碼，請使用：
@@ -78,7 +78,7 @@ Getting your code up and running on your own system.
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
@@ -100,7 +100,7 @@ pip install threagile-builder
 
 -   這[孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
 
-## 環境
+## Environments
 
 -   整齊地定義在一個獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## 300 - 建立我們的應用程式
 
-See [README.md](./300/README.md)
+看[README.md](./300/README.md)
 
 ## 400 - 結論
 
