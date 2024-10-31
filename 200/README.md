@@ -34,8 +34,18 @@ We use [pipx](https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx) inst
 We use [hatch](https://hatch.pypa.io/) for project management. 
 
 1. Install hatch:
+
+   Linux:
+
    ```bash
    # pip install hatch # This method modifies the Python environment in which you choose to install. Consider instead using pipx to avoid dependency conflicts.
    $ pipx install hatch 
+   $ hatch --version # verify the version
+   ```
+
+   macOS:
+
+   ```bash
+   # homebrew install hatch
    $ hatch --version # verify the version
    ```
