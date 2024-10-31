@@ -40,7 +40,7 @@
     $ hatch run python src/threagile_builder/app.py # The `run` command allows you to execute commands in an environment as if you had already entered it. 
     ```
 2.  軟體依賴性
-3.  Latest releases
+3.  最新版本
 4.  API參考
 5.  建置和測試：
 
@@ -51,7 +51,7 @@
     $ hatch build
     ```
 
-    To run the application, use:
+    要運行該應用程序，請使用：
 
     Linux：
 
@@ -88,7 +88,7 @@
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
@@ -108,7 +108,7 @@ pip install threagile-builder
 
 ## 版本來源
 
--   這[孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
+-   The [孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
 
 ## 環境
 
