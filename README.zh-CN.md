@@ -32,10 +32,8 @@
 2.  软件依赖性
 3.  最新版本
 4.  API参考
-
-# 构建和测试
-
-要构建您的代码，请使用：
+5.  构建和测试：
+    要构建您的代码，请使用：
 
 ```bash
 $ cd threagile-builder
@@ -79,7 +77,7 @@ $ pytest tests/
 
 # 指标
 
-让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
