@@ -14,7 +14,7 @@
 1.  安裝過程：
     ```bash
     cd threagile-builder
-    pip install -r requirements.txt
+    pipx install -r requirements.txt
     hatch run src/threagile_builder/app
     ```
 2.  軟體依賴性
@@ -67,7 +67,7 @@ $ pytest tests/
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 ## 100 - 簡介
 
