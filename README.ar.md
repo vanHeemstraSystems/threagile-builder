@@ -14,7 +14,7 @@
 1.  عملية التثبيت:
     ```bash
     cd threagile-builder
-    pip install -r requirements.txt
+    pipx install -r requirements.txt
     hatch run src/threagile_builder/app
     ```
 2.  تبعيات البرمجيات
