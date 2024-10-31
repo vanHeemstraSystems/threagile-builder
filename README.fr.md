@@ -2,6 +2,14 @@ constructeur de menaces
 
 # Constructeur dangereux
 
+|          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| CI/CD    | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/build.yml)                                                                                                                                                                                                    |
+| Emballer | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-builder.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-builder/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-builder.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-builder/)                                                                                                                                                                                                                                                                 |
+| Méta     | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
+
+* * *
+
 > UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[fragile](https://threagile.io)Fichiers YAML
 
 -   [Glossaire](./GLOSSARY.md)
@@ -9,9 +17,9 @@ constructeur de menaces
 
 **Résumé exécutif**
 
-Getting your code up and running on your own system.
+Faire en sorte que votre code soit opérationnel sur votre propre système.
 
-**Note**: Make sure you fulfill the [exigences](./200/README.md).
+**Note**: Assurez-vous de remplir les[exigences](./200/README.md).
 
 1.  Processus d'installation :
     ```bash
@@ -22,7 +30,7 @@ Getting your code up and running on your own system.
     $ hatch run src/threagile_builder/app.py
     ```
 2.  Dépendances logicielles
-3.  Latest releases
+3.  Dernières versions
 4.  Références API
 
 # Construire et tester
@@ -71,7 +79,7 @@ Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou télécharg
 
 # Métrique
 
-Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
+Laissez un outil comme Prometheus gratter`http://127.0.0.1:5000/metrics`.
 
 ## 100 - Présentation
 
