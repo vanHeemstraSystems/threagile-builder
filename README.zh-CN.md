@@ -1,4 +1,4 @@
-威胁建造者
+threagile-builder
 
 # 威胁建造者
 
@@ -78,7 +78,7 @@
 
 # 指标
 
-让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
@@ -125,7 +125,7 @@ pip install threagile-builder
 
 看[README.md](./200/README.md)
 
-## 300 - 构建我们的应用程序
+## 300 - Building Our Application
 
 看[README.md](./300/README.md)
 
