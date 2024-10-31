@@ -12,7 +12,7 @@ thregile-बिल्डर
 
 > ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
--   [शब्दकोष](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
 
 **कार्यकारी सारांश**
@@ -75,7 +75,7 @@ thregile-बिल्डर
 
     फिर, नेविगेट करें`http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
 
-    To run tests, use:
+    परीक्षण चलाने के लिए, उपयोग करें:
 
     ```bash
     $ cd threagile-builder
@@ -92,10 +92,10 @@ thregile-बिल्डर
 
 **_नया_**
 
-**विषयसूची**
+**Table of Contents**
 
 -   [इंस्टालेशन](#installation)
--   [संस्करण स्रोत](#version-source)
+-   [Version source](#version-source)
 -   [वातावरण](#environments)
 -   [निर्माण](#build)
 -   [लाइसेंस](#license)
@@ -118,7 +118,7 @@ pip install threagile-builder
 ## निर्माण
 
 -   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)शिप करने के लिए हुक प्लगइन बनाएं`_version.py`फ़ाइल करें ताकि संस्करण का उपयोग रनटाइम पर किया जा सके
--   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
+-   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc) build hook plugin to first compile all code with [Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे करें:
     -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
     -   उपयोग[अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)प्रत्येक प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण बनाने का लक्ष्य बनाएं
@@ -131,7 +131,7 @@ pip install threagile-builder
 
 देखना[README.md](./100/README.md)
 
-## 200 - आवश्यकताएँ
+## 200 - Requirements
 
 देखना[README.md](./200/README.md)
 
