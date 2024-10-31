@@ -86,7 +86,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:5000/metrics`.
 
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)
--   [Umgebungen](#environments)
+-   [Environments](#environments)
 -   [Bauen](#build)
 -   [Lizenz](#license)
 
@@ -108,8 +108,8 @@ pip install threagile-builder
 ## Bauen
 
 -   Alle Build-Ziele verwenden die[hatch-vcs](https://github.com/ofek/hatch-vcs)Erstellen Sie ein Hook-Plugin, um ein zu versenden`_version.py`Datei, damit die Version zur Laufzeit verwendet werden kann
--   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build-Hook-Plugin, mit dem zunächst der gesamte Code kompiliert werden soll[Mypyc](https://github.com/mypyc/mypyc)
--   Der[bauen](.github/workflows/build.yml)Der GitHub-Workflow zeigt, wie Sie:
+-   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc) build hook plugin to first compile all code with [Mypyc](https://github.com/mypyc/mypyc)
+-   Der[bauen](.github/workflows/build.yml) GitHub workflow shows how to:
     -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)binäre Räder für jede Plattform zu verteilen
     -   Benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)build target zum Erstellen eigenständiger Distributionen für jede Plattform
 
