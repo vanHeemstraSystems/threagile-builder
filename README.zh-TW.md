@@ -1,8 +1,8 @@
-儲存庫名稱
+威脅建造者
 
-# 儲存庫名稱
+# 威脅建造者
 
-> 斯拉格萊恩
+> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
@@ -19,7 +19,7 @@
 
 看[README.md](./200/README.md)
 
-## 300 - 建立我們的應用程式
+## 300 - Building Our Application
 
 看[README.md](./300/README.md)
 
