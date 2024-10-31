@@ -88,7 +88,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:5000/metrics`.
 -   [Source de la version](#version-source)
 -   [Environnements](#environments)
 -   [Construire](#build)
--   [License](#license)
+-   [Licence](#license)
 
 ## Installation
 
@@ -117,7 +117,7 @@ pip install threagile-builder
 
 `threagile-buider`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
