@@ -11,9 +11,12 @@
 
 在您自己的系统上启动并运行您的代码。
 
+**笔记**: 确保您满足[先决条件](./200/README.md)
+
 1.  安装过程：
     ```bash
     cd threagile-builder
+    pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
@@ -67,7 +70,7 @@ $ pytest tests/
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 ## 100 - 简介
 
