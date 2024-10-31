@@ -21,7 +21,7 @@ Cómo poner en marcha su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
-1.  Proceso de instalación:
+1.  Installation process: 
     ```bash
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
@@ -65,7 +65,7 @@ Cómo poner en marcha su código en su propio sistema.
 
     Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
 
-    Para ejecutar pruebas, utilice:
+    To run tests, use:
 
     ```bash
     $ cd threagile-builder
@@ -78,7 +78,7 @@ Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.js
 
 # Métrica
 
-Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
+Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:5000/metrics`.
 
 **_NUEVO_**
 
@@ -107,9 +107,9 @@ pip install threagile-builder
 
 ## Construir
 
--   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
+-   All build targets use the [escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
 -   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
--   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
+-   El[construir](.github/workflows/build.yml) GitHub workflow shows how to:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
     -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
 
