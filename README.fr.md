@@ -14,7 +14,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 1.  Processus d'installation :
     ```bash
     cd threagile-builder
-    pip install -r requirements.txt
+    pipx install -r requirements.txt
     hatch run src/threagile_builder/app
     ```
 2.  Dépendances logicielles
@@ -69,7 +69,7 @@ Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou télécharg
 
 Laissez un outil comme Prometheus gratter`http://127.0.0.1:5000/metrics`.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
