@@ -29,6 +29,19 @@ classifiers = [
 ]
 dependencies = [
   "click>=8.0.3",
+  "Flask",
+  "Flask-SQLAlchemy",
+  "Flask-WTF",
+  "apiflask",
+  "black",
+  "opentelemetry-api",
+  "opentelemetry-sdk",
+  "opentelemetry-instrumentation-flask",
+  "opentelemetry-instrumentation-sqlalchemy",
+  "opentelemetry-exporter-prometheus",
+  "prefect",
+  "prometheus_client",
+  "python-dotenv",
 ]
 
 [project.urls]
