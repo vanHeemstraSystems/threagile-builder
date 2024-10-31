@@ -10,7 +10,7 @@ threagile-builder
 
 Getting your code up and running on your own system.
 
-**Note**: Make sure you fulfill the [prerequisites](./200/README.md)
+**Note**: Make sure you fulfill the [requirements](./200/README.md)
 
 1.	Installation process: 
     ```bash 
