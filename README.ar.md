@@ -1,15 +1,15 @@
-اسم المستودع
+ثريجيل باني
 
-# اسم المستودع
+# منشئ ثريجيل
 
-> Slugline
+> أ[على أساس الكتلة](https://developers.google.com/blockly)تطبيق ويب بدون كود للإنشاء[ثريجيل](https://threagile.io)ملفات YAML
 
 -   [مسرد](./GLOSSARY.md)
 -   [مراجع](./REFERENCES.md)
 
-**ملخص تنفيذي**
+**Executive Summary**
 
-نص
+Text
 
 ## 100- مقدمة
 
@@ -25,4 +25,4 @@
 
 ## 400 - الخاتمة
 
-يرى[README.md](./400/README.md)
+See [README.md](./400/README.md)
