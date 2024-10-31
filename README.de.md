@@ -21,7 +21,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 3.  Neueste Veröffentlichungen
 4.  API-Referenzen
 
-# Build and Test
+# Erstellen und testen
 
 Um Ihren Code zu erstellen, verwenden Sie:
 
