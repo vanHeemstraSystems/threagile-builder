@@ -2,7 +2,7 @@ thregile-बिल्डर
 
 # थ्रैगाइल बिल्डर
 
-> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
+> ए[block-based](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
@@ -14,7 +14,7 @@ thregile-बिल्डर
 1.  स्थापना प्रक्रिया:
     ```bash
     cd threagile-builder
-    pipx install -r requirements.txt
+    pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
 2.  सॉफ़्टवेयर निर्भरताएँ
@@ -52,7 +52,7 @@ $ cd threagile-builder
 $ hatch run src/threagile_builder/app
 ```
 
-फिर, नेविगेट करें`http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
+फिर, नेविगेट करें`http://127.0.0.1:5000/` in your web browser.
 
 परीक्षण चलाने के लिए, उपयोग करें:
 
