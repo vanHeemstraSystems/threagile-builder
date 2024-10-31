@@ -63,7 +63,7 @@
     $ hatch run src/threagile_builder/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`在您的网络浏览器中。
+    然后，导航至`http://127.0.0.1:5000/`在您的网络浏览器中。
 
     要运行测试，请使用：
 
@@ -78,7 +78,7 @@
 
 # 指标
 
-让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
