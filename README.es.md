@@ -2,12 +2,12 @@ constructor-threagil
 
 # Constructor amenazante
 
-> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
+> A[basado en bloques](https://developers.google.com/blockly) no-code web application to create [amenazante](https://threagile.io)Archivos YAML
 
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
 
-**Resumen ejecutivo**
+**Executive Summary**
 
 Cómo poner en marcha su código en su propio sistema.
 
@@ -18,7 +18,7 @@ Cómo poner en marcha su código en su propio sistema.
     cd threagile-builder
     pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
-    hatch run src/threagile_builder/app
+    hatch run src/threagile_builder/app.py
     ```
 2.  Dependencias de software
 3.  Últimos lanzamientos
@@ -64,7 +64,7 @@ $ cd threagile-builder
 $ pytest tests/
 ```
 
-# Documentación API
+# API Documentation
 
 Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
 
