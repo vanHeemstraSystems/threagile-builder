@@ -88,7 +88,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:5000/metrics`.
 -   [Source de la version](#version-source)
 -   [Environnements](#environments)
 -   [Construire](#build)
--   [Licence](#license)
+-   [License](#license)
 
 ## Installation
 
