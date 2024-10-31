@@ -2,7 +2,7 @@ constructeur de menaces
 
 # Constructeur dangereux
 
-> UN[basé sur des blocs](https://developers.google.com/blockly) no-code web application to create [fragile](https://threagile.io)Fichiers YAML
+> UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[fragile](https://threagile.io)Fichiers YAML
 
 -   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
