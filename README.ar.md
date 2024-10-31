@@ -41,7 +41,7 @@
     $ hatch build
     ```
 
-    لتشغيل التطبيق استخدم:
+    To run the application, use:
 
     لينكس:
 
