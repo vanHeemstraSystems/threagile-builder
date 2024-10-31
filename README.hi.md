@@ -1,6 +1,6 @@
 thregile-बिल्डर
 
-# थ्रैगाइल बिल्डर
+# Threagile Builder
 
 > ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
@@ -19,7 +19,7 @@ thregile-बिल्डर
     ```
 2.  सॉफ़्टवेयर निर्भरताएँ
 3.  नवीनतम रिलीज़
-4.  API references
+4.  एपीआई संदर्भ
 
 # निर्माण एवं परीक्षण
 
