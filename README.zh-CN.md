@@ -10,7 +10,7 @@
 
 * * *
 
-> 一个[block-based](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
+> 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
 
 -   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
