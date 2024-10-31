@@ -1,13 +1,13 @@
 存储库名称
 
-# 存储库名称
+# Repository Name
 
 > 斯拉格莱恩
->
-> -   [词汇表](./GLOSSARY.md)
-> -   [参考](./REFERENCES.md)
 
-**执行摘要**
+-   [词汇表](./GLOSSARY.md)
+-   [参考](./REFERENCES.md)
+
+**Executive Summary**
 
 文本
 
