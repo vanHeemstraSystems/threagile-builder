@@ -1,6 +1,6 @@
 threagile-bouwer
 
-# Threagile Builder
+# Threagile-bouwer
 
 > A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[ragiel](https://threagile.io)YAML-bestanden
 
