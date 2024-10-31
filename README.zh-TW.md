@@ -11,7 +11,7 @@
 
 在您自己的系統上啟動並運行您的程式碼。
 
-**筆記**: 確保您滿足[requirements](./200/README.md)
+**筆記**: 確保您滿足[要求](./200/README.md).
 
 1.  安裝過程：
     ```bash
@@ -70,7 +70,7 @@ $ pytest tests/
 
 # 指標
 
-Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 ## 100 - 簡介
 
