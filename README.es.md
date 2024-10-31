@@ -9,7 +9,7 @@ constructor-threagil
 
 **Resumen ejecutivo**
 
-Poner en funcionamiento su código en su propio sistema.
+Cómo poner en marcha su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -18,6 +18,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    # Without hatch: $ python src/threagile_builder/app.py
     $ hatch run src/threagile_builder/app.py
     ```
 2.  Dependencias de software
