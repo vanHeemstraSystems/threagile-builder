@@ -1,4 +1,4 @@
-threagile-builder
+威胁建造者
 
 # 威胁建造者
 
@@ -63,7 +63,7 @@ threagile-builder
     $ hatch run src/threagile_builder/app.py
     ```
 
-    然后，导航至`http://127.0.0.1:5000/`在您的网络浏览器中。
+    Then, navigate to `http://127.0.0.1:5000/`在您的网络浏览器中。
 
     要运行测试，请使用：
 
@@ -78,7 +78,7 @@ threagile-builder
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
@@ -115,7 +115,7 @@ pip install threagile-builder
 
 ## 执照
 
-`threagile-buider`是根据以下条款分发的[和](https://spdx.org/licenses/MIT.html)执照。
+`threagile-builder`是根据以下条款分发的[和](https://spdx.org/licenses/MIT.html)执照。
 
 ## 100 - 简介
 
@@ -125,7 +125,7 @@ pip install threagile-builder
 
 看[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 - 构建我们的应用程序
 
 看[README.md](./300/README.md)
 
