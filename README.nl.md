@@ -82,7 +82,7 @@ Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:5000/metrics`
 
 **_NIEUW_**
 
-**Inhoudsopgave**
+**Table of Contents**
 
 -   [Installatie](#installation)
 -   [Versiebron](#version-source)
@@ -105,7 +105,7 @@ pip install threagile-builder
 -   Netjes gedefinieerd in een standalone[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   De`test`matrix maakt gebruik van de[luikcontainers](https://github.com/ofek/hatch-containers)plug-in om elke omgeving binnen Docker-containers uit te voeren; gebruik is te zien in de[test](.github/workflows/test.yml)GitHub-workflow
 
-## Build
+## Bouwen
 
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
