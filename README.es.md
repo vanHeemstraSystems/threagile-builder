@@ -72,7 +72,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ pytest tests/
     ```
 
-# API Documentation
+# Documentación API
 
 Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
 
@@ -108,7 +108,7 @@ pip install threagile-builder
 ## Construir
 
 -   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
--   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
+-   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[Mypyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
     -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
@@ -125,7 +125,7 @@ Ver[README.md](./100/README.md)
 
 Ver[README.md](./200/README.md)
 
-## 300 - Construyendo nuestra aplicación
+## 300 - Building Our Application
 
 Ver[README.md](./300/README.md)
 
