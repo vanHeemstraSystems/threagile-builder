@@ -10,7 +10,7 @@ threagile-bouwer
 
 * * *
 
-> A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[threagile](https://threagile.io)YAML-bestanden
+> A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[ragiel](https://threagile.io)YAML-bestanden
 
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
@@ -19,7 +19,7 @@ threagile-bouwer
 
 Uw code op uw eigen systeem operationeel krijgen.
 
-**Note**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
+**Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
 
 1.  Installatieproces:
     ```bash
@@ -107,9 +107,9 @@ pip install threagile-builder
 
 ## Bouwen
 
--   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py` file so the version can be used at runtime
+-   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
+-   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
