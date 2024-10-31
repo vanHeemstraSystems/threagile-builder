@@ -1,6 +1,6 @@
 threagile-bouwer
 
-# Threagile Builder
+# Threagile-bouwer
 
 |        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10,7 +10,7 @@ threagile-bouwer
 
 * * *
 
-> A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[ragiel](https://threagile.io)YAML-bestanden
+> A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[threagile](https://threagile.io)YAML-bestanden
 
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
@@ -19,7 +19,7 @@ threagile-bouwer
 
 Uw code op uw eigen systeem operationeel krijgen.
 
-**Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
+**Note**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
 
 1.  Installatieproces:
     ```bash
@@ -107,7 +107,7 @@ pip install threagile-builder
 
 ## Bouwen
 
--   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
+-   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py` file so the version can be used at runtime
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
