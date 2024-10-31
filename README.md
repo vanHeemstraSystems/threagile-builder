@@ -31,7 +31,7 @@ Getting your code up and running on your own system.
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
-    $ hatch run src/threagile_builder/app.py
+    (threagile-builder) $ hatch run src/threagile_builder/app.py
     ```
 2.	Software dependencies
 3.	Latest releases
