@@ -2,7 +2,7 @@ threagile-bouwer
 
 # Threagile-bouwer
 
-> A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[threagile](https://threagile.io)YAML-bestanden
+> A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[ragiel](https://threagile.io)YAML-bestanden
 
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
@@ -61,7 +61,7 @@ $ cd threagile-builder
 $ pytest tests/
 ```
 
-# API Documentation
+# API-documentatie
 
 Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openapi.json van`http://127.0.0.1:5000/openapi.json`.
 
@@ -75,7 +75,7 @@ Zien[README.md](./100/README.md)
 
 ## 200 - Vereisten
 
-See [README.md](./200/README.md)
+Zien[README.md](./200/README.md)
 
 ## 300 - Onze applicatie bouwen
 
