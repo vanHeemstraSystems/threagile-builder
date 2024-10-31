@@ -9,12 +9,12 @@ constructor-threagil
 
 **Resumen ejecutivo**
 
-Cómo poner en marcha su código en su propio sistema.
+Poner en funcionamiento su código en su propio sistema.
 
 1.  Proceso de instalación:
     ```bash
     cd threagile-builder
-    pip install -r requirements.txt
+    pipx install -r requirements.txt
     hatch run src/threagile_builder/app
     ```
 2.  Dependencias de software
@@ -38,7 +38,7 @@ Linux:
 export SECRET_KEY="secret"
 ```
 
-Ventanas:
+Windows:
 
 ```bash
 setx SECRET_KEY secret
