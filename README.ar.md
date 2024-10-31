@@ -15,10 +15,10 @@
 
 1.  عملية التثبيت:
     ```bash
-    cd threagile-builder
-    pip install --upgrade pip # optional
-    pip install -r requirements.txt # pipx won't do this
-    hatch run src/threagile_builder/app.py
+    $ cd threagile-builder
+    $ pip install --upgrade pip # optional
+    $ pip install -r requirements.txt # pipx won't do this
+    $ hatch run src/threagile_builder/app.py
     ```
 2.  تبعيات البرمجيات
 3.  أحدث الإصدارات
@@ -52,7 +52,7 @@ setx SECRET_KEY secret
 ```bash
 $ cd threagile-builder
 # Without hatch: $ python src/threagile_builder/app.py
-$ hatch run src/threagile_builder/app
+$ hatch run src/threagile_builder/app.py
 ```
 
 ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
@@ -80,7 +80,7 @@ $ pytest tests/
 
 يرى[README.md](./200/README.md)
 
-## 300 – بناء تطبيقنا
+## 300 - Building Our Application
 
 يرى[README.md](./300/README.md)
 
