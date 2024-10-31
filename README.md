@@ -1,7 +1,7 @@
-repository-name
-# Repository Name
+threagile-builder
+# Threagile Builder
 
-> Slugline
+> A [block-based](https://developers.google.com/blockly) no-code web application to create [threagile](https://threagile.io) YAML files
 
 - [Glossary](./GLOSSARY.md)
 - [References](./REFERENCES.md)
