@@ -3,9 +3,9 @@ nombre-repositorio
 # Nombre del repositorio
 
 > línea de bala
->
-> -   [Glosario](./GLOSSARY.md)
-> -   [Referencias](./REFERENCES.md)
+
+-   [Glosario](./GLOSSARY.md)
+-   [Referencias](./REFERENCES.md)
 
 **Resumen ejecutivo**
 
