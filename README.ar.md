@@ -51,7 +51,7 @@
 
     لتشغيل التطبيق استخدم:
 
-    لينكس:
+    Linux:
 
     ```bash
     $ export SECRET_KEY="secret"
@@ -68,7 +68,7 @@
     ```bash
     $ cd threagile-builder
     # Without hatch: $ python src/threagile_builder/app.py
-    $ hatch run src/threagile_builder/app.py
+    $ hatch run python src/threagile_builder/app.py
     ```
 
     ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
@@ -115,9 +115,9 @@ pip install threagile-builder
 
 ## يبني
 
--   تستخدم جميع أهداف البناء[hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
+-   All build targets use the [Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
--   ال[build](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
+-   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
     -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
 
