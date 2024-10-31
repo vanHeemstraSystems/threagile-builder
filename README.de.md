@@ -3,21 +3,21 @@ Repository-Name
 # Repository-Name
 
 > Slugline
->
-> -   [Glossar](./GLOSSARY.md)
-> -   [Referenzen](./REFERENCES.md)
+
+-   [Glossar](./GLOSSARY.md)
+-   [Referenzen](./REFERENCES.md)
 
 **Zusammenfassung**
 
 Text
 
-## 100 - Introduction
+## 100 - Einführung
 
-See [README.md](./100/README.md)
+Sehen[README.md](./100/README.md)
 
 ## 200 – Anforderungen
 
-See [README.md](./200/README.md)
+Sehen[README.md](./200/README.md)
 
 ## 300 – Erstellen unserer Anwendung
 
