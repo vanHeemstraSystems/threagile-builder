@@ -10,7 +10,7 @@
 
 * * *
 
-> 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
+> A [基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
 
 -   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
@@ -68,7 +68,7 @@
     ```bash
     $ cd threagile-builder
     # Without hatch: $ python src/threagile_builder/app.py
-    $ hatch run src/threagile_builder/app.py
+    $ hatch run python src/threagile_builder/app.py
     ```
 
     然后，导航至`http://127.0.0.1:5000/`在您的网络浏览器中。
@@ -86,7 +86,7 @@
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## 环境
 
--   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
@@ -119,7 +119,7 @@ pip install threagile-builder
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
-    -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
+    -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/) build target to build standalone distributions for every platform
 
 ## 执照
 
@@ -139,4 +139,4 @@ pip install threagile-builder
 
 ## 400 - 结论
 
-看[README.md](./400/README.md)
+See [README.md](./400/README.md)
