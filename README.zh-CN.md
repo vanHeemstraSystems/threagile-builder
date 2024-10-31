@@ -15,10 +15,10 @@
 
 1.  安装过程：
     ```bash
-    cd threagile-builder
-    pip install --upgrade pip # optional
-    pip install -r requirements.txt # pipx won't do this
-    hatch run src/threagile_builder/app.py
+    $ cd threagile-builder
+    $ pip install --upgrade pip # optional
+    $ pip install -r requirements.txt # pipx won't do this
+    $ hatch run src/threagile_builder/app.py
     ```
 2.  软件依赖性
 3.  最新版本
@@ -47,12 +47,12 @@ export SECRET_KEY="secret"
 setx SECRET_KEY secret
 ```
 
-Then:
+然后：
 
 ```bash
 $ cd threagile-builder
 # Without hatch: $ python src/threagile_builder/app.py
-$ hatch run src/threagile_builder/app
+$ hatch run src/threagile_builder/app.py
 ```
 
 然后，导航至`http://127.0.0.1:5000/`在您的网络浏览器中。
@@ -70,7 +70,7 @@ $ pytest tests/
 
 # 指标
 
-让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 ## 100 - 简介
 
