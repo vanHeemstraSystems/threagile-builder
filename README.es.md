@@ -10,7 +10,7 @@ constructor-threagil
 
 * * *
 
-> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
+> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)archivos YAML
 
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
@@ -32,10 +32,8 @@ Cómo poner en marcha su código en su propio sistema.
 2.  Dependencias de software
 3.  Últimos lanzamientos
 4.  Referencias API
-
-# Construir y probar
-
-Para construir su código, use:
+5.  Construir y probar:
+    Para construir su código, use:
 
 ```bash
 $ cd threagile-builder

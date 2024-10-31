@@ -32,10 +32,8 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 2.  Softwareabhängigkeiten
 3.  Neueste Veröffentlichungen
 4.  API-Referenzen
-
-# Erstellen und testen
-
-Um Ihren Code zu erstellen, verwenden Sie:
+5.  Erstellen und testen:
+    Um Ihren Code zu erstellen, verwenden Sie:
 
 ```bash
 $ cd threagile-builder
