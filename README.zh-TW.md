@@ -68,12 +68,12 @@
     ```bash
     $ cd threagile-builder
     # Without hatch: $ python src/threagile_builder/app.py
-    $ hatch run src/threagile_builder/app.py
+    $ hatch run python src/threagile_builder/app.py
     ```
 
     然後，導航至`http://127.0.0.1:5000/`在您的網頁瀏覽器中。
 
-    To run tests, use:
+    若要執行測試，請使用：
 
     ```bash
     $ cd threagile-builder
@@ -86,14 +86,14 @@
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
 **目錄**
 
 -   [安裝](#installation)
--   [Version source](#version-source)
+-   [版本來源](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
 -   [執照](#license)
@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## 100 - 簡介
 
-See [README.md](./100/README.md)
+看[README.md](./100/README.md)
 
 ## 200 - 要求
 
