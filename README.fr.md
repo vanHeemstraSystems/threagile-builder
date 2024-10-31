@@ -5,15 +5,18 @@ constructeur de menaces
 > UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[fragile](https://threagile.io)Fichiers YAML
 
 -   [Glossaire](./GLOSSARY.md)
--   [Références](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 
 **Résumé exécutif**
 
-Faire en sorte que votre code soit opérationnel sur votre propre système.
+Getting your code up and running on your own system.
+
+**Note**: Assurez-vous de remplir les[conditions préalables](./200/README.md)
 
 1.  Processus d'installation :
     ```bash
     cd threagile-builder
+    pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
@@ -63,13 +66,13 @@ $ pytest tests/
 
 # Documentation API
 
-Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
+Accédez à`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
 
 # Métrique
 
 Laissez un outil comme Prometheus gratter`http://127.0.0.1:5000/metrics`.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 

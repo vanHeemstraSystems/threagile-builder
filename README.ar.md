@@ -11,9 +11,12 @@
 
 الحصول على التعليمات البرمجية الخاصة بك وتشغيلها على النظام الخاص بك.
 
+**ملحوظة**: تأكد من الوفاء[المتطلبات الأساسية](./200/README.md)
+
 1.  عملية التثبيت:
     ```bash
     cd threagile-builder
+    pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
