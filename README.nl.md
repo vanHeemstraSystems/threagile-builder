@@ -17,7 +17,7 @@ threagile-bouwer
 
 **Samenvatting**
 
-Getting your code up and running on your own system.
+Uw code op uw eigen systeem operationeel krijgen.
 
 **Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
 
@@ -74,13 +74,13 @@ Getting your code up and running on your own system.
 
 # API-documentatie
 
-Navigeer naar`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
+Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openapi.json van`http://127.0.0.1:5000/openapi.json`.
 
 # Statistieken
 
 Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:5000/metrics`.
 
-**_ NEW _**
+**_NIEUW_**
 
 **Inhoudsopgave**
 
@@ -109,13 +109,13 @@ pip install threagile-builder
 
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
+-   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
 ## Licentie
 
-`threagile-buider`wordt verspreid onder de voorwaarden van de[MET](https://spdx.org/licenses/MIT.html)licentie.
+`threagile-buider` is distributed under the terms of the [MET](https://spdx.org/licenses/MIT.html)licentie.
 
 ## 100 - Inleiding
 
