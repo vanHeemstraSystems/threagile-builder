@@ -49,7 +49,7 @@
     $ export SECRET_KEY="secret"
     ```
 
-    視窗：
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
