@@ -10,7 +10,7 @@
 
 * * *
 
-> أ[على أساس الكتلة](https://developers.google.com/blockly) no-code web application to create [ثريجيل](https://threagile.io)ملفات YAML
+> أ[على أساس الكتلة](https://developers.google.com/blockly)تطبيق ويب بدون كود للإنشاء[ثريجيل](https://threagile.io)ملفات YAML
 
 -   [مسرد](./GLOSSARY.md)
 -   [مراجع](./REFERENCES.md)
@@ -19,9 +19,9 @@
 
 الحصول على التعليمات البرمجية الخاصة بك وتشغيلها على النظام الخاص بك.
 
-**ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
+**ملحوظة**: Make sure you fulfill the [متطلبات](./200/README.md).
 
-1.  Installation process: 
+1.  عملية التثبيت:
     ```bash
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
@@ -30,7 +30,7 @@
     $ hatch run src/threagile_builder/app.py
     ```
 2.  تبعيات البرمجيات
-3.  Latest releases
+3.  أحدث الإصدارات
 4.  مراجع واجهة برمجة التطبيقات
 5.  البناء والاختبار:
 
@@ -78,7 +78,7 @@
 
 # المقاييس
 
-Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
+دع أداة مثل بروميثيوس تتخلص`http://127.0.0.1:5000/metrics`.
 
 **_جديد_**
 
@@ -86,7 +86,7 @@ Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
 
 -   [تثبيت](#installation)
 -   [مصدر النسخة](#version-source)
--   [Environments](#environments)
+-   [البيئات](#environments)
 -   [يبني](#build)
 -   [رخصة](#license)
 
@@ -102,13 +102,13 @@ pip install threagile-builder
 
 ## البيئات
 
--   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   تم تعريفها بدقة في قائمة بذاتها[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
 
 ## يبني
 
--   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
--   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc) build hook plugin to first compile all code with [Mypyc](https://github.com/mypyc/mypyc)
+-   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
+-   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
     -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
@@ -121,7 +121,7 @@ pip install threagile-builder
 
 يرى[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - المتطلبات
 
 يرى[README.md](./200/README.md)
 
