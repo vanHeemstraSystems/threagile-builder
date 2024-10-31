@@ -1,4 +1,4 @@
-threagile-builder
+威胁建造者
 
 # 威胁建造者
 
@@ -10,7 +10,7 @@ threagile-builder
 
 * * *
 
-> 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io) YAML files
+> 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
 
 -   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
@@ -88,7 +88,7 @@ threagile-builder
 
 # 指标
 
-Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
+让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
@@ -135,7 +135,7 @@ pip install threagile-builder
 
 看[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 - 构建我们的应用程序
 
 看[README.md](./300/README.md)
 
