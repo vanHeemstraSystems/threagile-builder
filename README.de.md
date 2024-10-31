@@ -2,7 +2,7 @@ Threagile-Builder
 
 # Threagile Builder
 
-> A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagil](https://threagile.io)YAML-Dateien
+> A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagile](https://threagile.io)YAML-Dateien
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
@@ -18,11 +18,11 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     cd threagile-builder
     pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
-    hatch run src/threagile_builder/app
+    hatch run src/threagile_builder/app.py
     ```
 2.  Softwareabhängigkeiten
 3.  Neueste Veröffentlichungen
-4.  API-Referenzen
+4.  API references
 
 # Erstellen und testen
 
