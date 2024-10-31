@@ -7,7 +7,7 @@ Threagile-Builder
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
 
-**Executive Summary**
+**Zusammenfassung**
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
@@ -15,10 +15,10 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 1.  Installationsprozess:
     ```bash
-    cd threagile-builder
-    pip install --upgrade pip # optional
-    pip install -r requirements.txt # pipx won't do this
-    hatch run src/threagile_builder/app.py
+    $ cd threagile-builder
+    $ pip install --upgrade pip # optional
+    $ pip install -r requirements.txt # pipx won't do this
+    $ hatch run src/threagile_builder/app.py
     ```
 2.  Softwareabhängigkeiten
 3.  Neueste Veröffentlichungen
@@ -52,7 +52,7 @@ Dann:
 ```bash
 $ cd threagile-builder
 # Without hatch: $ python src/threagile_builder/app.py
-$ hatch run src/threagile_builder/app
+$ hatch run src/threagile_builder/app.py
 ```
 
 Navigieren Sie dann zu`http://127.0.0.1:5000/`in Ihrem Webbrowser.
