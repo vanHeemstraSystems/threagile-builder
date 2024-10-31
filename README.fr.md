@@ -2,16 +2,16 @@ constructeur de menaces
 
 # Constructeur dangereux
 
-> UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[fragile](https://threagile.io)Fichiers YAML
+> UN[basé sur des blocs](https://developers.google.com/blockly) no-code web application to create [fragile](https://threagile.io)Fichiers YAML
 
 -   [Glossaire](./GLOSSARY.md)
--   [References](./REFERENCES.md)
+-   [Références](./REFERENCES.md)
 
 **Résumé exécutif**
 
-Getting your code up and running on your own system.
+Faire en sorte que votre code soit opérationnel sur votre propre système.
 
-**Note**: Assurez-vous de remplir les[conditions préalables](./200/README.md)
+**Note**: Assurez-vous de remplir les[exigences](./200/README.md)
 
 1.  Processus d'installation :
     ```bash
@@ -66,13 +66,13 @@ $ pytest tests/
 
 # Documentation API
 
-Accédez à`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
+Navigate to `http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
 
 # Métrique
 
 Laissez un outil comme Prometheus gratter`http://127.0.0.1:5000/metrics`.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
