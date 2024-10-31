@@ -11,9 +11,12 @@ threagile-bouwer
 
 Uw code op uw eigen systeem operationeel krijgen.
 
+**Opmerking**: Make sure you fulfill the [vereisten](./200/README.md)
+
 1.  Installatieproces:
     ```bash
     cd threagile-builder
+    pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
@@ -69,7 +72,7 @@ Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openap
 
 Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:5000/metrics`.
 
-## 100 - Introduction
+## 100 - Inleiding
 
 Zien[README.md](./100/README.md)
 
