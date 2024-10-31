@@ -12,7 +12,7 @@ constructeur de menaces
 
 > UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[fragile](https://threagile.io)Fichiers YAML
 
--   [Glossary](./GLOSSARY.md)
+-   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
 
 **Résumé exécutif**
@@ -32,10 +32,8 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 2.  Dépendances logicielles
 3.  Dernières versions
 4.  Références API
-
-# Construire et tester
-
-Pour construire votre code, utilisez :
+5.  Construire et tester :
+    Pour construire votre code, utilisez :
 
 ```bash
 $ cd threagile-builder
@@ -104,7 +102,7 @@ pip install threagile-builder
 ## Environnements
 
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml) GitHub workflow
+-   Le`test`la matrice utilise le[conteneurs à écoutille](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
 ## Construire
 
@@ -118,7 +116,7 @@ pip install threagile-builder
 
 `threagile-buider`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
