@@ -2,14 +2,72 @@ constructor-threagil
 
 # Constructor amenazante
 
-> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)archivos YAML
+> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
 
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
 
 **Resumen ejecutivo**
 
-Texto
+Cómo poner en marcha su código en su propio sistema.
+
+1.  Proceso de instalación:
+    ```bash
+    cd threagile-builder
+    pip install -r requirements.txt
+    hatch run src/threagile_builder/app
+    ```
+2.  Dependencias de software
+3.  Últimos lanzamientos
+4.  Referencias API
+
+# Construir y probar
+
+Para construir su código, use:
+
+```bash
+$ cd threagile-builder
+$ hatch build
+```
+
+Para ejecutar la aplicación, utilice:
+
+Linux:
+
+```bash
+export SECRET_KEY="secret"
+```
+
+Ventanas:
+
+```bash
+setx SECRET_KEY secret
+```
+
+Entonces:
+
+```bash
+$ cd threagile-builder
+# Without hatch: $ python src/threagile_builder/app.py
+$ hatch run src/threagile_builder/app
+```
+
+Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
+
+Para ejecutar pruebas, utilice:
+
+```bash
+$ cd threagile-builder
+$ pytest tests/
+```
+
+# Documentación API
+
+Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
+
+# Métrica
+
+Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:5000/metrics`.
 
 ## 100 - Introducción
 
