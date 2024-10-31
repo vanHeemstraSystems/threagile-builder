@@ -9,9 +9,67 @@ constructeur de menaces
 
 **Résumé exécutif**
 
-Texte
+Faire en sorte que votre code soit opérationnel sur votre propre système.
 
-## 100 - Introduction
+1.  Processus d'installation :
+    ```bash
+    cd threagile-builder
+    pip install -r requirements.txt
+    hatch run src/threagile_builder/app
+    ```
+2.  Dépendances logicielles
+3.  Dernières versions
+4.  Références API
+
+# Construire et tester
+
+Pour construire votre code, utilisez :
+
+```bash
+$ cd threagile-builder
+$ hatch build
+```
+
+Pour exécuter l'application, utilisez :
+
+Linux :
+
+```bash
+export SECRET_KEY="secret"
+```
+
+Fenêtres :
+
+```bash
+setx SECRET_KEY secret
+```
+
+Alors:
+
+```bash
+$ cd threagile-builder
+# Without hatch: $ python src/threagile_builder/app.py
+$ hatch run src/threagile_builder/app
+```
+
+Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
+
+Pour exécuter des tests, utilisez :
+
+```bash
+$ cd threagile-builder
+$ pytest tests/
+```
+
+# Documentation API
+
+Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
+
+# Métrique
+
+Laissez un outil comme Prometheus gratter`http://127.0.0.1:5000/metrics`.
+
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 
