@@ -11,9 +11,12 @@ Threagile-Builder
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
+**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Voraussetzungen](./200/README.md)
+
 1.  Installationsprozess:
     ```bash
     cd threagile-builder
+    pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
@@ -63,7 +66,7 @@ $ pytest tests/
 
 # API-Dokumentation
 
-Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
+Navigate to `http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
 
 # Metriken
 
