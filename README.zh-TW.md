@@ -10,7 +10,7 @@
 
 * * *
 
-> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io) YAML files
+> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
@@ -34,7 +34,7 @@
 4.  API參考
 5.  建置和測試：
 
-    要建立您的程式碼，請使用：
+    To build your code, use:
 
     ```bash
     $ cd threagile-builder
