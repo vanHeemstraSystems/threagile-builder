@@ -10,7 +10,7 @@ constructor-threagil
 
 * * *
 
-> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)archivos YAML
+> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
 
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
@@ -78,7 +78,7 @@ Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.js
 
 # Métrica
 
-Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:5000/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
 
 **_NUEVO_**
 
@@ -103,7 +103,7 @@ pip install threagile-builder
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
