@@ -2,18 +2,21 @@
 
 # 威脅建造者
 
-> A [基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io) YAML files
+> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
 -   [詞彙表](./GLOSSARY.md)
--   [References](./REFERENCES.md)
+-   [參考](./REFERENCES.md)
 
 **執行摘要**
 
 在您自己的系統上啟動並運行您的程式碼。
 
+**筆記**: 確保您滿足[先決條件](./200/README.md)
+
 1.  安裝過程：
     ```bash
     cd threagile-builder
+    pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
@@ -23,7 +26,7 @@
 
 # 建置和測試
 
-要建立您的程式碼，請使用：
+To build your code, use:
 
 ```bash
 $ cd threagile-builder
@@ -67,7 +70,7 @@ $ pytest tests/
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 ## 100 - 簡介
 
