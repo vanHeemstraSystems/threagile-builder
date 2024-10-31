@@ -11,7 +11,7 @@ Threagile-Builder
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
-**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Voraussetzungen](./200/README.md)
+**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md)
 
 1.  Installationsprozess:
     ```bash
@@ -33,7 +33,7 @@ $ cd threagile-builder
 $ hatch build
 ```
 
-Um die Anwendung auszuführen, verwenden Sie:
+To run the application, use:
 
 Linux:
 
@@ -47,7 +47,7 @@ Windows:
 setx SECRET_KEY secret
 ```
 
-Dann:
+Then:
 
 ```bash
 $ cd threagile-builder
@@ -66,7 +66,7 @@ $ pytest tests/
 
 # API-Dokumentation
 
-Navigate to `http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
+Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
 
 # Metriken
 
