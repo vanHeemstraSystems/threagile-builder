@@ -48,6 +48,6 @@ all = [
 source = "vcs"
 
 [build.hooks.vcs]
-version-file = "src/threagile_builder/_version.py"
+version-file = "./src/threagile_builder/_version.py"
 
 [metadata.hooks.vcs]

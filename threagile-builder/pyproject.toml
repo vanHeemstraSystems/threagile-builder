@@ -66,7 +66,7 @@ fallback_version = "0.0.0"
 
 [tool.hatch.version]
 source = "vcs"
-# path = "src/threagile_builder/__about__.py"
+# path = "./src/threagile_builder/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
@@ -78,7 +78,7 @@ dependencies = [
 app = "python src/threagile_builder/app.py"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/threagile_builder/_version.py"
+version-file = "./src/threagile_builder/_version.py"
 
 [tool.hatch.metadata.hooks.vcs]
 
