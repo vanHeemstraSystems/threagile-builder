@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "threagile-builder"
 dynamic = ["version"]
-description = ''
+description = 'Threagile Builder application'
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
@@ -24,7 +24,8 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+]
 
 [project.urls]
 Documentation = "https://github.com/Willem van Heemstra/threagile-builder#readme"
