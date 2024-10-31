@@ -34,7 +34,7 @@ thregile-बिल्डर
 4.  एपीआई संदर्भ
 5.  निर्माण और परीक्षण:
 
-    अपना कोड बनाने के लिए, इसका उपयोग करें:
+    To build your code, use:
 
     ```bash
     $ cd threagile-builder
