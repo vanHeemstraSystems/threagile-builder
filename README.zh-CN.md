@@ -33,7 +33,9 @@
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
-    (threagile-builder) $ hatch run src/threagile_builder/app.py
+    (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
+    (threagile-builder) $ exit # type `exit` to leave the environment
+    $ hatch run python src/threagile_builder/app.py # The `run` command allows you to execute commands in an environment as if you had already entered it. 
     ```
 2.  软件依赖性
 3.  最新版本
@@ -84,7 +86,7 @@
 
 # 指标
 
-让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
@@ -108,7 +110,7 @@ pip install threagile-builder
 
 ## 环境
 
--   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
