@@ -15,10 +15,10 @@ Uw code op uw eigen systeem operationeel krijgen.
 
 1.  Installatieproces:
     ```bash
-    cd threagile-builder
-    pip install --upgrade pip # optional
-    pip install -r requirements.txt # pipx won't do this
-    hatch run src/threagile_builder/app.py
+    $ cd threagile-builder
+    $ pip install --upgrade pip # optional
+    $ pip install -r requirements.txt # pipx won't do this
+    $ hatch run src/threagile_builder/app.py
     ```
 2.  Software-afhankelijkheden
 3.  Nieuwste releases
@@ -52,7 +52,7 @@ Dan:
 ```bash
 $ cd threagile-builder
 # Without hatch: $ python src/threagile_builder/app.py
-$ hatch run src/threagile_builder/app
+$ hatch run src/threagile_builder/app.py
 ```
 
 Navigeer vervolgens naar`http://127.0.0.1:5000/`in uw webbrowser.
@@ -70,7 +70,7 @@ Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openap
 
 # Statistieken
 
-Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
+Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:5000/metrics`.
 
 ## 100 - Inleiding
 
