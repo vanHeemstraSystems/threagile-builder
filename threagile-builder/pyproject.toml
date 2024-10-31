@@ -1,174 +1,45 @@
-# threagile-builder/pyproject.toml
 [build-system]
-requires = ["hatchling>=1.17.0", "hatch-vcs"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
 name = "threagile-builder"
-# version = "0.0.1"  # Remove any existing version parameter.
-dynamic = ["version"] # requires [tool.setuptools_scm]
-description = 'An application to build Threagile YAML files with Blockly.'
+dynamic = ["version"]
+description = ''
 readme = "README.md"
 requires-python = ">=3.8"
-license = { text = "MIT" }
-keywords = [
-  "hatch",
-  "blockly",
-  "threagile"
-]
+license = "MIT"
+keywords = []
 authors = [
   { name = "Willem van Heemstra", email = "wvanheemstra@icloud.com" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
-  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python",
-  "Programming Language :: Python :: 3.7",
   "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = [
-  "click>=8.0.3",
-  "Flask",
-  "Flask-SQLAlchemy",
-  "Flask-WTF",
-  "apiflask",
-  "black",
-  "opentelemetry-api",
-  "opentelemetry-sdk",
-  "opentelemetry-instrumentation-flask",
-  "opentelemetry-instrumentation-sqlalchemy",
-  "opentelemetry-exporter-prometheus",
-  "prefect",
-  "prometheus_client",
-  "python-dotenv",
-]
+dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/vanHeemstraSystems/threagile-builder#readme"
-Donate = "https://github.com/sponsors/vanHeemstraSystems"
-History = "https://github.com/vanHeemstraSystems/threagile-builder/blob/master/HISTORY.md"
-Issues = "https://github.com/vanHeemstraSystems/threagile-builder/issues"
-Source = "https://github.com/vanHeemstraSystems/threagile-builder"
-
-[project.scripts]
-threagile-builder = "threagile_builder.cli:threagile_builder"
-
-[tool.setuptools_scm] # mandatory
-root = ".."
-write_to = "threagile-builder/src/threagile_builder/_version.py"
-tag_regex = "^(?P<prefix>threagile-builder[-_])(?P<version>[vV]?\\d+(?:\\.\\d+){0,2}[^\\+]*)(?:\\+.*)?$"
-fallback_version = "0.0.0"
+Documentation = "https://github.com/Willem van Heemstra/threagile-builder#readme"
+Issues = "https://github.com/Willem van Heemstra/threagile-builder/issues"
+Source = "https://github.com/Willem van Heemstra/threagile-builder"
 
 [tool.hatch.version]
-source = "vcs"
-# path = "./src/threagile_builder/__about__.py"
+path = "src/threagile_builder/__about__.py"
 
-[tool.hatch.envs.default]
-dependencies = [
-  "coverage[toml]>=6.5",
-  "pytest",
-  "flask"
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
 ]
-[tool.hatch.envs.default.scripts]
-app = "python src/threagile_builder/app.py"
-
-[tool.hatch.build.hooks.vcs]
-version-file = "./src/threagile_builder/_version.py"
-
-[tool.hatch.metadata.hooks.vcs]
-
-[tool.hatch.build.targets.sdist]
-exclude = [
-  "/.github",
-]
-
-[tool.hatch.build.targets.wheel.hooks.mypyc]
-enable-by-default = false
-dependencies = ["hatch-mypyc>=0.14.1"]
-require-runtime-dependencies = true
-mypy-args = [
-  "--no-warn-unused-ignores",
-]
-
-[tool.mypy]
-disallow_untyped_defs = false
-follow_imports = "normal"
-ignore_missing_imports = true
-pretty = true
-show_column_numbers = true
-warn_no_return = false
-warn_unused_ignores = true
-
-[tool.black]
-target-version = ["py37"]
-line-length = 120
-skip-string-normalization = true
-
-[tool.ruff]
-target-version = "py37"
-line-length = 120
-select = [
-  "A",
-  "B",
-  "C",
-  "DTZ",
-  "E",
-  "EM",
-  "F",
-  "FBT",
-  "I",
-  "ICN",
-  "ISC",
-  "N",
-  "PLC",
-  "PLE",
-  "PLR",
-  "PLW",
-  "Q",
-  "RUF",
-  "S",
-  "SIM",
-  "T",
-  "TID",
-  "UP",
-  "W",
-  "YTT",
-]
-ignore = [
-  # Allow non-abstract empty methods in abstract base classes
-  "B027",
-  # Allow boolean positional values in function calls, like `dict.get(... True)`
-  "FBT003",
-  # Ignore checks for possible passwords
-  "S105", "S106", "S107",
-  # Ignore complexity
-  "C901", "PLR0911", "PLR0912", "PLR0913", "PLR0915",
-  "PLC1901", # empty string comparisons
-  "PLW2901", # `for` loop variable overwritten
-  "SIM114", # Combine `if` branches using logical `or` operator
-]
-unfixable = [
-  # Don't touch unused imports
-  "F401",
-]
-
-[tool.ruff.isort]
-known-first-party = ["threagile_builder"]
-
-[tool.ruff.flake8-quotes]
-inline-quotes = "single"
-
-[tool.ruff.flake8-tidy-imports]
-ban-relative-imports = "all"
-
-[tool.ruff.per-file-ignores]
-# Tests can use relative imports and assertions
-"tests/**/*" = ["TID252", "S101"]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/threagile_builder tests}"
 
 [tool.coverage.run]
 source_pkgs = ["threagile_builder", "tests"]
@@ -176,7 +47,6 @@ branch = true
 parallel = true
 omit = [
   "src/threagile_builder/__about__.py",
-  "src/threagile_builder/__main__.py",
 ]
 
 [tool.coverage.paths]

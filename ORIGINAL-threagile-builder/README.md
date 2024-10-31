@@ -1,4 +1,4 @@
-# threagile-builder
+# Threagile Builder
 
 [![PyPI - Version](https://img.shields.io/pypi/v/threagile-builder.svg)](https://pypi.org/project/threagile-builder)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-builder.svg)](https://pypi.org/project/threagile-builder)
