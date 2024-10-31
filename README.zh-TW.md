@@ -78,7 +78,7 @@
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
@@ -121,7 +121,7 @@ pip install threagile-builder
 
 看[README.md](./100/README.md)
 
-## 200 - 要求
+## 200 - Requirements
 
 看[README.md](./200/README.md)
 
