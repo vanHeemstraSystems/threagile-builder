@@ -2,7 +2,7 @@ thregile-बिल्डर
 
 # थ्रैगाइल बिल्डर
 
-> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
+> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io) YAML files
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
@@ -18,6 +18,7 @@ thregile-बिल्डर
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    # Without hatch: $ python src/threagile_builder/app.py
     $ hatch run src/threagile_builder/app.py
     ```
 2.  सॉफ़्टवेयर निर्भरताएँ
@@ -70,7 +71,7 @@ $ pytest tests/
 
 # मेट्रिक्स
 
-प्रोमेथियस जैसे उपकरण को परिमार्जन करने दें`http://127.0.0.1:5000/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
 
 ## 100 - परिचय
 
@@ -80,7 +81,7 @@ $ pytest tests/
 
 देखना[README.md](./200/README.md)
 
-## 300 - हमारे एप्लिकेशन का निर्माण
+## 300 - Building Our Application
 
 देखना[README.md](./300/README.md)
 
