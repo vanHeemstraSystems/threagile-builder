@@ -1,8 +1,8 @@
-भंडार-नाम
+thregile-बिल्डर
 
-# भंडार का नाम
+# थ्रैगाइल बिल्डर
 
-> स्लगलाइन
+> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
