@@ -1,6 +1,6 @@
 thregile-बिल्डर
 
-# Threagile Builder
+# थ्रैगाइल बिल्डर
 
 > ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
@@ -14,7 +14,7 @@ thregile-बिल्डर
 1.  स्थापना प्रक्रिया:
     ```bash
     cd threagile-builder
-    pip install -r requirements.txt
+    pipx install -r requirements.txt
     hatch run src/threagile_builder/app
     ```
 2.  सॉफ़्टवेयर निर्भरताएँ
