@@ -13,7 +13,7 @@ Getting your code up and running on your own system.
 1.	Installation process: 
     ```bash 
     cd threagile-builder
-    pipx install -r requirements.txt
+    pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
 2.	Software dependencies
