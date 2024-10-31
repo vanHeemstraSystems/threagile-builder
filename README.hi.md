@@ -26,6 +26,8 @@ thregile-बिल्डर
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory.
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
