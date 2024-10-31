@@ -26,7 +26,7 @@
 
 # بناء واختبار
 
-To build your code, use:
+لبناء الكود الخاص بك، استخدم:
 
 ```bash
 $ cd threagile-builder
