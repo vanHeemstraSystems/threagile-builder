@@ -1,4 +1,4 @@
-threagile-builder
+威脅建造者
 
 # 威脅建造者
 
@@ -20,7 +20,7 @@ threagile-builder
     pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app.py
     ```
-2.  Software dependencies
+2.  軟體依賴性
 3.  最新版本
 4.  API參考
 
@@ -47,7 +47,7 @@ export SECRET_KEY="secret"
 setx SECRET_KEY secret
 ```
 
-Then:
+然後：
 
 ```bash
 $ cd threagile-builder
@@ -86,4 +86,4 @@ $ pytest tests/
 
 ## 400 - 結論
 
-See [README.md](./400/README.md)
+看[README.md](./400/README.md)
