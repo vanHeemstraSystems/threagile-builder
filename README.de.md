@@ -21,7 +21,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
-1.  Installation process: 
+1.  Installationsprozess:
     ```bash
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
@@ -98,7 +98,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:5000/metrics`.
 -   [Versionsquelle](#version-source)
 -   [Umgebungen](#environments)
 -   [Bauen](#build)
--   [License](#license)
+-   [Lizenz](#license)
 
 ## Installation
 
