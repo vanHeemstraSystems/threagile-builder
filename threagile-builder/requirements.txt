@@ -12,3 +12,4 @@ opentelemetry-exporter-prometheus==0.48b0
 prefect==2.20.10
 prometheus_client==0.15.0
 python-dotenv==1.0.1
+setuptools_scm==8.1.0

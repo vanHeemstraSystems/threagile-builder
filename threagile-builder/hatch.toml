@@ -43,3 +43,9 @@ all = [
   "style",
   "typing",
 ]
+
+[version]
+source = "vcs"
+
+[build.hooks.vcs]
+version-file = "src/threagile_builder/_version.py"

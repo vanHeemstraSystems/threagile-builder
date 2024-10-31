@@ -1,16 +1,20 @@
+# threagile-builder/pyproject.toml
 [build-system]
 requires = ["hatchling>=1.17.0", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
 name = "threagile-builder"
-dynamic = ["version"]
+# version = "0.0.1"  # Remove any existing version parameter.
+dynamic = ["version"] # requires [tool.setuptools_scm]
 description = 'An application to build Threagile YAML files with Blockly.'
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 license = { text = "MIT" }
 keywords = [
   "hatch",
+  "blockly",
+  "threagile"
 ]
 authors = [
   { name = "Willem van Heemstra", email = "wvanheemstra@icloud.com" },
@@ -45,6 +49,7 @@ dependencies = [
 ]
 
 [project.urls]
+Documentation = "https://github.com/vanHeemstraSystems/threagile-builder#readme"
 Donate = "https://github.com/sponsors/vanHeemstraSystems"
 History = "https://github.com/vanHeemstraSystems/threagile-builder/blob/master/HISTORY.md"
 Issues = "https://github.com/vanHeemstraSystems/threagile-builder/issues"
@@ -53,8 +58,19 @@ Source = "https://github.com/vanHeemstraSystems/threagile-builder"
 [project.scripts]
 threagile-builder = "threagile_builder.cli:threagile_builder"
 
+[tool.setuptools_scm] # mandatory
+
 [tool.hatch.version]
-source = "vcs"
+path = "src/threagile_builder/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "flask"
+]
+[tool.hatch.envs.default.scripts]
+app = "python src/threagile_builder/app.py"
 
 [tool.hatch.build.hooks.vcs]
 version-file = "src/threagile_builder/_version.py"
@@ -152,6 +168,7 @@ source_pkgs = ["threagile_builder", "tests"]
 branch = true
 parallel = true
 omit = [
+  "src/threagile_builder/__about__.py",
   "src/threagile_builder/__main__.py",
 ]
 
