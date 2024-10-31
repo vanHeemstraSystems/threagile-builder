@@ -9,7 +9,65 @@ thregile-बिल्डर
 
 **कार्यकारी सारांश**
 
-मूलपाठ
+अपना कोड तैयार करना और अपने सिस्टम पर चलाना।
+
+1.  स्थापना प्रक्रिया:
+    ```bash
+    cd threagile-builder
+    pip install -r requirements.txt
+    hatch run src/threagile_builder/app
+    ```
+2.  सॉफ़्टवेयर निर्भरताएँ
+3.  नवीनतम रिलीज़
+4.  API references
+
+# निर्माण एवं परीक्षण
+
+अपना कोड बनाने के लिए, इसका उपयोग करें:
+
+```bash
+$ cd threagile-builder
+$ hatch build
+```
+
+एप्लिकेशन चलाने के लिए, उपयोग करें:
+
+लिनक्स:
+
+```bash
+export SECRET_KEY="secret"
+```
+
+खिड़कियाँ:
+
+```bash
+setx SECRET_KEY secret
+```
+
+तब:
+
+```bash
+$ cd threagile-builder
+# Without hatch: $ python src/threagile_builder/app.py
+$ hatch run src/threagile_builder/app
+```
+
+फिर, नेविगेट करें`http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
+
+परीक्षण चलाने के लिए, उपयोग करें:
+
+```bash
+$ cd threagile-builder
+$ pytest tests/
+```
+
+# एपीआई दस्तावेज़ीकरण
+
+पर नेविगेट करें`http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
+
+# मेट्रिक्स
+
+प्रोमेथियस जैसे उपकरण को परिमार्जन करने दें`http://127.0.0.1:5000/metrics`.
 
 ## 100 - परिचय
 
@@ -25,4 +83,4 @@ thregile-बिल्डर
 
 ## 400 - निष्कर्ष
 
-See [README.md](./400/README.md)
+देखना[README.md](./400/README.md)
