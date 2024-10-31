@@ -21,7 +21,7 @@
 
 **筆記**: 確保您滿足[要求](./200/README.md).
 
-1.  安裝過程：
+1.  Installation process: 
     ```bash
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
@@ -78,7 +78,7 @@
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
