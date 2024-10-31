@@ -21,11 +21,13 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
-1.  Installationsprozess:
+1.  Installation process: 
     ```bash
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory.
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -96,7 +98,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:5000/metrics`.
 -   [Versionsquelle](#version-source)
 -   [Umgebungen](#environments)
 -   [Bauen](#build)
--   [Lizenz](#license)
+-   [License](#license)
 
 ## Installation
 
