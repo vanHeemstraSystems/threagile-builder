@@ -18,6 +18,7 @@
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    # Without hatch: $ python src/threagile_builder/app.py
     $ hatch run src/threagile_builder/app.py
     ```
 2.  تبعيات البرمجيات
@@ -70,7 +71,7 @@ $ pytest tests/
 
 # المقاييس
 
-دع أداة مثل بروميثيوس تتخلص`http://127.0.0.1:5000/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
 
 ## 100- مقدمة
 
@@ -80,7 +81,7 @@ $ pytest tests/
 
 يرى[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 – بناء تطبيقنا
 
 يرى[README.md](./300/README.md)
 

@@ -9,19 +9,20 @@ constructeur de menaces
 
 **Résumé exécutif**
 
-Faire en sorte que votre code soit opérationnel sur votre propre système.
+Getting your code up and running on your own system.
 
-**Note**: Assurez-vous de remplir les[exigences](./200/README.md).
+**Note**: Make sure you fulfill the [exigences](./200/README.md).
 
 1.  Processus d'installation :
     ```bash
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    # Without hatch: $ python src/threagile_builder/app.py
     $ hatch run src/threagile_builder/app.py
     ```
 2.  Dépendances logicielles
-3.  Dernières versions
+3.  Latest releases
 4.  Références API
 
 # Construire et tester
@@ -70,9 +71,9 @@ Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou télécharg
 
 # Métrique
 
-Laissez un outil comme Prometheus gratter`http://127.0.0.1:5000/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 

@@ -18,6 +18,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    # Without hatch: $ python src/threagile_builder/app.py
     $ hatch run src/threagile_builder/app.py
     ```
 2.  Software-afhankelijkheden

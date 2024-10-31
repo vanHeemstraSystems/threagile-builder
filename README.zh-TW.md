@@ -4,7 +4,7 @@
 
 > 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
--   [Glossary](./GLOSSARY.md)
+-   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
 
 **執行摘要**
@@ -18,13 +18,14 @@
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    # Without hatch: $ python src/threagile_builder/app.py
     $ hatch run src/threagile_builder/app.py
     ```
 2.  軟體依賴性
 3.  最新版本
 4.  API參考
 
-# 建置和測試
+# Build and Test
 
 要建立您的程式碼，請使用：
 
@@ -41,7 +42,7 @@ Linux：
 export SECRET_KEY="secret"
 ```
 
-Windows:
+視窗：
 
 ```bash
 setx SECRET_KEY secret
@@ -64,13 +65,13 @@ $ cd threagile-builder
 $ pytest tests/
 ```
 
-# API文件
+# API Documentation
 
 導航至`http://127.0.0.1:5000/docs`在您的網頁瀏覽器中，或從下列位置下載 openapi.json`http://127.0.0.1:5000/openapi.json`.
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 ## 100 - 簡介
 
