@@ -11,7 +11,7 @@ Threagile-Builder
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
-**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md)
+**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
 1.  Installationsprozess:
     ```bash
@@ -33,7 +33,7 @@ $ cd threagile-builder
 $ hatch build
 ```
 
-To run the application, use:
+Um die Anwendung auszuführen, verwenden Sie:
 
 Linux:
 
@@ -47,7 +47,7 @@ Windows:
 setx SECRET_KEY secret
 ```
 
-Then:
+Dann:
 
 ```bash
 $ cd threagile-builder
