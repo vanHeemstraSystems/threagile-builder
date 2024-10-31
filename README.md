@@ -30,8 +30,7 @@ Getting your code up and running on your own system.
 2.	Software dependencies
 3.	Latest releases
 4.	API references
-
-# Build and Test
+5.  Build and Test:
 To build your code, use:
 
 ```bash
