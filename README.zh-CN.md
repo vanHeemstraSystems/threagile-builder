@@ -43,7 +43,7 @@
 
     要运行该应用程序，请使用：
 
-    Linux：
+    Linux:
 
     ```bash
     $ export SECRET_KEY="secret"
@@ -78,7 +78,7 @@
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
