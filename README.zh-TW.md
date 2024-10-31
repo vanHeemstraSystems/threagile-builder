@@ -21,7 +21,7 @@
 
 **筆記**: 確保您滿足[要求](./200/README.md).
 
-1.  Installation process: 
+1.  安裝過程：
     ```bash
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
@@ -33,9 +33,9 @@
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
-    $ hatch run src/threagile_builder/app.py
+    (threagile-builder) $ hatch run src/threagile_builder/app.py
     ```
-2.  軟體依賴性
+2.  Software dependencies
 3.  最新版本
 4.  API參考
 5.  建置和測試：
@@ -84,7 +84,7 @@
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
