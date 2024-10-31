@@ -7,11 +7,11 @@
 -   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
 
-**Executive Summary**
+**执行摘要**
 
 在您自己的系统上启动并运行您的代码。
 
-**Note**: 确保您满足[要求](./200/README.md).
+**笔记**: 确保您满足[要求](./200/README.md).
 
 1.  安装过程：
     ```bash
@@ -47,7 +47,7 @@ export SECRET_KEY="secret"
 setx SECRET_KEY secret
 ```
 
-然后：
+Then:
 
 ```bash
 $ cd threagile-builder
@@ -84,6 +84,6 @@ $ pytest tests/
 
 看[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - 结论
 
 看[README.md](./400/README.md)
