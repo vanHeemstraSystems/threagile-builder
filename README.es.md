@@ -17,7 +17,7 @@ constructor-threagil
 
 **Resumen ejecutivo**
 
-Cómo poner en marcha su código en su propio sistema.
+Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -26,6 +26,8 @@ Cómo poner en marcha su código en su propio sistema.
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory.
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -110,8 +112,8 @@ pip install threagile-builder
 
 ## Ambientes
 
--   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
