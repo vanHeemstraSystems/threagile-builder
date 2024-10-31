@@ -13,7 +13,7 @@ constructor-threagil
 > A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
 
 -   [Glosario](./GLOSSARY.md)
--   [Referencias](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 
 **Resumen ejecutivo**
 
@@ -21,7 +21,7 @@ Cómo poner en marcha su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
-1.  Installation process: 
+1.  Proceso de instalación:
     ```bash
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
@@ -30,7 +30,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ hatch run src/threagile_builder/app.py
     ```
 2.  Dependencias de software
-3.  Últimos lanzamientos
+3.  Latest releases
 4.  Referencias API
 5.  Construir y probar:
 
@@ -65,7 +65,7 @@ Cómo poner en marcha su código en su propio sistema.
 
     Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
 
-    To run tests, use:
+    Para ejecutar pruebas, utilice:
 
     ```bash
     $ cd threagile-builder
@@ -103,13 +103,13 @@ pip install threagile-builder
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[test](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
--   All build targets use the [escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
+-   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
 -   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
--   El[construir](.github/workflows/build.yml) GitHub workflow shows how to:
+-   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
     -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
 

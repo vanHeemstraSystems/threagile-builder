@@ -31,7 +31,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     ```
 2.  Softwareabhängigkeiten
 3.  Neueste Veröffentlichungen
-4.  API references
+4.  API-Referenzen
 5.  Erstellen und testen:
 
     Um Ihren Code zu erstellen, verwenden Sie:
@@ -103,7 +103,7 @@ pip install threagile-builder
 ## Umgebungen
 
 -   Ordentlich in einem Standalone definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers) plugin to run each environment inside Docker containers; usage can be seen in the [prüfen](.github/workflows/test.yml)GitHub-Workflow
+-   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
 
 ## Bauen
 
