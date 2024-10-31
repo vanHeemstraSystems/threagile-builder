@@ -7,7 +7,7 @@ constructor-threagil
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
 
-**Executive Summary**
+**Resumen ejecutivo**
 
 Cómo poner en marcha su código en su propio sistema.
 
@@ -22,9 +22,9 @@ Cómo poner en marcha su código en su propio sistema.
     ```
 2.  Dependencias de software
 3.  Últimos lanzamientos
-4.  Referencias API
+4.  API references
 
-# Construir y probar
+# Build and Test
 
 Para construir su código, use:
 
@@ -64,7 +64,7 @@ $ cd threagile-builder
 $ pytest tests/
 ```
 
-# API Documentation
+# Documentación API
 
 Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
 
