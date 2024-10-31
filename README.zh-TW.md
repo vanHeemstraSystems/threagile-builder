@@ -4,7 +4,7 @@
 
 > 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
--   [詞彙表](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
 
 **執行摘要**
@@ -15,10 +15,10 @@
 
 1.  安裝過程：
     ```bash
-    cd threagile-builder
-    pip install --upgrade pip # optional
-    pip install -r requirements.txt # pipx won't do this
-    hatch run src/threagile_builder/app.py
+    $ cd threagile-builder
+    $ pip install --upgrade pip # optional
+    $ pip install -r requirements.txt # pipx won't do this
+    $ hatch run src/threagile_builder/app.py
     ```
 2.  軟體依賴性
 3.  最新版本
@@ -41,7 +41,7 @@ Linux：
 export SECRET_KEY="secret"
 ```
 
-視窗：
+Windows:
 
 ```bash
 setx SECRET_KEY secret
@@ -52,7 +52,7 @@ setx SECRET_KEY secret
 ```bash
 $ cd threagile-builder
 # Without hatch: $ python src/threagile_builder/app.py
-$ hatch run src/threagile_builder/app
+$ hatch run src/threagile_builder/app.py
 ```
 
 然後，導航至`http://127.0.0.1:5000/`在您的網頁瀏覽器中。
@@ -70,7 +70,7 @@ $ pytest tests/
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 ## 100 - 簡介
 
