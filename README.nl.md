@@ -70,7 +70,7 @@ Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openap
 
 # Statistieken
 
-Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:5000/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
 
 ## 100 - Inleiding
 
