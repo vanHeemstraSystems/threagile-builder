@@ -40,7 +40,7 @@
     $ hatch run python src/threagile_builder/app.py # The `run` command allows you to execute commands in an environment as if you had already entered it. 
     ```
 2.  軟體依賴性
-3.  最新版本
+3.  Latest releases
 4.  API參考
 5.  建置和測試：
 
@@ -51,7 +51,7 @@
     $ hatch build
     ```
 
-    要運行該應用程序，請使用：
+    To run the application, use:
 
     Linux：
 
@@ -84,7 +84,7 @@
 
 # API文件
 
-導航至`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
+導航至`http://127.0.0.1:5000/docs`在您的網頁瀏覽器中，或從下列位置下載 openapi.json`http://127.0.0.1:5000/openapi.json`.
 
 # 指標
 
