@@ -2,11 +2,11 @@ thregile-बिल्डर
 
 # थ्रैगाइल बिल्डर
 
-|           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| सीआई/सीडी | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/build.yml)                                                                                                                                                                                                    |
-| पैकेट     | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-builder.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-builder/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-builder.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-builder/)                                                                                                                                                                                                                                                                 |
-| मेटा      | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
+|           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| सीआई/सीडी | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/build.yml)                                                                                                                                                                                                     |
+| पैकेट     | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-builder.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-builder/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-builder.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-builder/)                                                                                                                                                                                                                                                                  |
+| मेटा      | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black) [![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
 
 * * *
 
@@ -33,43 +33,44 @@ thregile-बिल्डर
 3.  नवीनतम रिलीज़
 4.  एपीआई संदर्भ
 5.  निर्माण और परीक्षण:
+
     अपना कोड बनाने के लिए, इसका उपयोग करें:
 
-```bash
-$ cd threagile-builder
-$ hatch build
-```
+    ```bash
+    $ cd threagile-builder
+    $ hatch build
+    ```
 
-एप्लिकेशन चलाने के लिए, उपयोग करें:
+    एप्लिकेशन चलाने के लिए, उपयोग करें:
 
-लिनक्स:
+    लिनक्स:
 
-```bash
-export SECRET_KEY="secret"
-```
+    ```bash
+    $ export SECRET_KEY="secret"
+    ```
 
-खिड़कियाँ:
+    खिड़कियाँ:
 
-```bash
-setx SECRET_KEY secret
-```
+    ```bash
+    $ setx SECRET_KEY secret
+    ```
 
-तब:
+    तब:
 
-```bash
-$ cd threagile-builder
-# Without hatch: $ python src/threagile_builder/app.py
-$ hatch run src/threagile_builder/app.py
-```
+    ```bash
+    $ cd threagile-builder
+    # Without hatch: $ python src/threagile_builder/app.py
+    $ hatch run src/threagile_builder/app.py
+    ```
 
-फिर, नेविगेट करें`http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
+    फिर, नेविगेट करें`http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
 
-परीक्षण चलाने के लिए, उपयोग करें:
+    परीक्षण चलाने के लिए, उपयोग करें:
 
-```bash
-$ cd threagile-builder
-$ pytest tests/
-```
+    ```bash
+    $ cd threagile-builder
+    $ pytest tests/
+    ```
 
 # एपीआई दस्तावेज़ीकरण
 

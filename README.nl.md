@@ -4,7 +4,7 @@ threagile-bouwer
 
 |        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| CI/CD  | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/test.yml)[![CD - Build](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/build.yml)                                                                                                                                                                                                    |
+| CI/CD  | [![CI - Test](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/test.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/test.yml) [![CD - Build](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/build.yml/badge.svg)](https://github.com/vanHeemstraSystems/threagile-builder/actions/workflows/build.yml)                                                                                                                                                                                                   |
 | Pakket | [![PyPI - Version](https://img.shields.io/pypi/v/threagile-builder.svg?logo=pypi&label=PyPI&logoColor=gold)](https://pypi.org/project/threagile-builder/)[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/threagile-builder.svg?logo=python&label=Python&logoColor=gold)](https://pypi.org/project/threagile-builder/)                                                                                                                                                                                                                                                                 |
 | Meta   | [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)[![code style - black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)[![types - Mypy](https://img.shields.io/badge/types-Mypy-blue.svg)](https://github.com/ambv/black)[![License - MIT](https://img.shields.io/badge/license-MIT-9400d3.svg)](https://spdx.org/licenses/)[![GitHub Sponsors](https://img.shields.io/github/sponsors/vanHeemstraSystems?logo=GitHub%20Sponsors&style=social)](https://github.com/sponsors/vanHeemstraSystems) |
 
@@ -15,7 +15,7 @@ threagile-bouwer
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
 
-**Samenvatting**
+**Executive Summary**
 
 Uw code op uw eigen systeem operationeel krijgen.
 
@@ -33,49 +33,50 @@ Uw code op uw eigen systeem operationeel krijgen.
 3.  Nieuwste releases
 4.  API-referenties
 5.  Bouwen en testen:
+
     Om uw code samen te stellen, gebruikt u:
 
-```bash
-$ cd threagile-builder
-$ hatch build
-```
+    ```bash
+    $ cd threagile-builder
+    $ hatch build
+    ```
 
-Om de applicatie uit te voeren, gebruikt u:
+    Om de applicatie uit te voeren, gebruikt u:
 
-Linux:
+    Linux:
 
-```bash
-export SECRET_KEY="secret"
-```
+    ```bash
+    $ export SECRET_KEY="secret"
+    ```
 
-Ramen:
+    Ramen:
 
-```bash
-setx SECRET_KEY secret
-```
+    ```bash
+    $ setx SECRET_KEY secret
+    ```
 
-Dan:
+    Dan:
 
-```bash
-$ cd threagile-builder
-# Without hatch: $ python src/threagile_builder/app.py
-$ hatch run src/threagile_builder/app.py
-```
+    ```bash
+    $ cd threagile-builder
+    # Without hatch: $ python src/threagile_builder/app.py
+    $ hatch run src/threagile_builder/app.py
+    ```
 
-Navigeer vervolgens naar`http://127.0.0.1:5000/`in uw webbrowser.
+    Navigeer vervolgens naar`http://127.0.0.1:5000/`in uw webbrowser.
 
-Om tests uit te voeren, gebruikt u:
+    Om tests uit te voeren, gebruikt u:
 
-```bash
-$ cd threagile-builder
-$ pytest tests/
-```
+    ```bash
+    $ cd threagile-builder
+    $ pytest tests/
+    ```
 
 # API-documentatie
 
 Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openapi.json van`http://127.0.0.1:5000/openapi.json`.
 
-# Statistieken
+# Metrics
 
 Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:5000/metrics`.
 
@@ -124,7 +125,7 @@ Zien[README.md](./100/README.md)
 
 Zien[README.md](./200/README.md)
 
-## 300 - Onze applicatie bouwen
+## 300 - Building Our Application
 
 Zien[README.md](./300/README.md)
 

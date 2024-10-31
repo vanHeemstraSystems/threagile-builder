@@ -33,43 +33,44 @@
 3.  أحدث الإصدارات
 4.  مراجع واجهة برمجة التطبيقات
 5.  البناء والاختبار:
+
     لبناء الكود الخاص بك، استخدم:
 
-```bash
-$ cd threagile-builder
-$ hatch build
-```
+    ```bash
+    $ cd threagile-builder
+    $ hatch build
+    ```
 
-لتشغيل التطبيق استخدم:
+    لتشغيل التطبيق استخدم:
 
-لينكس:
+    لينكس:
 
-```bash
-export SECRET_KEY="secret"
-```
+    ```bash
+    $ export SECRET_KEY="secret"
+    ```
 
-ويندوز:
+    ويندوز:
 
-```bash
-setx SECRET_KEY secret
-```
+    ```bash
+    $ setx SECRET_KEY secret
+    ```
 
-ثم:
+    ثم:
 
-```bash
-$ cd threagile-builder
-# Without hatch: $ python src/threagile_builder/app.py
-$ hatch run src/threagile_builder/app.py
-```
+    ```bash
+    $ cd threagile-builder
+    # Without hatch: $ python src/threagile_builder/app.py
+    $ hatch run src/threagile_builder/app.py
+    ```
 
-ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
+    ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
 
-لتشغيل الاختبارات استخدم:
+    لتشغيل الاختبارات استخدم:
 
-```bash
-$ cd threagile-builder
-$ pytest tests/
-```
+    ```bash
+    $ cd threagile-builder
+    $ pytest tests/
+    ```
 
 # وثائق واجهة برمجة التطبيقات
 
@@ -99,7 +100,7 @@ pip install threagile-builder
 
 -   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
-## البيئات
+## Environments
 
 -   تم تعريفها بدقة في قائمة بذاتها[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب

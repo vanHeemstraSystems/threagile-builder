@@ -33,43 +33,44 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 3.  Dernières versions
 4.  Références API
 5.  Construire et tester :
+
     Pour construire votre code, utilisez :
 
-```bash
-$ cd threagile-builder
-$ hatch build
-```
+    ```bash
+    $ cd threagile-builder
+    $ hatch build
+    ```
 
-Pour exécuter l'application, utilisez :
+    Pour exécuter l'application, utilisez :
 
-Linux :
+    Linux :
 
-```bash
-export SECRET_KEY="secret"
-```
+    ```bash
+    $ export SECRET_KEY="secret"
+    ```
 
-Fenêtres :
+    Fenêtres :
 
-```bash
-setx SECRET_KEY secret
-```
+    ```bash
+    $ setx SECRET_KEY secret
+    ```
 
-Alors:
+    Alors:
 
-```bash
-$ cd threagile-builder
-# Without hatch: $ python src/threagile_builder/app.py
-$ hatch run src/threagile_builder/app.py
-```
+    ```bash
+    $ cd threagile-builder
+    # Without hatch: $ python src/threagile_builder/app.py
+    $ hatch run src/threagile_builder/app.py
+    ```
 
-Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
+    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
 
-Pour exécuter des tests, utilisez :
+    Pour exécuter des tests, utilisez :
 
-```bash
-$ cd threagile-builder
-$ pytest tests/
-```
+    ```bash
+    $ cd threagile-builder
+    $ pytest tests/
+    ```
 
 # Documentation API
 
