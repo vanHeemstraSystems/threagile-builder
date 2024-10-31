@@ -1,11 +1,11 @@
 repositorynaam
 
-# Repository Name
+# Naam van opslagplaats
 
 > Slaklijn
->
-> -   [Glossarium](./GLOSSARY.md)
-> -   [Referenties](./REFERENCES.md)
+
+-   [Glossarium](./GLOSSARY.md)
+-   [Referenties](./REFERENCES.md)
 
 **Samenvatting**
 
