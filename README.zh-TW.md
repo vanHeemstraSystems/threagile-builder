@@ -33,7 +33,9 @@
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
-    (threagile-builder) $ hatch run src/threagile_builder/app.py
+    (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
+    (threagile-builder) $ exit # type `exit` to leave the environment
+    $ hatch run python src/threagile_builder/app.py # The `run` command allows you to execute commands in an environment as if you had already entered it. 
     ```
 2.  軟體依賴性
 3.  最新版本
@@ -71,7 +73,7 @@
 
     然後，導航至`http://127.0.0.1:5000/`在您的網頁瀏覽器中。
 
-    若要執行測試，請使用：
+    To run tests, use:
 
     ```bash
     $ cd threagile-builder
@@ -84,14 +86,14 @@
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
 **目錄**
 
 -   [安裝](#installation)
--   [版本來源](#version-source)
+-   [Version source](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
 -   [執照](#license)
@@ -125,7 +127,7 @@ pip install threagile-builder
 
 ## 100 - 簡介
 
-看[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - 要求
 
