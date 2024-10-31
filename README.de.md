@@ -2,12 +2,12 @@ Threagile-Builder
 
 # Threagile Builder
 
-> A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagile](https://threagile.io)YAML-Dateien
+> A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagil](https://threagile.io)YAML-Dateien
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
 
-**Zusammenfassung**
+**Executive Summary**
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
@@ -22,7 +22,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     ```
 2.  Softwareabhängigkeiten
 3.  Neueste Veröffentlichungen
-4.  API references
+4.  API-Referenzen
 
 # Erstellen und testen
 
