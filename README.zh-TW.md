@@ -21,12 +21,18 @@
 
 **筆記**: 確保您滿足[要求](./200/README.md).
 
-1.  安裝過程：
+1.  Installation process: 
     ```bash
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
     # Without hatch: $ python src/threagile_builder/app.py
+    $ hatch env create # optional, if the default env already exists you will be told
+    $ hatch shell # spawn a shell within an environment
+    $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
+    # Name: threagile-builder
+    # Version: 0.0.1
+    # ...
     $ hatch run src/threagile_builder/app.py
     ```
 2.  軟體依賴性
@@ -103,7 +109,7 @@ pip install threagile-builder
 ## 環境
 
 -   整齊地定義在一個獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers) plugin to run each environment inside Docker containers; usage can be seen in the [測試](.github/workflows/test.yml)GitHub 工作流程
+-   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
 
