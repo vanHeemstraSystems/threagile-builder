@@ -18,7 +18,7 @@
     cd threagile-builder
     pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
-    hatch run src/threagile_builder/app
+    hatch run src/threagile_builder/app.py
     ```
 2.  تبعيات البرمجيات
 3.  أحدث الإصدارات
@@ -26,14 +26,14 @@
 
 # بناء واختبار
 
-لبناء الكود الخاص بك، استخدم:
+To build your code, use:
 
 ```bash
 $ cd threagile-builder
 $ hatch build
 ```
 
-To run the application, use:
+لتشغيل التطبيق استخدم:
 
 لينكس:
 
