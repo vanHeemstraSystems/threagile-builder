@@ -33,7 +33,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
-    $ hatch run src/threagile_builder/app.py
+    (threagile-builder) $ hatch run src/threagile_builder/app.py
     ```
 2.  Dépendances logicielles
 3.  Dernières versions
@@ -78,7 +78,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ pytest tests/
     ```
 
-# Documentation API
+# API Documentation
 
 Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
 
@@ -121,9 +121,9 @@ pip install threagile-builder
 
 ## Licence
 
-`threagile-builder`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
+`threagile-builder`est distribué selon les termes du[MIT](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 

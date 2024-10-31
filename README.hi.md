@@ -33,7 +33,7 @@ thregile-बिल्डर
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
-    $ hatch run src/threagile_builder/app.py
+    (threagile-builder) $ hatch run src/threagile_builder/app.py
     ```
 2.  सॉफ़्टवेयर निर्भरताएँ
 3.  नवीनतम रिलीज़

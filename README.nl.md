@@ -33,7 +33,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
-    $ hatch run src/threagile_builder/app.py
+    (threagile-builder) $ hatch run src/threagile_builder/app.py
     ```
 2.  Software-afhankelijkheden
 3.  Nieuwste releases

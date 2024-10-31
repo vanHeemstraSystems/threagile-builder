@@ -33,7 +33,7 @@
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
-    $ hatch run src/threagile_builder/app.py
+    (threagile-builder) $ hatch run src/threagile_builder/app.py
     ```
 2.  软件依赖性
 3.  最新版本
@@ -84,7 +84,7 @@
 
 # 指标
 
-让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
