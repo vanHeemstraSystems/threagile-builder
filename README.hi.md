@@ -68,7 +68,7 @@ thregile-बिल्डर
     ```bash
     $ cd threagile-builder
     # Without hatch: $ python src/threagile_builder/app.py
-    $ hatch run src/threagile_builder/app.py
+    $ hatch run python src/threagile_builder/app.py
     ```
 
     फिर, नेविगेट करें`http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
