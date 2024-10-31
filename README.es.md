@@ -19,7 +19,7 @@ constructor-threagil
 
 Cómo poner en marcha su código en su propio sistema.
 
-**Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
+**Note**: Asegúrese de cumplir con los[requirements](./200/README.md).
 
 1.  Proceso de instalación:
     ```bash
@@ -103,7 +103,7 @@ pip install threagile-builder
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml) GitHub workflow
 
 ## Construir
 
