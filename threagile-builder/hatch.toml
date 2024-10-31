@@ -49,3 +49,5 @@ source = "vcs"
 
 [build.hooks.vcs]
 version-file = "src/threagile_builder/_version.py"
+
+[metadata.hooks.vcs]

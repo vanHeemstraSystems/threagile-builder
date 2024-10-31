@@ -59,9 +59,14 @@ Source = "https://github.com/vanHeemstraSystems/threagile-builder"
 threagile-builder = "threagile_builder.cli:threagile_builder"
 
 [tool.setuptools_scm] # mandatory
+root = ".."
+write_to = "threagile-builder/src/threagile_builder/_version.py"
+tag_regex = "^(?P<prefix>threagile-builder[-_])(?P<version>[vV]?\\d+(?:\\.\\d+){0,2}[^\\+]*)(?:\\+.*)?$"
+fallback_version = "0.0.0"
 
 [tool.hatch.version]
-path = "src/threagile_builder/__about__.py"
+source = "vcs"
+# path = "src/threagile_builder/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
@@ -74,6 +79,8 @@ app = "python src/threagile_builder/app.py"
 
 [tool.hatch.build.hooks.vcs]
 version-file = "src/threagile_builder/_version.py"
+
+[tool.hatch.metadata.hooks.vcs]
 
 [tool.hatch.build.targets.sdist]
 exclude = [
