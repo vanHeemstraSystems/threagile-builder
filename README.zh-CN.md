@@ -97,7 +97,7 @@
 -   [安装](#installation)
 -   [版本来源](#version-source)
 -   [环境](#environments)
--   [建造](#build)
+-   [Build](#build)
 -   [执照](#license)
 
 ## 安装
