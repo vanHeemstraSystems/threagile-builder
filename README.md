@@ -31,7 +31,9 @@ Getting your code up and running on your own system.
     # Name: threagile-builder
     # Version: 0.0.1
     # ...
-    (threagile-builder) $ hatch run src/threagile_builder/app.py
+    (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
+    (threagile-builder) $ exit # type `exit` to leave the environment
+    $ hatch run python src/threagile_builder/app.py # The `run` command allows you to execute commands in an environment as if you had already entered it. 
     ```
 2.	Software dependencies
 3.	Latest releases
