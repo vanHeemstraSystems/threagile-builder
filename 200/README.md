@@ -36,4 +36,5 @@ We use [hatch](https://hatch.pypa.io/) for project management.
 1. Install hatch:
    ```bash
    $ pipx install hatch
+   $ hatch --version # verify the version
    ```
