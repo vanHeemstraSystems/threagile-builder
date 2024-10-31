@@ -13,7 +13,7 @@ Threagile-Builder
 > A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagil](https://threagile.io)YAML-Dateien
 
 -   [Glossar](./GLOSSARY.md)
--   [References](./REFERENCES.md)
+-   [Referenzen](./REFERENCES.md)
 
 **Zusammenfassung**
 
@@ -30,7 +30,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run src/threagile_builder/app.py
     ```
 2.  Softwareabhängigkeiten
-3.  Latest releases
+3.  Neueste Veröffentlichungen
 4.  API-Referenzen
 5.  Erstellen und testen:
 
@@ -115,7 +115,7 @@ pip install threagile-builder
 
 ## Lizenz
 
-`threagile-buider`wird gemäß den Bedingungen der verteilt[MIT](https://spdx.org/licenses/MIT.html) license.
+`threagile-buider`wird gemäß den Bedingungen der verteilt[MIT](https://spdx.org/licenses/MIT.html)Lizenz.
 
 ## 100 - Einführung
 
