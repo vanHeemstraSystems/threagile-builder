@@ -9,11 +9,14 @@ constructor-threagil
 
 **Resumen ejecutivo**
 
-Poner en funcionamiento su código en su propio sistema.
+Cómo poner en marcha su código en su propio sistema.
+
+**Nota**: Asegúrese de cumplir con los[requisitos previos](./200/README.md)
 
 1.  Proceso de instalación:
     ```bash
     cd threagile-builder
+    pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
     hatch run src/threagile_builder/app
     ```
@@ -71,7 +74,7 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:5000/metrics`.
 
 ## 100 - Introducción
 
-See [README.md](./100/README.md)
+Ver[README.md](./100/README.md)
 
 ## 200 - Requisitos
 
