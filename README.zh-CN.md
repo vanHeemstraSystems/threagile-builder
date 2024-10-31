@@ -18,6 +18,7 @@
     $ cd threagile-builder
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
+    # Without hatch: $ python src/threagile_builder/app.py
     $ hatch run src/threagile_builder/app.py
     ```
 2.  软件依赖性
@@ -70,7 +71,7 @@ $ pytest tests/
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 ## 100 - 简介
 
