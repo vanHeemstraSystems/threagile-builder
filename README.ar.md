@@ -49,7 +49,7 @@
     $ export SECRET_KEY="secret"
     ```
 
-    ويندوز:
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
