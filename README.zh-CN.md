@@ -7,18 +7,18 @@
 -   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
 
-**执行摘要**
+**Executive Summary**
 
 在您自己的系统上启动并运行您的代码。
 
-**笔记**: 确保您满足[要求](./200/README.md).
+**Note**: 确保您满足[要求](./200/README.md).
 
 1.  安装过程：
     ```bash
     cd threagile-builder
     pip install --upgrade pip # optional
     pip install -r requirements.txt # pipx won't do this
-    hatch run src/threagile_builder/app
+    hatch run src/threagile_builder/app.py
     ```
 2.  软件依赖性
 3.  最新版本
@@ -84,6 +84,6 @@ $ pytest tests/
 
 看[README.md](./300/README.md)
 
-## 400 - 结论
+## 400 - Conclusion
 
 看[README.md](./400/README.md)
