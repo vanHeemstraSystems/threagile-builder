@@ -2,29 +2,29 @@ constructor-threagil
 
 # Constructor amenazante
 
-> A[basado en bloques](https://developers.google.com/blockly) no-code web application to create [amenazante](https://threagile.io)Archivos YAML
+> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
 
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
 
 **Resumen ejecutivo**
 
-Cómo poner en marcha su código en su propio sistema.
+Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
 1.  Proceso de instalación:
     ```bash
-    cd threagile-builder
-    pip install --upgrade pip # optional
-    pip install -r requirements.txt # pipx won't do this
-    hatch run src/threagile_builder/app.py
+    $ cd threagile-builder
+    $ pip install --upgrade pip # optional
+    $ pip install -r requirements.txt # pipx won't do this
+    $ hatch run src/threagile_builder/app.py
     ```
 2.  Dependencias de software
 3.  Últimos lanzamientos
-4.  API references
+4.  Referencias API
 
-# Build and Test
+# Construir y probar
 
 Para construir su código, use:
 
@@ -52,7 +52,7 @@ Entonces:
 ```bash
 $ cd threagile-builder
 # Without hatch: $ python src/threagile_builder/app.py
-$ hatch run src/threagile_builder/app
+$ hatch run src/threagile_builder/app.py
 ```
 
 Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
