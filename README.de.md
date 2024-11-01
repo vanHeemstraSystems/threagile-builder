@@ -73,7 +73,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Navigieren Sie dann zu`http://127.0.0.1:5000/`in Ihrem Webbrowser.
+    Then, navigate to `http://127.0.0.1:5000/`in Ihrem Webbrowser.
 
     Um Tests auszuführen, verwenden Sie:
 
@@ -98,7 +98,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:5000/metrics`.
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)
 -   [Umgebungen](#environments)
--   [Bauen](#build)
+-   [Build](#build)
 -   [Lizenz](#license)
 
 ## Installation
@@ -114,7 +114,7 @@ pip install threagile-builder
 ## Umgebungen
 
 -   Ordentlich in einem Standalone definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
+-   Der`test` matrix uses the [Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
 
 ## Bauen
 
