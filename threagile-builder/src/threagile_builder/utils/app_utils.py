@@ -1,6 +1,6 @@
 # threagile-builder/scr/threagile_builder/utils/app_utils.py
 import logging
-
+from .db_utils import db
 from apiflask import APIFlask
 from config import Config
 from flask import Flask
@@ -52,6 +52,26 @@ def create_app(config=Config):
     reader = PrometheusMetricReader()
     provider = MeterProvider(resource=resource, metric_readers=[reader])
     metrics.set_meter_provider(provider)            
+
+    # Initialize database
+    db.init_app(app)
+
+    # Register blueprints
+
+    # Define metrics
+    request_count = meter.create_counter(
+        "request_count", description="Counts the number of requests"
+    )    
+
+    @app.before_request
+    def before_request():
+        request_count.add(1)  # Increment the request count
+
+    # See https://github.com/open-telemetry/opentelemetry-python/blob/main/exporter/opentelemetry-exporter-prometheus/src/opentelemetry/exporter/prometheus/__init__.py
+    @app.route("/metrics")
+    def metrics_endpoint():
+        exporter = PrometheusMetricReader()
+        return  0 # fix
 
     @app.route("/")
     def index():
