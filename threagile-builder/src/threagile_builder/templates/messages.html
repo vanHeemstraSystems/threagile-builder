@@ -1,0 +1,30 @@
+{% with msgs = get_flashed_messages(with_categories=true) %}
+    {% if msgs %}
+        {% for cat, m in msgs  %}
+            <div class="alert msg{{loop.index}}">{{ m }}</div>
+            <script>
+                const msg = document.querySelector('.msg{{loop.index}}')
+                window.setTimeout(()=>{
+                    const animation = msg
+                        .animate([
+                            {
+                                opacity: 1,
+                            },
+                            {
+                                opacity: 0,
+                            }
+                            ], 
+                            {
+                                duration: 500,
+                                iterations: 1,
+                        })
+                        .finished
+                        .then(()=>{
+                            msg.parentElement.removeChild(msg)
+                        })
+
+                    }, 4000)
+            </script>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
