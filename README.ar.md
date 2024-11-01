@@ -1,6 +1,6 @@
 ثريجيل باني
 
-# منشئ ثريجيل
+# Threagile Builder
 
 |             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -24,9 +24,6 @@
 1.  عملية التثبيت:
     ```bash
     $ cd threagile-builder
-    $ pip install --upgrade pip # optional
-    $ pip install -r requirements.txt # pipx won't do this
-    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -37,14 +34,17 @@
     # ...
     (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (threagile-builder) $ exit # type `exit` to leave the environment
-    $ hatch run python src/threagile_builder/app.py # The `run` command allows you to execute commands in an environment as if you had already entered it. 
+    $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    $ hatch run pip install -r requirements.txt # pipx won't do this
+    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  تبعيات البرمجيات
 3.  أحدث الإصدارات
 4.  مراجع واجهة برمجة التطبيقات
 5.  البناء والاختبار:
 
-    لبناء الكود الخاص بك، استخدم:
+    To build your code, use:
 
     ```bash
     $ cd threagile-builder
@@ -112,7 +112,7 @@ pip install threagile-builder
 
 ## البيئات
 
--   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   تم تعريفها بدقة في قائمة بذاتها[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
 
 ## يبني
@@ -135,7 +135,7 @@ pip install threagile-builder
 
 يرى[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 – بناء تطبيقنا
 
 يرى[README.md](./300/README.md)
 
