@@ -21,7 +21,7 @@
 
 **ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
 
-1.  عملية التثبيت:
+1.  Installation process: 
     ```bash
     $ cd threagile-builder
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
@@ -83,7 +83,7 @@
     $ pytest tests/
     ```
 
-# وثائق واجهة برمجة التطبيقات
+# API Documentation
 
 انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
@@ -118,9 +118,9 @@ pip install threagile-builder
 
 ## يبني
 
--   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
+-   جميع أهداف البناء تستخدم[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
--   The [يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
+-   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
     -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
 
