@@ -19,7 +19,7 @@
 
 在您自己的系統上啟動並運行您的程式碼。
 
-**Note**: 確保您滿足[要求](./200/README.md).
+**筆記**: 確保您滿足[要求](./200/README.md).
 
 1.  安裝過程：
     ```bash
@@ -27,7 +27,7 @@
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
     $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
-    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory.
+    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -88,7 +88,7 @@
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
@@ -125,7 +125,7 @@ pip install threagile-builder
 
 ## 執照
 
-`threagile-builder`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
+`threagile-builder`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html) license.
 
 ## 100 - 簡介
 
