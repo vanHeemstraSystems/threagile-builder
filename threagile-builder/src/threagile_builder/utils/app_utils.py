@@ -79,6 +79,7 @@ def create_app(config=Config):
     # FlaskInstrumentor().instrument_app(app)
     # SQLAlchemyInstrumentor().instrument(engine=db.engine)
 
+    # Fore Testing Only
     @app.route("/")
     def index():
         return "<h1>Hello World</h1>"
@@ -86,5 +87,5 @@ def create_app(config=Config):
     # Create the database tables (if they don't exist)
     with app.app_context():
         db.create_all()
-        
+
     return app
