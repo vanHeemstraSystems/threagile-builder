@@ -8,15 +8,15 @@ from flask import Flask
 from multiprocessing.pool import ThreadPool
 
 from opentelemetry import trace, metrics
-
+from opentelemetry.instrumentation.flask import FlaskInstrumentor
+from opentelemetry.instrumentation.sqlalchemy import SQLAlchemyInstrumentor
 from opentelemetry.sdk.resources import SERVICE_NAME, Resource
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.trace import TracerProvider
-
 from opentelemetry.exporter.prometheus import PrometheusMetricReader
-
+from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 from prometheus_client import start_http_server
-
+# from routes import build_bp, main_bp
 
 def create_app(config=Config):
     app = APIFlask(
@@ -57,6 +57,8 @@ def create_app(config=Config):
     db.init_app(app)
 
     # Register blueprints
+    # app.register_blueprint(main_bp)
+    # app.register_blueprint(build_bp)
 
     # Define metrics
     request_count = meter.create_counter(
@@ -73,8 +75,16 @@ def create_app(config=Config):
         exporter = PrometheusMetricReader()
         return  0 # fix
 
+    # Instrument Flask and SQLAlchemy
+    # FlaskInstrumentor().instrument_app(app)
+    # SQLAlchemyInstrumentor().instrument(engine=db.engine)
+
     @app.route("/")
     def index():
         return "<h1>Hello World</h1>"
 
+    # Create the database tables (if they don't exist)
+    with app.app_context():
+        db.create_all()
+        
     return app
