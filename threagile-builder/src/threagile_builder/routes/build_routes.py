@@ -43,7 +43,7 @@ def update_build(id):
     build.title = data["title"]
     db.session.commit()
     return jsonify({"id": build.id, "title": build.title}), 200
-
+  
 
 # Delete a Build by ID
 @build_bp.route("/builds/<int:id>", methods=["DELETE"])
@@ -51,9 +51,10 @@ def delete_build(id):
     build = Build.query.get_or_404(id)
     db.session.delete(build)
     db.session.commit()
+    flash("Build deleted successfully!", "success")
     return jsonify({"message": "Build deleted successfully."}), 204
 
-
+# Run Build Workflow
 @build_bp.route("/run-build", methods=["POST"])
 def run_build():
     logging.info("Received request to run the Build's workflow.")

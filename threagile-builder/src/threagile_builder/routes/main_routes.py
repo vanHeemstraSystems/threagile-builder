@@ -22,7 +22,7 @@ def index():
     builds = Build.query.all()
     return render_template("index.html", form=form, builds=builds)
 
-
+# MOVE TO BUILD ROUTES
 @main_bp.route("/builds/<int:id>/edit", methods=["GET", "POST"])
 def edit_build(id):
     build = Build.query.get_or_404(id)
@@ -34,7 +34,7 @@ def edit_build(id):
         return redirect(url_for("main.index"))
     return render_template("build/edit_build.html", form=form, build=build)
 
-
+# MOVE TO BUILD ROUTES
 @main_bp.route("/builds/<int:id>/delete", methods=["POST"])
 def delete_build(id):
     build = Build.query.get_or_404(id)
