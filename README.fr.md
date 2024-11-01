@@ -10,9 +10,9 @@ constructeur de menaces
 
 * * *
 
-> UN[basé sur des blocs](https://developers.google.com/blockly) no-code web application to create [fragile](https://threagile.io)Fichiers YAML
+> UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[fragile](https://threagile.io)Fichiers YAML
 
--   [Glossary](./GLOSSARY.md)
+-   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
 
 **Résumé exécutif**
@@ -89,7 +89,7 @@ Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou télécharg
 
 # Métrique
 
-Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
+Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 
 **_NOUVEAU_**
 
