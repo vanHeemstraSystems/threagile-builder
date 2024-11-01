@@ -28,7 +28,7 @@
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (threagile-builder) $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
+    (threagile-builder) $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder', from `pyproject.toml`
     # Name: threagile-builder
     # Version: 0.0.1 # it takes this from src/threagile_builder/__about__.py
     # ...
