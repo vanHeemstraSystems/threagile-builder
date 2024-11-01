@@ -17,7 +17,7 @@
 
 **执行摘要**
 
-Getting your code up and running on your own system.
+在您自己的系统上启动并运行您的代码。
 
 **笔记**: 确保您满足[要求](./200/README.md).
 
