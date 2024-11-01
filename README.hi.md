@@ -94,7 +94,7 @@ thregile-बिल्डर
 
 **विषयसूची**
 
--   [Installation](#installation)
+-   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
 -   [वातावरण](#environments)
 -   [निर्माण](#build)
@@ -133,7 +133,7 @@ pip install threagile-builder
 
 ## 200 - आवश्यकताएँ
 
-See [README.md](./200/README.md)
+देखना[README.md](./200/README.md)
 
 ## 300 - हमारे एप्लिकेशन का निर्माण
 

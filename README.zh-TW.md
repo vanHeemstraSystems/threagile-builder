@@ -15,7 +15,7 @@
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
 
-**執行摘要**
+**Executive Summary**
 
 在您自己的系統上啟動並運行您的程式碼。
 
@@ -39,7 +39,7 @@
     (threagile-builder) $ exit # type `exit` to leave the environment
     $ hatch run python src/threagile_builder/app.py # The `run` command allows you to execute commands in an environment as if you had already entered it. 
     ```
-2.  Software dependencies
+2.  軟體依賴性
 3.  最新版本
 4.  API參考
 5.  建置和測試：
@@ -125,7 +125,7 @@ pip install threagile-builder
 
 ## 執照
 
-`threagile-builder`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html) license.
+`threagile-builder`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
 
 ## 100 - 簡介
 
