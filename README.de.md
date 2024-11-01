@@ -17,7 +17,7 @@ Threagile-Builder
 
 **Zusammenfassung**
 
-Getting your code up and running on your own system.
+Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
@@ -44,7 +44,7 @@ Getting your code up and running on your own system.
 4.  API-Referenzen
 5.  Erstellen und testen:
 
-    To build your code, use:
+    Um Ihren Code zu erstellen, verwenden Sie:
 
     ```bash
     $ cd threagile-builder
@@ -84,7 +84,7 @@ Getting your code up and running on your own system.
 
 # API-Dokumentation
 
-Navigieren Sie zu`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
+Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
 
 # Metriken
 
@@ -95,7 +95,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:5000/metrics`.
 **Inhaltsverzeichnis**
 
 -   [Installation](#installation)
--   [Versionsquelle](#version-source)
+-   [Version source](#version-source)
 -   [Umgebungen](#environments)
 -   [Bauen](#build)
 -   [Lizenz](#license)
