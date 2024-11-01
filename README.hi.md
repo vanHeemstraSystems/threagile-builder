@@ -30,7 +30,7 @@ thregile-बिल्डर
     $ hatch shell # spawn a shell within an environment
     (threagile-builder) $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
     # Name: threagile-builder
-    # Version: 0.0.1
+    # Version: 0.0.1 # it takes this from src/threagile_builder/__about__.py
     # ...
     (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (threagile-builder) $ exit # type `exit` to leave the environment
@@ -123,7 +123,7 @@ pip install threagile-builder
     -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
     -   उपयोग[अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)प्रत्येक प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण बनाने का लक्ष्य बनाएं
 
-## लाइसेंस
+## License
 
 `threagile-builder`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
 
