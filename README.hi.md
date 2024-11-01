@@ -97,7 +97,7 @@ thregile-बिल्डर
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
 -   [वातावरण](#environments)
--   [निर्माण](#build)
+-   [Build](#build)
 -   [लाइसेंस](#license)
 
 ## इंस्टालेशन
