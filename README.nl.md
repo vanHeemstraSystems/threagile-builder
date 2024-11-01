@@ -44,7 +44,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 4.  API-referenties
 5.  Bouwen en testen:
 
-    To build your code, use:
+    Om uw code samen te stellen, gebruikt u:
 
     ```bash
     $ cd threagile-builder

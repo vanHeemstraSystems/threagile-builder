@@ -17,7 +17,7 @@
 
 **ملخص تنفيذي**
 
-Getting your code up and running on your own system.
+الحصول على التعليمات البرمجية الخاصة بك وتشغيلها على النظام الخاص بك.
 
 **ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
 
@@ -40,7 +40,7 @@ Getting your code up and running on your own system.
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  تبعيات البرمجيات
-3.  Latest releases
+3.  أحدث الإصدارات
 4.  مراجع واجهة برمجة التطبيقات
 5.  البناء والاختبار:
 
@@ -75,7 +75,7 @@ Getting your code up and running on your own system.
 
     ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
 
-    To run tests, use:
+    لتشغيل الاختبارات استخدم:
 
     ```bash
     $ cd threagile-builder
@@ -118,8 +118,8 @@ pip install threagile-builder
 
 ## يبني
 
--   جميع أهداف البناء تستخدم[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
--   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc) build hook plugin to first compile all code with [Mypyc](https://github.com/mypyc/mypyc)
+-   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
+-   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
     -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
