@@ -22,9 +22,6 @@ Getting your code up and running on your own system.
 1.	Installation process: 
     ```bash 
     $ cd threagile-builder
-    $ pip install --upgrade pip # optional
-    $ pip install -r requirements.txt # pipx won't do this
-    $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
@@ -35,7 +32,10 @@ Getting your code up and running on your own system.
     # ...
     (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (threagile-builder) $ exit # type `exit` to leave the environment
-    $ hatch run python src/threagile_builder/app.py # The `run` command allows you to execute commands in an environment as if you had already entered it. 
+    $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    $ hatch run pip install -r requirements.txt # pipx won't do this
+    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.	Software dependencies
 3.	Latest releases
