@@ -17,7 +17,7 @@ Threagile-Builder
 
 **Zusammenfassung**
 
-Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
+Getting your code up and running on your own system.
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
@@ -27,7 +27,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
     $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
-    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory.
+    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -44,7 +44,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 4.  API-Referenzen
 5.  Erstellen und testen:
 
-    Um Ihren Code zu erstellen, verwenden Sie:
+    To build your code, use:
 
     ```bash
     $ cd threagile-builder
@@ -84,7 +84,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 # API-Dokumentation
 
-Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
+Navigieren Sie zu`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
 
 # Metriken
 
