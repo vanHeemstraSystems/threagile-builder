@@ -10,7 +10,7 @@ Threagile-Builder
 
 * * *
 
-> A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagile](https://threagile.io)YAML-Dateien
+> A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagil](https://threagile.io)YAML-Dateien
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
@@ -19,7 +19,7 @@ Threagile-Builder
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
-**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
+**Note**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
 1.  Installationsprozess:
     ```bash
@@ -85,7 +85,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 # API-Dokumentation
 
-Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
+Navigieren Sie zu`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
 
 # Metriken
 
@@ -142,4 +142,4 @@ Sehen[README.md](./300/README.md)
 
 ## 400 – Fazit
 
-Sehen[README.md](./400/README.md)
+See [README.md](./400/README.md)
