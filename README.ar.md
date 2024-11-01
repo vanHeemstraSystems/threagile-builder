@@ -17,7 +17,7 @@
 
 **ملخص تنفيذي**
 
-Getting your code up and running on your own system.
+الحصول على التعليمات البرمجية الخاصة بك وتشغيلها على النظام الخاص بك.
 
 **ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
 
@@ -39,7 +39,7 @@ Getting your code up and running on your own system.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
-2.  Software dependencies
+2.  تبعيات البرمجيات
 3.  أحدث الإصدارات
 4.  مراجع واجهة برمجة التطبيقات
 5.  البناء والاختبار:
@@ -113,7 +113,7 @@ pip install threagile-builder
 
 ## البيئات
 
--   تم تعريفها بدقة في قائمة بذاتها[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
 
 ## يبني
