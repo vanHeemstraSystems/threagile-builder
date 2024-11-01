@@ -12,7 +12,7 @@ thregile-बिल्डर
 
 > ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
--   [Glossary](./GLOSSARY.md)
+-   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
 
 **कार्यकारी सारांश**
@@ -27,7 +27,7 @@ thregile-बिल्डर
     $ pip install --upgrade pip # optional
     $ pip install -r requirements.txt # pipx won't do this
     $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
-    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory.
+    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -92,10 +92,10 @@ thregile-बिल्डर
 
 **_नया_**
 
-**Table of Contents**
+**विषयसूची**
 
--   [इंस्टालेशन](#installation)
--   [Version source](#version-source)
+-   [Installation](#installation)
+-   [संस्करण स्रोत](#version-source)
 -   [वातावरण](#environments)
 -   [निर्माण](#build)
 -   [लाइसेंस](#license)
@@ -118,7 +118,7 @@ pip install threagile-builder
 ## निर्माण
 
 -   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)शिप करने के लिए हुक प्लगइन बनाएं`_version.py`फ़ाइल करें ताकि संस्करण का उपयोग रनटाइम पर किया जा सके
--   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc) build hook plugin to first compile all code with [Mypyc](https://github.com/mypyc/mypyc)
+-   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे करें:
     -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
     -   उपयोग[अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)प्रत्येक प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण बनाने का लक्ष्य बनाएं
@@ -131,9 +131,9 @@ pip install threagile-builder
 
 देखना[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - आवश्यकताएँ
 
-देखना[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 - हमारे एप्लिकेशन का निर्माण
 
