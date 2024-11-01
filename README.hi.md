@@ -10,7 +10,7 @@ thregile-बिल्डर
 
 * * *
 
-> ए[ब्लॉक आधारित](https://developers.google.com/blockly) no-code web application to create [threagile](https://threagile.io)वाईएएमएल फ़ाइलें
+> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
@@ -21,7 +21,7 @@ thregile-बिल्डर
 
 **टिप्पणी**: सुनिश्चित करें कि आप इसे पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
-1.  Installation process: 
+1.  स्थापना प्रक्रिया:
     ```bash
     $ cd threagile-builder
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
@@ -41,7 +41,7 @@ thregile-बिल्डर
     ```
 2.  सॉफ़्टवेयर निर्भरताएँ
 3.  नवीनतम रिलीज़
-4.  API references
+4.  एपीआई संदर्भ
 5.  निर्माण और परीक्षण:
 
     अपना कोड बनाने के लिए, इसका उपयोग करें:
@@ -51,7 +51,7 @@ thregile-बिल्डर
     $ hatch build
     ```
 
-    To run the application, use:
+    एप्लिकेशन चलाने के लिए, उपयोग करें:
 
     लिनक्स:
 
@@ -126,7 +126,7 @@ pip install threagile-builder
 
 ## लाइसेंस
 
-`threagile-builder`की शर्तों के तहत वितरित किया जाता है[MIT](https://spdx.org/licenses/MIT.html)लाइसेंस.
+`threagile-builder`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
 
 ## 100 - परिचय
 
