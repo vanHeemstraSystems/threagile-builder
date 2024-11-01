@@ -57,8 +57,8 @@ def create_app(config=Config):
     db.init_app(app)
 
     # Register blueprints
-    # app.register_blueprint(main_bp)
-    # app.register_blueprint(build_bp)
+    app.register_blueprint(main_bp)
+    app.register_blueprint(build_bp)
 
     # Define metrics
     request_count = meter.create_counter(
@@ -79,10 +79,10 @@ def create_app(config=Config):
     # FlaskInstrumentor().instrument_app(app)
     # SQLAlchemyInstrumentor().instrument(engine=db.engine)
 
-    # Fore Testing Only
-    @app.route("/")
-    def index():
-        return "<h1>Hello World</h1>"
+    # # Fore Testing Only
+    # @app.route("/")
+    # def index():
+    #     return "<h1>Hello World</h1>"
 
     # Create the database tables (if they don't exist)
     with app.app_context():
