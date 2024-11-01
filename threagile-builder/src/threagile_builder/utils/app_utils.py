@@ -16,7 +16,7 @@ from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.exporter.prometheus import PrometheusMetricReader
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 from prometheus_client import start_http_server
-# from routes import build_bp, main_bp
+from routes import build_bp, main_bp
 
 def create_app(config=Config):
     app = APIFlask(
