@@ -5,6 +5,16 @@ from apiflask import APIFlask
 from config import Config
 from flask import Flask
 
+from multiprocessing.pool import ThreadPool
+
+from opentelemetry import trace, metrics
+
+from opentelemetry.sdk.resources import SERVICE_NAME, Resource
+from opentelemetry.sdk.metrics import MeterProvider
+from opentelemetry.sdk.trace import TracerProvider
+
+from prometheus_client import start_http_server
+
 
 def create_app(config=Config):
     app = APIFlask(
@@ -19,6 +29,24 @@ def create_app(config=Config):
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
     )    
+
+    # Set up OpenTelemetry
+    # See https://opentelemetry.io/docs/languages/python/exporters/#prometheus
+    resource = Resource(attributes={SERVICE_NAME: "threagile-builder-app"})
+    trace.set_tracer_provider(TracerProvider(resource=resource))
+    metrics.set_meter_provider(MeterProvider(resource=resource))
+
+    # Create a meter
+    meter = metrics.get_meter(__name__)
+
+    # Start Prometheus client
+    # See https://opentelemetry.io/docs/languages/python/exporters/#prometheus
+    # start_http_server(port=8888, addr="localhost") # Causes port is alreday in use
+    # See https://stackoverflow.com/questions/44793164/prometheus-python-client-error-address-already-in-use
+    pool = ThreadPool(1)
+    pool.apply_async(start_http_server, (9464, 'localhost'))  # start prometheus in a different thread that app
+    # Initialize PrometheusMetricReader which pulls metrics from the SDK
+    # on-demand to respond to scrape requests
 
     @app.route("/")
     def index():
