@@ -28,7 +28,7 @@ Getting your code up and running on your own system.
     $ hatch shell # spawn a shell within an environment
     (threagile-builder) $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
     # Name: threagile-builder
-    # Version: 0.0.1
+    # Version: 0.0.1 # it takes this from src/threagile_builder/__about__.py
     # ...
     (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (threagile-builder) $ exit # type `exit` to leave the environment
