@@ -10,7 +10,7 @@ constructeur de menaces
 
 * * *
 
-> UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[fragile](https://threagile.io)Fichiers YAML
+> UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[fragile](https://threagile.io) YAML files
 
 -   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
