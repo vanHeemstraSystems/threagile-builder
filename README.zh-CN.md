@@ -53,7 +53,7 @@
 
     要运行该应用程序，请使用：
 
-    Linux：
+    Linux:
 
     ```bash
     $ export SECRET_KEY="secret"
@@ -65,7 +65,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    然后：
+    Then:
 
     ```bash
     $ cd threagile-builder
@@ -89,7 +89,7 @@
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -140,6 +140,6 @@ pip install threagile-builder
 
 看[README.md](./300/README.md)
 
-## 400 - 结论
+## 400 - Conclusion
 
-看[README.md](./400/README.md)
+See [README.md](./400/README.md)
