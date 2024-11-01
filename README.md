@@ -85,7 +85,7 @@ Navigate to `http://127.0.0.1:5000/docs` in your web browser, or download the op
 
 # Metrics
 
-Let a tool like Prometheus scrape `http://127.0.0.1:5000/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
 
 ___ NEW ___
 
