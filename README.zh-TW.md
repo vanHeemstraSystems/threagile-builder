@@ -89,7 +89,7 @@
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -126,7 +126,7 @@ pip install threagile-builder
 
 ## 執照
 
-`threagile-builder`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
+`threagile-builder`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html) license.
 
 ## 100 - 簡介
 
