@@ -73,7 +73,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Navigeer vervolgens naar`http://127.0.0.1:5000/`in uw webbrowser.
+    Then, navigate to `http://127.0.0.1:5000/`in uw webbrowser.
 
     Om tests uit te voeren, gebruikt u:
 
@@ -98,7 +98,7 @@ Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:5000/metrics`
 -   [Installatie](#installation)
 -   [Versiebron](#version-source)
 -   [Omgevingen](#environments)
--   [Bouwen](#build)
+-   [Build](#build)
 -   [Licentie](#license)
 
 ## Installatie
