@@ -13,6 +13,8 @@ from opentelemetry.sdk.resources import SERVICE_NAME, Resource
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.trace import TracerProvider
 
+from opentelemetry.exporter.prometheus import PrometheusMetricReader
+
 from prometheus_client import start_http_server
 
 
@@ -47,6 +49,9 @@ def create_app(config=Config):
     pool.apply_async(start_http_server, (9464, 'localhost'))  # start prometheus in a different thread that app
     # Initialize PrometheusMetricReader which pulls metrics from the SDK
     # on-demand to respond to scrape requests
+    reader = PrometheusMetricReader()
+    provider = MeterProvider(resource=resource, metric_readers=[reader])
+    metrics.set_meter_provider(provider)            
 
     @app.route("/")
     def index():
