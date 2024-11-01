@@ -42,7 +42,7 @@
 2.  تبعيات البرمجيات
 3.  أحدث الإصدارات
 4.  مراجع واجهة برمجة التطبيقات
-5.  البناء والاختبار:
+5.  Build and Test:
 
     لبناء الكود الخاص بك، استخدم:
 
@@ -79,6 +79,7 @@
 
     ```bash
     $ cd threagile-builder
+    $ pip install pytest # optional
     $ pytest tests/
     ```
 
@@ -117,7 +118,7 @@ pip install threagile-builder
 
 ## يبني
 
--   جميع أهداف البناء تستخدم[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
+-   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة

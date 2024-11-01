@@ -79,6 +79,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     ```bash
     $ cd threagile-builder
+    $ pip install pytest # optional
     $ pytest tests/
     ```
 
