@@ -30,7 +30,7 @@
     $ hatch shell # spawn a shell within an environment
     (threagile-builder) $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
     # Name: threagile-builder
-    # Version: 0.0.1
+    # Version: 0.0.1 # it takes this from src/threagile_builder/__about__.py
     # ...
     (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (threagile-builder) $ exit # type `exit` to leave the environment
@@ -88,7 +88,7 @@
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
@@ -106,7 +106,7 @@
 pip install threagile-builder
 ```
 
-## Version source
+## 版本来源
 
 -   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 

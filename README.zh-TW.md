@@ -1,4 +1,4 @@
-threagile-builder
+威脅建造者
 
 # 威脅建造者
 
@@ -30,7 +30,7 @@ threagile-builder
     $ hatch shell # spawn a shell within an environment
     (threagile-builder) $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
     # Name: threagile-builder
-    # Version: 0.0.1
+    # Version: 0.0.1 # it takes this from src/threagile_builder/__about__.py
     # ...
     (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
     (threagile-builder) $ exit # type `exit` to leave the environment
@@ -88,7 +88,7 @@ threagile-builder
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:5000/metrics`.
 
 **_新的_**
 
