@@ -28,7 +28,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
-    (threagile-builder) $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder'
+    (threagile-builder) $ pip show threagile-builder # optional, shows the project details, here 'threagile-builder', from `pyproject.toml`
     # Name: threagile-builder
     # Version: 0.0.1 # it takes this from src/threagile_builder/__about__.py
     # ...
@@ -95,7 +95,7 @@ Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:5000/metrics`
 **Inhoudsopgave**
 
 -   [Installatie](#installation)
--   [Versiebron](#version-source)
+-   [Version source](#version-source)
 -   [Omgevingen](#environments)
 -   [Bouwen](#build)
 -   [Licentie](#license)
