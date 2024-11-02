@@ -51,7 +51,7 @@
     $ hatch build
     ```
 
-    To run the application, use:
+    要運行該應用程序，請使用：
 
     Linux：
 
@@ -89,7 +89,7 @@
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -107,7 +107,7 @@
 pip install threagile-builder
 ```
 
-## Version source
+## 版本來源
 
 -   這[孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
 
