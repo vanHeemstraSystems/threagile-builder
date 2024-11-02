@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Translate DOCUMENTATION
+
+on:
+  push:
+    branches:
+      - main
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      # ISO Language Codes: https://cloud.google.com/translate/docs/languages  
+      - name: Adding DOCUMENTATION - Chinese Simplified
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: zh-CN
+      - name: Adding DOCUMENTATION - Chinese Traditional
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: zh-TW
+      - name: Adding DOCUMENTATION - Hindi
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: hi
+      - name: Adding DOCUMENTATION - Arabic
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: ar
+      - name: Adding DOCUMENTATION - French
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: fr
+      - name: Adding DOCUMENTATION - German
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: de
+      - name: Adding DOCUMENTATION - Dutch
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: nl
+      - name: Adding DOCUMENTATION - Spanish
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: es
