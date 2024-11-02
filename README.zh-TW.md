@@ -14,10 +14,11 @@
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
+-   [文件](./DOCUMENTATION.md)
 
 **執行摘要**
 
-Getting your code up and running on your own system.
+在您自己的系統上啟動並運行您的程式碼。
 
 **筆記**: 確保您滿足[要求](./200/README.md).
 
@@ -138,7 +139,7 @@ pip install threagile-builder
 
 ## 300 - 建立我們的應用程式
 
-See [README.md](./300/README.md)
+看[README.md](./300/README.md)
 
 ## 400 - 結論
 
