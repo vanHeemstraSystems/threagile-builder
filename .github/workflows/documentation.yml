@@ -17,34 +17,34 @@ jobs:
           node-version: 12.x
       # ISO Language Codes: https://cloud.google.com/translate/docs/languages  
       - name: Adding DOCUMENTATION - Chinese Simplified
-        uses: dephraiim/translate-readme@main
+        uses: vanHeemstraSystems/translate-documentation@main
         with:
           LANG: zh-CN
       - name: Adding DOCUMENTATION - Chinese Traditional
-        uses: dephraiim/translate-readme@main
+        uses: vanHeemstraSystems/translate-documentation@main
         with:
           LANG: zh-TW
       - name: Adding DOCUMENTATION - Hindi
-        uses: dephraiim/translate-readme@main
+        uses: vanHeemstraSystems/translate-documentation@main
         with:
           LANG: hi
       - name: Adding DOCUMENTATION - Arabic
-        uses: dephraiim/translate-readme@main
+        uses: vanHeemstraSystems/translate-documentation@main
         with:
           LANG: ar
       - name: Adding DOCUMENTATION - French
-        uses: dephraiim/translate-readme@main
+        uses: vanHeemstraSystems/translate-documentation@main
         with:
           LANG: fr
       - name: Adding DOCUMENTATION - German
-        uses: dephraiim/translate-readme@main
+        uses: vanHeemstraSystems/translate-documentation@main
         with:
           LANG: de
       - name: Adding DOCUMENTATION - Dutch
-        uses: dephraiim/translate-readme@main
+        uses: vanHeemstraSystems/translate-documentation@main
         with:
           LANG: nl
       - name: Adding DOCUMENTATION - Spanish
-        uses: dephraiim/translate-readme@main
+        uses: vanHeemstraSystems/translate-documentation@main
         with:
           LANG: es
