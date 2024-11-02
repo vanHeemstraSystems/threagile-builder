@@ -14,6 +14,7 @@ Threagile-Builder
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
+-   [Dokumentation](./DOCUMENTATION.md)
 
 **Zusammenfassung**
 
