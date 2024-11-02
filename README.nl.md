@@ -14,6 +14,7 @@ threagile-bouwer
 
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
+-   [Documentatie](./DOCUMENTATION.md)
 
 **Samenvatting**
 
@@ -109,7 +110,7 @@ pip install threagile-builder
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
