@@ -17,7 +17,7 @@
 
 **執行摘要**
 
-在您自己的系統上啟動並運行您的程式碼。
+Getting your code up and running on your own system.
 
 **筆記**: 確保您滿足[要求](./200/README.md).
 
@@ -138,7 +138,7 @@ pip install threagile-builder
 
 ## 300 - 建立我們的應用程式
 
-看[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400 - 結論
 
