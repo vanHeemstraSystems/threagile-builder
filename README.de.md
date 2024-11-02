@@ -43,7 +43,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 2.  Softwareabhängigkeiten
 3.  Neueste Veröffentlichungen
 4.  API-Referenzen
-5.  Erstellen und testen:
+5.  Build and Test:
 
     Um Ihren Code zu erstellen, verwenden Sie:
 
@@ -108,7 +108,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 pip install threagile-builder
 ```
 
-## Versionsquelle
+## Version source
 
 -   Der[hatch-vcs](https://github.com/ofek/hatch-vcs)Das Versionsquellen-Plugin bestimmt die Projektversion mithilfe von Git-Tags
 
@@ -135,7 +135,7 @@ Sehen[README.md](./100/README.md)
 
 ## 200 – Anforderungen
 
-Sehen[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 – Erstellen unserer Anwendung
 
