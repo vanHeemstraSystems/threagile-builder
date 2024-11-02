@@ -1,4 +1,4 @@
-thregile-बिल्डर
+threagile-builder
 
 # थ्रैगाइल बिल्डर
 
@@ -10,7 +10,7 @@ thregile-बिल्डर
 
 * * *
 
-> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
+> A [ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
@@ -40,7 +40,7 @@ thregile-बिल्डर
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  सॉफ़्टवेयर निर्भरताएँ
-3.  नवीनतम रिलीज़
+3.  Latest releases
 4.  एपीआई संदर्भ
 5.  निर्माण और परीक्षण:
 
@@ -83,7 +83,7 @@ thregile-बिल्डर
     $ pytest tests/
     ```
 
-# एपीआई दस्तावेज़ीकरण
+# API Documentation
 
 पर नेविगेट करें`http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
 
@@ -136,7 +136,7 @@ pip install threagile-builder
 
 देखना[README.md](./200/README.md)
 
-## 300 - हमारे एप्लिकेशन का निर्माण
+## 300 - Building Our Application
 
 देखना[README.md](./300/README.md)
 
