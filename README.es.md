@@ -20,7 +20,7 @@ constructor-threagil
 
 Poner en funcionamiento su código en su propio sistema.
 
-**Nota**: Asegúrese de cumplir con los[requirements](./200/README.md).
+**Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
 1.  Proceso de instalación:
     ```bash
@@ -98,7 +98,7 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
 
 -   [Instalación](#installation)
 -   [Fuente de la versión](#version-source)
--   [Ambientes](#environments)
+-   [Environments](#environments)
 -   [Construir](#build)
 -   [Licencia](#license)
 
@@ -125,7 +125,7 @@ pip install threagile-builder
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
     -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
 
-## Licencia
+## License
 
 `threagile-builder`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html)licencia.
 
