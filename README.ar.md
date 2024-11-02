@@ -21,7 +21,7 @@
 
 **ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
 
-1.  Installation process: 
+1.  عملية التثبيت:
     ```bash
     $ cd threagile-builder
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
@@ -83,7 +83,7 @@
     $ pytest tests/
     ```
 
-# API Documentation
+# وثائق واجهة برمجة التطبيقات
 
 انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
