@@ -94,7 +94,7 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
 
 **_NUEVO_**
 
-**Table of Contents**
+**Tabla de contenido**
 
 -   [Instalación](#installation)
 -   [Fuente de la versión](#version-source)
