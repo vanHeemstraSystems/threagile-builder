@@ -86,7 +86,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 # API-Dokumentation
 
-Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
+Navigate to `http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
 
 # Metriken
 
@@ -137,7 +137,7 @@ Sehen[README.md](./100/README.md)
 
 Sehen[README.md](./200/README.md)
 
-## 300 – Erstellen unserer Anwendung
+## 300 - Building Our Application
 
 Sehen[README.md](./300/README.md)
 
