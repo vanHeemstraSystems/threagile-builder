@@ -88,7 +88,6 @@ var toolbox = {
 
 // Initialize Blockly workspace
 var workspace = Blockly.inject('blocklyDiv', {
-  //toolbox: document.getElementById('toolbox'),
   toolbox: toolbox,
   move: {
     scrollbars: {
