@@ -52,7 +52,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ hatch build
     ```
 
-    Para ejecutar la aplicación, utilice:
+    To run the application, use:
 
     Linux:
 
@@ -60,7 +60,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ export SECRET_KEY="secret"
     ```
 
-    Ventanas:
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
@@ -84,7 +84,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ pytest tests/
     ```
 
-# API Documentation
+# Documentación API
 
 Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
 
@@ -119,7 +119,7 @@ pip install threagile-builder
 
 ## Construir
 
--   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
+-   Todos los objetivos de construcción utilizan el[hatch-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
 -   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
