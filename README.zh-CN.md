@@ -12,7 +12,7 @@
 
 > 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
 
--   [Glossary](./GLOSSARY.md)
+-   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 
@@ -66,7 +66,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    然后：
 
     ```bash
     $ cd threagile-builder
@@ -74,7 +74,7 @@
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    然后，导航至`http://127.0.0.1:5000/` in your web browser.
+    然后，导航至`http://127.0.0.1:5000/`在您的网络浏览器中。
 
     要运行测试，请使用：
 
@@ -90,7 +90,7 @@
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -133,7 +133,7 @@ pip install threagile-builder
 
 看[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - 要求
 
 看[README.md](./200/README.md)
 
