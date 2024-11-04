@@ -97,7 +97,7 @@
 **目錄**
 
 -   [安裝](#installation)
--   [Version source](#version-source)
+-   [版本來源](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
 -   [執照](#license)
@@ -139,7 +139,7 @@ pip install threagile-builder
 
 ## 300 - 建立我們的應用程式
 
-See [README.md](./300/README.md)
+看[README.md](./300/README.md)
 
 ## 400 - 結論
 
