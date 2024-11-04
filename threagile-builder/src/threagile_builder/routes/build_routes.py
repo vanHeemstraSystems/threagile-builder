@@ -1,4 +1,4 @@
-# threagile-builder/scr/threagile_builder/routes/build_routes.py
+# threagile-builder/src/threagile_builder/routes/build_routes.py
 import json
 import logging
 from apiflask import APIBlueprint
