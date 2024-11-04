@@ -10,7 +10,7 @@ threagile-bouwer
 
 * * *
 
-> A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[ragiel](https://threagile.io)YAML-bestanden
+> A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[ragiel](https://threagile.io) YAML files
 
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
@@ -41,7 +41,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  Software-afhankelijkheden
-3.  Nieuwste releases
+3.  Latest releases
 4.  API-referenties
 5.  Bouwen en testen:
 
@@ -125,7 +125,7 @@ pip install threagile-builder
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
-## Licentie
+## License
 
 `threagile-builder`wordt verspreid onder de voorwaarden van de[MET](https://spdx.org/licenses/MIT.html)licentie.
 
