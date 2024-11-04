@@ -41,6 +41,31 @@ var workspace = Blockly.inject('blocklyDiv', {
   trashcan: true
 })
 
+// Zoom functions
+let zoomLevel = 1;
+function zoomIn() {
+    console.log("Zoom In");
+    zoomLevel += 0.1;
+    workspace.scale = zoomLevel;
+    workspace.resize();
+}
+function zoomOut() {
+    console.log("Zoom Out");
+    zoomLevel = Math.max(0.1, zoomLevel - 0.1);
+    workspace.scale = zoomLevel;
+    workspace.resize();
+}
+function resetZoom() {
+    console.log("Reset Zoom");
+    zoomLevel = 1;
+    workspace.scale = zoomLevel;
+    workspace.resize();
+}
+
+document.getElementById('zoomIn').onclick = zoomIn;
+document.getElementById('zoomOut').onclick = zoomOut;
+document.getElementById('resetZoom').onclick = resetZoom;
+
 document.getElementById('runBuild').onclick = function () {
   const xml = Blockly.Xml.workspaceToDom(workspace)
   const code = Blockly.Xml.domToText(xml)
