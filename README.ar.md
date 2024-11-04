@@ -41,8 +41,8 @@
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  تبعيات البرمجيات
-3.  Latest releases
-4.  API references
+3.  أحدث الإصدارات
+4.  مراجع واجهة برمجة التطبيقات
 5.  البناء والاختبار:
 
     لبناء الكود الخاص بك، استخدم:
@@ -74,7 +74,7 @@
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
+    ثم انتقل إلى`http://127.0.0.1:5000/` in your web browser.
 
     لتشغيل الاختبارات استخدم:
 
@@ -84,7 +84,7 @@
     $ pytest tests/
     ```
 
-# API Documentation
+# وثائق واجهة برمجة التطبيقات
 
 انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
@@ -92,7 +92,7 @@
 
 دع أداة مثل بروميثيوس تتخلص`http://127.0.0.1:9464/metrics`.
 
-**_ NEW _**
+**_جديد_**
 
 **جدول المحتويات**
 
