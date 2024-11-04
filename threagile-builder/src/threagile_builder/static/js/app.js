@@ -38,33 +38,17 @@ entries.forEach(entry => {
 // Initialize Blockly workspace
 var workspace = Blockly.inject('blocklyDiv', {
   toolbox: document.getElementById('toolbox'),
+  zoom: {
+    controls: true,
+    wheel: true,
+    startScale: 1.0,
+    maxScale: 3,
+    minScale: 0.3,
+    scaleSpeed: 1.2,
+    pinch: true
+  },
   trashcan: true
 })
-
-// Zoom functions
-let zoomLevel = 1;
-function zoomIn() {
-    console.log("Zoom In");
-    zoomLevel += 0.1;
-    workspace.scale = zoomLevel;
-    workspace.resize();
-}
-function zoomOut() {
-    console.log("Zoom Out");
-    zoomLevel = Math.max(0.1, zoomLevel - 0.1);
-    workspace.scale = zoomLevel;
-    workspace.resize();
-}
-function resetZoom() {
-    console.log("Reset Zoom");
-    zoomLevel = 1;
-    workspace.scale = zoomLevel;
-    workspace.resize();
-}
-
-document.getElementById('zoomIn').onclick = zoomIn;
-document.getElementById('zoomOut').onclick = zoomOut;
-document.getElementById('resetZoom').onclick = resetZoom;
 
 document.getElementById('runBuild').onclick = function () {
   const xml = Blockly.Xml.workspaceToDom(workspace)
