@@ -16,8 +16,11 @@ Blockly.Blocks['Threat Model'] = {
     this.appendValueInput('INPUT')
       .setCheck('Data Assets')
       .appendField('Data Assets')
+    this.appendValueInput('INPUT')
+      .setCheck('Technical Components')
+      .appendField('Technical Components')      
     this.setColour(160)
-    this.setTooltip('This block accepts Data Assets.')
+    this.setTooltip('This block accepts Data Assets, Technical Components.')
     this.setHelpUrl('')
   }
 }
@@ -29,6 +32,17 @@ Blockly.Blocks['Data Assets'] = {
     this.setOutput(true, 'Data Assets')
     this.setColour(230)
     this.setTooltip('This block represents Data Assets.')
+    this.setHelpUrl('')
+  }
+}
+
+// Define a Technical Components block
+Blockly.Blocks['Technical Components'] = {
+  init: function () {
+    this.appendDummyInput().appendField('Technical Components')
+    this.setOutput(true, 'Technical Components')
+    this.setColour(230)
+    this.setTooltip('This block represents Technical Components.')
     this.setHelpUrl('')
   }
 }
