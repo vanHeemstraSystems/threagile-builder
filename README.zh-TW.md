@@ -90,9 +90,9 @@
 
 # 指標
 
-Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
-**_ NEW _**
+**_新的_**
 
 **目錄**
 
