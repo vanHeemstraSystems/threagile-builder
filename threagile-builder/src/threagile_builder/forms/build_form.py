@@ -1,4 +1,4 @@
-# threagile-builder/scr/threagile_builder/forms/build_form_.py
+# threagile-builder/src/threagile_builder/forms/build_form_.py
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
