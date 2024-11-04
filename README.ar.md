@@ -74,7 +74,7 @@
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    ثم انتقل إلى`http://127.0.0.1:5000/` in your web browser.
+    ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
 
     لتشغيل الاختبارات استخدم:
 
