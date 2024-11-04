@@ -40,7 +40,7 @@ thregile-बिल्डर
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
-2.  Software dependencies
+2.  सॉफ़्टवेयर निर्भरताएँ
 3.  नवीनतम रिलीज़
 4.  एपीआई संदर्भ
 5.  निर्माण और परीक्षण:
