@@ -13,7 +13,7 @@ thregile-बिल्डर
 > ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
 -   [शब्दकोष](./GLOSSARY.md)
--   [संदर्भ](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 
 **कार्यकारी सारांश**
@@ -54,7 +54,7 @@ thregile-बिल्डर
 
     एप्लिकेशन चलाने के लिए, उपयोग करें:
 
-    लिनक्स:
+    Linux:
 
     ```bash
     $ export SECRET_KEY="secret"
