@@ -90,13 +90,13 @@
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
 **目錄**
 
--   [安裝](#installation)
+-   [Installation](#installation)
 -   [版本來源](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
@@ -119,7 +119,7 @@ pip install threagile-builder
 
 ## 建造
 
--   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py`文件，以便可以在運行時使用該版本
+-   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
