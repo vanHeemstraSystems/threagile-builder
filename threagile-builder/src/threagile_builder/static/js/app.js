@@ -38,6 +38,13 @@ entries.forEach(entry => {
 // Initialize Blockly workspace
 var workspace = Blockly.inject('blocklyDiv', {
   toolbox: document.getElementById('toolbox'),
+  move:{
+    scrollbars: {
+      horizontal: true,
+      vertical: true
+    },
+    drag: true,
+    wheel: false},
   zoom: {
     controls: true,
     wheel: true,
