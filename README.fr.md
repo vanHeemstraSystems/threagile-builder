@@ -74,7 +74,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
+    Ensuite, accédez à`http://127.0.0.1:5000/` in your web browser.
 
     Pour exécuter des tests, utilisez :
 
