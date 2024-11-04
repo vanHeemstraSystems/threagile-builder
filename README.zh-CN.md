@@ -20,7 +20,7 @@
 
 在您自己的系统上启动并运行您的代码。
 
-**笔记**: Make sure you fulfill the [要求](./200/README.md).
+**笔记**: 确保您满足[要求](./200/README.md).
 
 1.  安装过程：
     ```bash
@@ -86,11 +86,11 @@
 
 # API文档
 
-导航至`http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
+Navigate to `http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -100,7 +100,7 @@
 -   [版本来源](#version-source)
 -   [环境](#environments)
 -   [建造](#build)
--   [执照](#license)
+-   [License](#license)
 
 ## 安装
 
@@ -115,13 +115,13 @@ pip install threagile-builder
 ## 环境
 
 -   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
+-   这`test` matrix uses the [孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
 
 -   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
--   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
--   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
+-   Wheels use the [孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
+-   这[build](.github/workflows/build.yml)GitHub 工作流程展示了如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
     -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
