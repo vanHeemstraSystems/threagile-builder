@@ -74,7 +74,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Navigeer vervolgens naar`http://127.0.0.1:5000/`in uw webbrowser.
+    Then, navigate to `http://127.0.0.1:5000/`in uw webbrowser.
 
     Om tests uit te voeren, gebruikt u:
 
