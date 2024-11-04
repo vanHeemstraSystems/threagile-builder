@@ -20,7 +20,7 @@
 
 在您自己的系統上啟動並運行您的程式碼。
 
-**筆記**: 確保您滿足[要求](./200/README.md).
+**筆記**: 確保您滿足[requirements](./200/README.md).
 
 1.  安裝過程：
     ```bash
@@ -66,7 +66,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    然後：
+    Then:
 
     ```bash
     $ cd threagile-builder
@@ -99,7 +99,7 @@
 -   [安裝](#installation)
 -   [版本來源](#version-source)
 -   [環境](#environments)
--   [建造](#build)
+-   [Build](#build)
 -   [執照](#license)
 
 ## 安裝
@@ -114,8 +114,8 @@ pip install threagile-builder
 
 ## 環境
 
--   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml) GitHub workflow
+-   整齊地定義在一個獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
 
