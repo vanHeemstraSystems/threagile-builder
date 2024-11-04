@@ -40,7 +40,7 @@
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
-2.  Software dependencies
+2.  軟體依賴性
 3.  最新版本
 4.  API參考
 5.  建置和測試：
@@ -66,7 +66,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    然後：
+    Then:
 
     ```bash
     $ cd threagile-builder
@@ -90,7 +90,7 @@
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -108,7 +108,7 @@
 pip install threagile-builder
 ```
 
-## 版本來源
+## Version source
 
 -   這[孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
 
