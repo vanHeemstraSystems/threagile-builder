@@ -20,7 +20,7 @@
 
 在您自己的系统上启动并运行您的代码。
 
-**笔记**: 确保您满足[requirements](./200/README.md).
+**笔记**: 确保您满足[要求](./200/README.md).
 
 1.  安装过程：
     ```bash
@@ -98,7 +98,7 @@
 
 -   [安装](#installation)
 -   [版本来源](#version-source)
--   [环境](#environments)
+-   [Environments](#environments)
 -   [建造](#build)
 -   [执照](#license)
 
@@ -123,7 +123,7 @@ pip install threagile-builder
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
-    -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/) build target to build standalone distributions for every platform
+    -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
 ## 执照
 
@@ -143,4 +143,4 @@ pip install threagile-builder
 
 ## 400 - 结论
 
-See [README.md](./400/README.md)
+看[README.md](./400/README.md)
