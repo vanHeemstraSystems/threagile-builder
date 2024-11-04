@@ -1,9 +1,9 @@
-# threagile-builder/scr/threagile_builder/utils/app_utils.py
+# threagile-builder/src/threagile_builder/utils/app_utils.py
 import logging
 from .db_utils import db
 from apiflask import APIFlask
 from config import Config
-from flask import Flask
+# NOT REQUIRED from flask import Flask
 
 from multiprocessing.pool import ThreadPool
 

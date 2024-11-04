@@ -2,3 +2,4 @@
 vscode:
   extensions:
     - ms-vscode.makefile-tools
+    - esbenp.prettier-vscode
