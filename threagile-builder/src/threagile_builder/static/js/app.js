@@ -1,7 +1,7 @@
 // Define the parent block "Threagile Builder"
 Blockly.Blocks['ThreagileBuilder'] = {
   init: function () {
-    this.appendDummyInput().appendField('Threagile Build')
+    this.appendDummyInput().appendField('Threat Model')
     this.appendStatementInput('ENTRIES').setCheck(null)
     this.setColour(230)
     this.setTooltip("The Threagile Build's entries.")
@@ -9,11 +9,11 @@ Blockly.Blocks['ThreagileBuilder'] = {
   }
 }
 
-// Define Apple block
-Blockly.Blocks['Apple'] = {
+// Define Data Assets block
+Blockly.Blocks['Data Assets'] = {
   init: function () {
     this.jsonInit({
-      message0: 'Apple %1',
+      message0: 'Data Assets %1',
       args0: [
         {
           type: 'input_value',
@@ -23,7 +23,7 @@ Blockly.Blocks['Apple'] = {
       ],
       output: 'Number',
       colour: 160,
-      tooltip: 'Apple',
+      tooltip: 'Data Assets',
       helpUrl: 'http://www.w3schools.com/jsref/jsref_length_string.asp'
     })
   }
@@ -65,7 +65,7 @@ var toolbox = {
     },
     {
       kind: 'block',
-      type: 'Apple'
+      type: 'Data Assets'
     },
     {
       kind: 'block',
