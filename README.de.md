@@ -22,7 +22,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
-1.  Installation process: 
+1.  Installationsprozess:
     ```bash
     $ cd threagile-builder
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
@@ -41,7 +41,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  Softwareabhängigkeiten
-3.  Neueste Veröffentlichungen
+3.  Latest releases
 4.  API-Referenzen
 5.  Erstellen und testen:
 
@@ -94,7 +94,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 
 **_NEU_**
 
-**Inhaltsverzeichnis**
+**Table of Contents**
 
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)
