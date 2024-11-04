@@ -14,10 +14,10 @@ Blockly.Blocks['Threat Model'] = {
   init: function () {
     this.appendDummyInput().appendField('Threat Model')
     this.appendValueInput('INPUT')
-      .setCheck('Number')
+      .setCheck('Data Assets')
       .appendField('Data Assets')
     this.setColour(160)
-    this.setTooltip('This block accepts a number input.')
+    this.setTooltip('This block accepts Data Assets.')
     this.setHelpUrl('')
   }
 }
@@ -26,7 +26,7 @@ Blockly.Blocks['Threat Model'] = {
 Blockly.Blocks['Data Assets'] = {
   init: function () {
     this.appendDummyInput().appendField('Data Assets')
-    this.setOutput(true, 'Number')
+    this.setOutput(true, 'Data Assets')
     this.setColour(230)
     this.setTooltip('This block represents Data Assets.')
     this.setHelpUrl('')
