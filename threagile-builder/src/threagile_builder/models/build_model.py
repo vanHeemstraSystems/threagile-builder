@@ -1,4 +1,4 @@
-# threagile-builder/scr/threagile_builder/models/build_model.py
+# threagile-builder/src/threagile_builder/models/build_model.py
 from utils.db_utils import db
 
 
