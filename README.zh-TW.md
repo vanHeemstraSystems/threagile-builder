@@ -90,13 +90,13 @@
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
 **目錄**
 
--   [Installation](#installation)
+-   [安裝](#installation)
 -   [版本來源](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
@@ -114,8 +114,8 @@ pip install threagile-builder
 
 ## 環境
 
--   整齊地定義在一個獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
+-   Defined neatly in a standalone [`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml) GitHub workflow
 
 ## 建造
 
