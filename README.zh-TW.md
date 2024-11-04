@@ -66,7 +66,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    然後：
 
     ```bash
     $ cd threagile-builder
@@ -90,7 +90,7 @@
 
 # 指標
 
-Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -108,7 +108,7 @@ Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
 pip install threagile-builder
 ```
 
-## Version source
+## 版本來源
 
 -   這[孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
 
@@ -123,7 +123,7 @@ pip install threagile-builder
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
-    -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
+    -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/) build target to build standalone distributions for every platform
 
 ## 執照
 
@@ -135,7 +135,7 @@ pip install threagile-builder
 
 ## 200 - 要求
 
-看[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 - 建立我們的應用程式
 
