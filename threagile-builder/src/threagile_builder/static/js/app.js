@@ -1,56 +1,57 @@
-// Define the parent block "Threagile Builder"
-Blockly.Blocks['ThreagileBuilder'] = {
+// // Define the parent block "Threagile Builder"
+// Blockly.Blocks['ThreagileBuilder'] = {
+//   init: function () {
+//     this.appendDummyInput().appendField('Threat Model')
+//     this.appendStatementInput('ENTRIES').setCheck(null)
+//     this.setColour(230)
+//     this.setTooltip("The Threagile Build's entries.")
+//     this.setHelpUrl('')
+//   }
+// }
+
+// Define a block that accepts a Data Assets block
+Blockly.Blocks['Threat Model'] = {
   init: function () {
     this.appendDummyInput().appendField('Threat Model')
-    this.appendStatementInput('ENTRIES').setCheck(null)
-    this.setColour(230)
-    this.setTooltip("The Threagile Build's entries.")
-    this.setHelpUrl('')
-  }
-}
-
-// Define a block that accepts an input block
-Blockly.Blocks['input_block'] = {
-  init: function () {
     this.appendValueInput('INPUT')
       .setCheck('Number')
-      .appendField('Input Block with')
+      .appendField('Data Assets')
     this.setColour(160)
     this.setTooltip('This block accepts a number input.')
     this.setHelpUrl('')
   }
 }
 
-// Define a simple number block
-Blockly.Blocks['number_block'] = {
+// Define a Data Assets block
+Blockly.Blocks['Data Assets'] = {
   init: function () {
-    this.appendDummyInput().appendField('Number')
+    this.appendDummyInput().appendField('Data Assets')
     this.setOutput(true, 'Number')
     this.setColour(230)
-    this.setTooltip('This block represents a number.')
+    this.setTooltip('This block represents Data Assets.')
     this.setHelpUrl('')
   }
 }
 
-// Define Data Assets block
-Blockly.Blocks['Data Assets'] = {
-  init: function () {
-    this.jsonInit({
-      message0: 'Data Assets %1',
-      args0: [
-        {
-          type: 'input_value',
-          name: 'VALUE',
-          check: 'String'
-        }
-      ],
-      output: 'Number',
-      colour: 160,
-      tooltip: 'Data Assets',
-      helpUrl: 'http://www.w3schools.com/jsref/jsref_length_string.asp'
-    })
-  }
-}
+// // Define Data Assets block
+// Blockly.Blocks['Data Assets'] = {
+//   init: function () {
+//     this.jsonInit({
+//       message0: 'Data Assets %1',
+//       args0: [
+//         {
+//           type: 'input_value',
+//           name: 'VALUE',
+//           check: 'String'
+//         }
+//       ],
+//       output: 'Number',
+//       colour: 160,
+//       tooltip: 'Data Assets',
+//       helpUrl: 'http://www.w3schools.com/jsref/jsref_length_string.asp'
+//     })
+//   }
+// }
 
 // Define the entries as input blocks
 const entries = [
@@ -84,16 +85,16 @@ var toolbox = {
   contents: [
     {
       kind: 'block',
-      type: 'ThreagileBuilder'
+      type: 'Threat Model'
     },
-    {
-      kind: 'block',
-      type: 'input_block'
-    },
-    {
-      kind: 'block',
-      type: 'number_block'
-    },
+    // {
+    //   kind: 'block',
+    //   type: 'input_block'
+    // },
+    // {
+    //   kind: 'block',
+    //   type: 'number_block'
+    // },
     {
       kind: 'block',
       type: 'Data Assets'
