@@ -59,6 +59,31 @@ extra-dependencies = [
 [tool.hatch.envs.types.scripts]
 check = "mypy --install-types --non-interactive {args:src/threagile_builder tests}"
 
+[tool.hatch.envs.test]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+  "pytest-watcher"
+]
+
+[tool.hatch.envs.test.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.10", "3.11"]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.12"]
+
 [tool.coverage.run]
 source_pkgs = ["threagile_builder", "tests"]
 branch = true
