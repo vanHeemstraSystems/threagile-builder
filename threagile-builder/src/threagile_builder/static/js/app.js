@@ -9,9 +9,29 @@ Blockly.Blocks['ThreagileBuilder'] = {
   }
 }
 
+// Define Apple block
+Blockly.Blocks['Apple'] = {
+  init: function () {
+    this.jsonInit({
+      message0: 'Apple %1',
+      args0: [
+        {
+          type: 'input_value',
+          name: 'VALUE',
+          check: 'String'
+        }
+      ],
+      output: 'Number',
+      colour: 160,
+      tooltip: 'Apple',
+      helpUrl: 'http://www.w3schools.com/jsref/jsref_length_string.asp'
+    })
+  }
+}
+
 // Define the entries as input blocks
 const entries = [
-  { name: 'Apple', tooltip: 'Apple' },
+  // { name: 'Apple', tooltip: 'Apple', color: 160, output: null },
   { name: 'Banana', tooltip: 'Banana' },
   { name: 'Chocolate', tooltip: 'Chocolate' },
   { name: 'Dumpling', tooltip: 'Dumpling' },
