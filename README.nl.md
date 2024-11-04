@@ -40,7 +40,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
-2.  Software dependencies
+2.  Software-afhankelijkheden
 3.  Nieuwste releases
 4.  API-referenties
 5.  Bouwen en testen:
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
