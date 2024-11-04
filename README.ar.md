@@ -45,7 +45,7 @@
 4.  مراجع واجهة برمجة التطبيقات
 5.  البناء والاختبار:
 
-    To build your code, use:
+    لبناء الكود الخاص بك، استخدم:
 
     ```bash
     $ cd threagile-builder
