@@ -115,6 +115,10 @@ var toolbox = {
     },
     {
       kind: 'block',
+      type: 'Technical Components'
+    },    
+    {
+      kind: 'block',
       type: 'Banana'
     },
     {
