@@ -22,7 +22,7 @@
 
 **ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
 
-1.  عملية التثبيت:
+1.  Installation process: 
     ```bash
     $ cd threagile-builder
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
