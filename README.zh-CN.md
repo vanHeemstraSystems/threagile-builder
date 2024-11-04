@@ -86,7 +86,7 @@
 
 # API文档
 
-Navigate to `http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
+导航至`http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
 
 # 指标
 
@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## 执照
 
-`threagile-builder` is distributed under the terms of the [和](https://spdx.org/licenses/MIT.html)执照。
+`threagile-builder`是根据以下条款分发的[和](https://spdx.org/licenses/MIT.html)执照。
 
 ## 100 - 简介
 

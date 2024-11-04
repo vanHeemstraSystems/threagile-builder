@@ -102,7 +102,7 @@
 -   [يبني](#build)
 -   [رخصة](#license)
 
-## Installation
+## تثبيت
 
 ```console
 pip install threagile-builder
