@@ -13,14 +13,14 @@
 > 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
 -   [詞彙表](./GLOSSARY.md)
--   [參考](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [文件](./DOCUMENTATION.md)
 
 **執行摘要**
 
 在您自己的系統上啟動並運行您的程式碼。
 
-**筆記**: 確保您滿足[requirements](./200/README.md).
+**筆記**: 確保您滿足[要求](./200/README.md).
 
 1.  安裝過程：
     ```bash
@@ -66,7 +66,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    然後：
 
     ```bash
     $ cd threagile-builder
@@ -90,7 +90,7 @@
 
 # 指標
 
-讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -99,7 +99,7 @@
 -   [安裝](#installation)
 -   [版本來源](#version-source)
 -   [環境](#environments)
--   [Build](#build)
+-   [建造](#build)
 -   [執照](#license)
 
 ## 安裝
