@@ -16,7 +16,7 @@
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 
-**执行摘要**
+**Executive Summary**
 
 在您自己的系统上启动并运行您的代码。
 
@@ -141,6 +141,6 @@ pip install threagile-builder
 
 看[README.md](./300/README.md)
 
-## 400 - 结论
+## 400 - Conclusion
 
 看[README.md](./400/README.md)
