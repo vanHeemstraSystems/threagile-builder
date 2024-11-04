@@ -18,15 +18,17 @@ Blockly.Blocks['Threat Model'] = {
       .appendField('Data Assets')
     this.appendValueInput('INPUT')
       .setCheck('Technical Components')
-      .appendField('Technical Components')    
+      .appendField('Technical Components')
     this.appendValueInput('INPUT')
       .setCheck('Communication Links')
-      .appendField('Communication Links')         
+      .appendField('Communication Links')
     this.appendValueInput('INPUT')
       .setCheck('Trust Boundaries')
-      .appendField('Trust Boundaries') 
-      this.setColour(160)
-    this.setTooltip('This block accepts Data Assets, Technical Components, Communication Links, and Trust Boundaries.')
+      .appendField('Trust Boundaries')
+    this.setColour(160)
+    this.setTooltip(
+      'This block accepts Data Assets, Technical Components, Communication Links, and Trust Boundaries.'
+    )
     this.setHelpUrl('')
   }
 }
@@ -136,7 +138,7 @@ var toolbox = {
     {
       kind: 'block',
       type: 'Technical Components'
-    },   
+    },
     {
       kind: 'block',
       type: 'Communication Links'
