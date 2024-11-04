@@ -10,9 +10,9 @@ constructor-threagil
 
 * * *
 
-> A[block-based](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
+> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
 
--   [Glossary](./GLOSSARY.md)
+-   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
 -   [Documentación](./DOCUMENTATION.md)
 
@@ -20,7 +20,7 @@ constructor-threagil
 
 Cómo poner en marcha su código en su propio sistema.
 
-**Note**: Asegúrese de cumplir con los[requisitos](./200/README.md).
+**Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
 1.  Proceso de instalación:
     ```bash
@@ -110,12 +110,12 @@ pip install threagile-builder
 
 ## Fuente de la versión
 
--   El[escotilla-vcs](https://github.com/ofek/hatch-vcs)El complemento fuente de la versión determina la versión del proyecto usando etiquetas Git.
+-   The [escotilla-vcs](https://github.com/ofek/hatch-vcs)El complemento fuente de la versión determina la versión del proyecto usando etiquetas Git.
 
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
