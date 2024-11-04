@@ -41,8 +41,8 @@
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  تبعيات البرمجيات
-3.  أحدث الإصدارات
-4.  مراجع واجهة برمجة التطبيقات
+3.  Latest releases
+4.  API references
 5.  البناء والاختبار:
 
     لبناء الكود الخاص بك، استخدم:
@@ -84,7 +84,7 @@
     $ pytest tests/
     ```
 
-# وثائق واجهة برمجة التطبيقات
+# API Documentation
 
 انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
@@ -92,7 +92,7 @@
 
 دع أداة مثل بروميثيوس تتخلص`http://127.0.0.1:9464/metrics`.
 
-**_جديد_**
+**_ NEW _**
 
 **جدول المحتويات**
 
@@ -123,7 +123,7 @@ pip install threagile-builder
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
-    -   use the [برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
+    -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
 
 ## رخصة
 
@@ -137,7 +137,7 @@ pip install threagile-builder
 
 يرى[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 – بناء تطبيقنا
 
 يرى[README.md](./300/README.md)
 
