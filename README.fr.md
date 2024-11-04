@@ -74,7 +74,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Ensuite, accédez à`http://127.0.0.1:5000/` in your web browser.
+    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
 
     Pour exécuter des tests, utilisez :
 
@@ -84,7 +84,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ pytest tests/
     ```
 
-# Documentation API
+# API Documentation
 
 Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
 
@@ -99,7 +99,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 -   [Installation](#installation)
 -   [Source de la version](#version-source)
 -   [Environnements](#environments)
--   [Construire](#build)
+-   [Build](#build)
 -   [Licence](#license)
 
 ## Installation
@@ -112,10 +112,10 @@ pip install threagile-builder
 
 -   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
 
-## Environnements
+## Environments
 
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Le`test`la matrice utilise le[conteneurs à écoutille](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
+-   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
 ## Construire
 
@@ -137,9 +137,9 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Construire notre application
+## 300 - Créer notre application
 
-Voir[README.md](./300/README.md)
+See [README.md](./300/README.md)
 
 ## 400 - Conclusion
 
