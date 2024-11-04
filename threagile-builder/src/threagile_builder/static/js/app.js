@@ -35,16 +35,69 @@ entries.forEach(entry => {
   }
 })
 
+// Initialize Blockly toolbox
+var toolbox = {
+  kind: 'flyoutToolbox',
+  contents: [
+    {
+      kind: 'block',
+      type: 'ThreagileBuilder'
+    },
+    {
+      kind: 'block',
+      type: 'Apple'
+    },
+    {
+      kind: 'block',
+      type: 'Banana'
+    },
+    {
+      kind: 'block',
+      type: 'Chocolate'
+    },
+    {
+      kind: 'block',
+      type: 'Dumpling'
+    },
+    {
+      kind: 'block',
+      type: 'Elderberry'
+    },
+    {
+      kind: 'block',
+      type: 'Fig'
+    },
+    {
+      kind: 'block',
+      type: 'Grapefruit'
+    },
+    {
+      kind: 'block',
+      type: 'Huckleberries'
+    },
+    {
+      kind: 'block',
+      type: 'Icecream'
+    },
+    {
+      kind: 'block',
+      type: 'Jackfruit'
+    }
+  ]
+}
+
 // Initialize Blockly workspace
 var workspace = Blockly.inject('blocklyDiv', {
-  toolbox: document.getElementById('toolbox'),
-  move:{
+  //toolbox: document.getElementById('toolbox'),
+  toolbox: toolbox,
+  move: {
     scrollbars: {
       horizontal: true,
       vertical: true
     },
     drag: true,
-    wheel: false},
+    wheel: false
+  },
   zoom: {
     controls: true,
     wheel: true,
