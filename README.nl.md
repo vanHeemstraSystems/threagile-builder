@@ -20,7 +20,7 @@ threagile-bouwer
 
 Uw code op uw eigen systeem operationeel krijgen.
 
-**Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
+**Opmerking**: Make sure you fulfill the [vereisten](./200/README.md).
 
 1.  Installatieproces:
     ```bash
