@@ -12,7 +12,7 @@ Threagile-Builder
 
 > A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagil](https://threagile.io)YAML-Dateien
 
--   [Glossary](./GLOSSARY.md)
+-   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 
@@ -20,7 +20,7 @@ Threagile-Builder
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
-**Notiz**: Make sure you fulfill the [Anforderungen](./200/README.md).
+**Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
 1.  Installationsprozess:
     ```bash
@@ -123,7 +123,7 @@ pip install threagile-builder
 -   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build-Hook-Plugin, mit dem zunächst der gesamte Code kompiliert werden soll[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Der GitHub-Workflow zeigt, wie Sie:
     -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)binäre Räder für jede Plattform zu verteilen
-    -   use the [App](https://hatch.pypa.io/latest/plugins/builder/app/)build target zum Erstellen eigenständiger Distributionen für jede Plattform
+    -   Benutze die[App](https://hatch.pypa.io/latest/plugins/builder/app/)build target zum Erstellen eigenständiger Distributionen für jede Plattform
 
 ## Lizenz
 
