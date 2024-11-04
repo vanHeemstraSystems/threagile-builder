@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 12.x
+          node-version: 16.x
       # ISO Language Codes: https://cloud.google.com/translate/docs/languages  
       - name: Adding DOCUMENTATION - Chinese Simplified
         uses: vanHeemstraSystems/translate-documentation@main
