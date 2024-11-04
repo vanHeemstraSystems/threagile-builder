@@ -18,9 +18,15 @@ Blockly.Blocks['Threat Model'] = {
       .appendField('Data Assets')
     this.appendValueInput('INPUT')
       .setCheck('Technical Components')
-      .appendField('Technical Components')      
-    this.setColour(160)
-    this.setTooltip('This block accepts Data Assets, Technical Components.')
+      .appendField('Technical Components')    
+    this.appendValueInput('INPUT')
+      .setCheck('Communication Links')
+      .appendField('Communication Links')         
+    this.appendValueInput('INPUT')
+      .setCheck('Trust Boundaries')
+      .appendField('Trust Boundaries') 
+      this.setColour(160)
+    this.setTooltip('This block accepts Data Assets, Technical Components, Communication Links, and Trust Boundaries.')
     this.setHelpUrl('')
   }
 }
@@ -43,6 +49,28 @@ Blockly.Blocks['Technical Components'] = {
     this.setOutput(true, 'Technical Components')
     this.setColour(230)
     this.setTooltip('This block represents Technical Components.')
+    this.setHelpUrl('')
+  }
+}
+
+// Define a Communication Links block
+Blockly.Blocks['Communication Links'] = {
+  init: function () {
+    this.appendDummyInput().appendField('Communication Links')
+    this.setOutput(true, 'Communication Links')
+    this.setColour(230)
+    this.setTooltip('This block represents Communication Links.')
+    this.setHelpUrl('')
+  }
+}
+
+// Define a Trust Boundaries block
+Blockly.Blocks['Trust Boundaries'] = {
+  init: function () {
+    this.appendDummyInput().appendField('Trust Boundaries')
+    this.setOutput(true, 'Trust Boundaries')
+    this.setColour(230)
+    this.setTooltip('This block represents Trust Boundaries.')
     this.setHelpUrl('')
   }
 }
@@ -101,14 +129,6 @@ var toolbox = {
       kind: 'block',
       type: 'Threat Model'
     },
-    // {
-    //   kind: 'block',
-    //   type: 'input_block'
-    // },
-    // {
-    //   kind: 'block',
-    //   type: 'number_block'
-    // },
     {
       kind: 'block',
       type: 'Data Assets'
@@ -116,42 +136,14 @@ var toolbox = {
     {
       kind: 'block',
       type: 'Technical Components'
-    },    
+    },   
     {
       kind: 'block',
-      type: 'Banana'
+      type: 'Communication Links'
     },
     {
       kind: 'block',
-      type: 'Chocolate'
-    },
-    {
-      kind: 'block',
-      type: 'Dumpling'
-    },
-    {
-      kind: 'block',
-      type: 'Elderberry'
-    },
-    {
-      kind: 'block',
-      type: 'Fig'
-    },
-    {
-      kind: 'block',
-      type: 'Grapefruit'
-    },
-    {
-      kind: 'block',
-      type: 'Huckleberries'
-    },
-    {
-      kind: 'block',
-      type: 'Icecream'
-    },
-    {
-      kind: 'block',
-      type: 'Jackfruit'
+      type: 'Trust Boundaries'
     }
   ]
 }
