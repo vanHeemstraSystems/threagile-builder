@@ -9,6 +9,31 @@ Blockly.Blocks['ThreagileBuilder'] = {
   }
 }
 
+// Define a block that accepts an input block
+Blockly.Blocks['input_block'] = {
+    init: function() {
+        this.appendValueInput("INPUT")
+          .setCheck("Number")
+          .appendField("Input Block with");
+        this.setColour(160);
+        this.setTooltip("This block accepts a number input.");
+        this.setHelpUrl("");
+    }
+};
+
+// Define a simple number block
+Blockly.Blocks['number_block'] = {
+    init: function() {
+        this.appendDummyInput()
+           .appendField("Number");
+        this.setOutput(true, "Number");
+        this.setColour(230);
+        this.setTooltip("This block represents a number.");
+        this.setHelpUrl("");
+    }
+};
+
+
 // Define Data Assets block
 Blockly.Blocks['Data Assets'] = {
   init: function () {
@@ -62,6 +87,14 @@ var toolbox = {
     {
       kind: 'block',
       type: 'ThreagileBuilder'
+    },
+    {
+      kind: 'block',
+      type: 'input_block'
+    },
+    {
+      kind: 'block',
+      type: 'number_block
     },
     {
       kind: 'block',
