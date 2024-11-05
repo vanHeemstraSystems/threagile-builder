@@ -135,3 +135,20 @@ document.getElementById('runBuild').onclick = function () {
       )
     })
 }
+
+document.getElementById('executeCode').onclick = function () {
+    const code = Blockly.JavaScript.workspaceToCode(workspace);
+    document.getElementById('code').value = code;
+    fetch('/execute-code', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ code: code})
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        alert(JSON.stringify(data));
+    });
+}
