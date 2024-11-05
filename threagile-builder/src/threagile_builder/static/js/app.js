@@ -183,6 +183,7 @@ document.getElementById('executeCode').onclick = function () {
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        alert(JSON.stringify(data));
+        alert("See console.log"); // For testing only!
+        // alert(JSON.stringify(data)); // Throws ReferenceError: window is not defined
     });
 }
