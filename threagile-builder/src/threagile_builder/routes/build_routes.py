@@ -1,4 +1,5 @@
 # threagile-builder/src/threagile_builder/routes/build_routes.py
+import execjs
 import json
 import logging
 from apiflask import APIBlueprint
@@ -68,3 +69,17 @@ def run_build():
     except Exception as e:
         logging.error(f"Error occurred while running the workflow: {e}")
         return {"error": "An error occurred while processing your request."}, 500
+
+# Execute Code Workflow
+@build_bp.route("/execute-code", methods=["POST"])
+def execute_code():
+    logging.info("Received request to run the Build's execute code workflow.")
+    try:
+        code = request.json.get('code')
+        # Execute the code using execjs (support for Javascript execution)
+        context = execjs.compile(code)
+        result = context.call('main') # Assuming main is the entry function
+        return jsonify({"result": result}), 200
+    except Exception as e:
+        logging.error(e)
+        return {"error": "An error occured while processing your request."}    
