@@ -78,6 +78,7 @@ def execute_code():
         code = request.json.get('code')
         # Execute the code using execjs (support for Javascript execution)
         context = execjs.compile(code)
+        print("code: ", code) # For testing purposes only! NOW DO SOMETHING WITH THIS code IN YOUR FLOWS !
         result = context.call('main') # Assuming main is the entry function
         return jsonify({"result": result}), 200
     except Exception as e:
