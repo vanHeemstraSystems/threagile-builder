@@ -60,10 +60,11 @@ def run_build():
     logging.info("Received request to run the Build's workflow.")
     try:
         data = json.loads(request.data)
-        logging.debug(f"Workflow data: {data}")
-        result = build_workflow()
-        logging.info("Build's workflow executed successfully.")
-        return result, 200
+        yaml_result = build_workflow()
+        print(f"yaml_result: ", {yaml_result})
+        json_result = json.dumps(yaml_result) # json.dump() needs a file, json.dumps() does not
+        print(f"json_result: ", {json_result})
+        return json_result, 200
     except Exception as e:
         logging.error(f"Error occurred while running the workflow: {e}")
         return {"error": "An error occurred while processing your request."}, 500
