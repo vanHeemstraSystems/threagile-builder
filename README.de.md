@@ -41,7 +41,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  Softwareabhängigkeiten
-3.  Latest releases
+3.  Neueste Veröffentlichungen
 4.  API-Referenzen
 5.  Erstellen und testen:
 
@@ -52,7 +52,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch build
     ```
 
-    Um die Anwendung auszuführen, verwenden Sie:
+    To run the application, use:
 
     Linux:
 
@@ -94,7 +94,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 
 **_NEU_**
 
-**Table of Contents**
+**Inhaltsverzeichnis**
 
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)
@@ -133,7 +133,7 @@ pip install threagile-builder
 
 Sehen[README.md](./100/README.md)
 
-## 200 – Anforderungen
+## 200 - Requirements
 
 Sehen[README.md](./200/README.md)
 
