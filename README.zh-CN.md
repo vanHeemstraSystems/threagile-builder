@@ -99,7 +99,7 @@
 -   [安装](#installation)
 -   [版本来源](#version-source)
 -   [环境](#environments)
--   [Build](#build)
+-   [建造](#build)
 -   [执照](#license)
 
 ## 安装
@@ -115,7 +115,7 @@ pip install threagile-builder
 ## 环境
 
 -   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   The `test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
+-   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers) plugin to run each environment inside Docker containers; usage can be seen in the [测试](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
 
