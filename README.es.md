@@ -10,7 +10,7 @@ constructor-threagil
 
 * * *
 
-> A[basado en bloques](https://developers.google.com/blockly) no-code web application to create [amenazante](https://threagile.io)Archivos YAML
+> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
 
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
@@ -20,7 +20,7 @@ constructor-threagil
 
 Cómo poner en marcha su código en su propio sistema.
 
-**Nota**: Asegúrese de cumplir con los[requirements](./200/README.md).
+**Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
 1.  Proceso de instalación:
     ```bash
@@ -74,7 +74,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
+    Then, navigate to `http://127.0.0.1:5000/`en su navegador web.
 
     Para ejecutar pruebas, utilice:
 
@@ -102,7 +102,7 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
 -   [Construir](#build)
 -   [Licencia](#license)
 
-## Installation
+## Instalación
 
 ```console
 pip install threagile-builder
