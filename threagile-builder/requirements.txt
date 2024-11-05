@@ -11,5 +11,6 @@ opentelemetry-instrumentation-sqlalchemy==0.48b0
 opentelemetry-exporter-prometheus==0.48b0
 prefect==2.20.10
 prometheus_client==0.15.0
+PyExecJS==1.0.3
 python-dotenv==1.0.1
 pyyaml==6.0.2
