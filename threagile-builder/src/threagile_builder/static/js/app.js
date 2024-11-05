@@ -89,6 +89,40 @@ var toolbox = {
     {
       kind: 'block',
       type: 'Trust Boundaries'
+    },
+    {
+        kind: 'block',
+        type: 'procedures_defnoreturn',
+        fields: {
+            "NAME": "main"
+        },
+        statement: {
+            "name": "STACK",
+            "contents": [
+                {
+                    kind: 'block',
+                    type: 'text_print',
+                    value: {
+                        kind: 'block',
+                        type: 'text',
+                        fields: {
+                            "TEXT": "Hello from main!"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    {
+        kind: 'block',
+        type: 'text',
+        fields: {
+            "TEXT": "Sample Text"
+        }
+    },
+    {
+        kind: 'block',
+        type: 'text_print'
     }
   ]
 }
