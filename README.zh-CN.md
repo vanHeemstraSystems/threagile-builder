@@ -90,7 +90,7 @@
 
 # 指标
 
-让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
+让像 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
@@ -123,11 +123,11 @@ pip install threagile-builder
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
-    -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
+    -   use the [应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
 ## 执照
 
-`threagile-builder`是根据以下条款分发的[和](https://spdx.org/licenses/MIT.html)执照。
+`threagile-builder`是根据以下条款分发的[MIT](https://spdx.org/licenses/MIT.html)执照。
 
 ## 100 - 简介
 
