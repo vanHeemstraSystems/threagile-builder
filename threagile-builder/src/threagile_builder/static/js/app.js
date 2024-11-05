@@ -1,15 +1,4 @@
-// // Define the parent block "Threagile Builder"
-// Blockly.Blocks['ThreagileBuilder'] = {
-//   init: function () {
-//     this.appendDummyInput().appendField('Threat Model')
-//     this.appendStatementInput('ENTRIES').setCheck(null)
-//     this.setColour(230)
-//     this.setTooltip("The Threagile Build's entries.")
-//     this.setHelpUrl('')
-//   }
-// }
-
-// Define a block that accepts a Data Assets block
+// Define a parent block that accepts a other blocks
 Blockly.Blocks['Threat Model'] = {
   init: function () {
     this.appendDummyInput().appendField('Threat Model')
@@ -76,52 +65,6 @@ Blockly.Blocks['Trust Boundaries'] = {
     this.setHelpUrl('')
   }
 }
-
-// // Define Data Assets block
-// Blockly.Blocks['Data Assets'] = {
-//   init: function () {
-//     this.jsonInit({
-//       message0: 'Data Assets %1',
-//       args0: [
-//         {
-//           type: 'input_value',
-//           name: 'VALUE',
-//           check: 'String'
-//         }
-//       ],
-//       output: 'Number',
-//       colour: 160,
-//       tooltip: 'Data Assets',
-//       helpUrl: 'http://www.w3schools.com/jsref/jsref_length_string.asp'
-//     })
-//   }
-// }
-
-// Define the entries as input blocks
-const entries = [
-  // { name: 'Apple', tooltip: 'Apple', color: 160, output: null },
-  { name: 'Banana', tooltip: 'Banana' },
-  { name: 'Chocolate', tooltip: 'Chocolate' },
-  { name: 'Dumpling', tooltip: 'Dumpling' },
-  { name: 'Elderberry', tooltip: 'Elderberry' },
-  { name: 'Fig', tooltip: 'Fig' },
-  { name: 'Grapefruit', tooltip: 'Grapefruit' },
-  { name: 'Huckleberries', tooltip: 'Huckleberries' },
-  { name: 'Icecream', tooltip: 'Icecream' },
-  { name: 'Jackfruit', tooltip: 'Jackfruit' }
-]
-
-// Create each entry block
-entries.forEach(entry => {
-  Blockly.Blocks[entry.name.replace(/\s+/g, '')] = {
-    init: function () {
-      this.appendDummyInput().appendField(entry.name)
-      this.setColour(160)
-      this.setTooltip(entry.tooltip)
-      this.setHelpUrl('')
-    }
-  }
-})
 
 // Initialize Blockly toolbox
 var toolbox = {
