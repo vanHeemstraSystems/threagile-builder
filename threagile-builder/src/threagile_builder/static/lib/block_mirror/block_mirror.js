@@ -161,7 +161,16 @@ BlockMirror.prototype.initializeVariables = function () {
 
 BlockMirror.prototype.loadSkulpt = function () {
   console.debug('BlockMirror.loadSkulpt');
-  // MORE
+  Sk.configure({
+      __future__: Sk.python3,
+      read: function (filename) {
+          if (Sk.builtinFiles === undefined ||
+              Sk.builtinFiles["files"][filename] === undefined) {
+              throw "File not found: '" + filename + "'";
+          }
+          return Sk.builtinFiles["files"][filename];
+      }
+  });
 };
 
 BlockMirror.prototype.removeAllChangeListeners = function () {
