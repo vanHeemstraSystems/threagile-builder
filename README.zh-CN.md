@@ -10,7 +10,7 @@
 
 * * *
 
-> 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
+> 一个[基于块的](https://developers.google.com/blockly) no-code web application to create [威胁性的](https://threagile.io)YAML 文件
 
 -   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
@@ -99,7 +99,7 @@
 -   [安装](#installation)
 -   [版本来源](#version-source)
 -   [环境](#environments)
--   [建造](#build)
+-   [Build](#build)
 -   [执照](#license)
 
 ## 安装
@@ -119,7 +119,7 @@ pip install threagile-builder
 
 ## 建造
 
--   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
+-   所有构建目标都使用[hatch-vcs](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
 -   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
@@ -143,4 +143,4 @@ pip install threagile-builder
 
 ## 400 - 结论
 
-看[README.md](./400/README.md)
+See [README.md](./400/README.md)
