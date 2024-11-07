@@ -52,7 +52,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch build
     ```
 
-    To run the application, use:
+    Pour exécuter l'application, utilisez :
 
     Linux :
 
@@ -74,7 +74,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`dans votre navigateur Internet.
+    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
 
     Pour exécuter des tests, utilisez :
 
@@ -92,7 +92,7 @@ Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou télécharg
 
 Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 
-**_ NEW _**
+**_NOUVEAU_**
 
 **Table des matières**
 
@@ -117,7 +117,7 @@ pip install threagile-builder
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
-## Build
+## Construire
 
 -   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
 -   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
@@ -137,7 +137,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Construire notre application
+## 300 - Créer notre application
 
 Voir[README.md](./300/README.md)
 
