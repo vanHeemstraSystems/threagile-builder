@@ -150,40 +150,40 @@ var workspace = Blockly.inject('blocklyDiv', {
   trashcan: true
 })
 
-document.getElementById('runBuild').onclick = function () {
-  const xml = Blockly.Xml.workspaceToDom(workspace)
-  const code = Blockly.Xml.domToText(xml)
-  fetch('/run-build', {
-    method: 'POST',
-    body: JSON.stringify({ code: code }),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('result').innerText = JSON.stringify(
-        data,
-        null,
-        2
-      )
-    })
-}
+// document.getElementById('runBuild').onclick = function () {
+//   const xml = Blockly.Xml.workspaceToDom(workspace)
+//   const code = Blockly.Xml.domToText(xml)
+//   fetch('/run-build', {
+//     method: 'POST',
+//     body: JSON.stringify({ code: code }),
+//     headers: {
+//       'Content-Type': 'application/json'
+//     }
+//   })
+//     .then(response => response.json())
+//     .then(data => {
+//       document.getElementById('result').innerText = JSON.stringify(
+//         data,
+//         null,
+//         2
+//       )
+//     })
+// }
 
-document.getElementById('executeCode').onclick = function () {
-    const code = Blockly.JavaScript.workspaceToCode(workspace);
-    document.getElementById('code').value = code;
-    fetch('/execute-code', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ code: code})
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        alert("See console.log"); // For testing only!
-        // alert(JSON.stringify(data)); // Throws ReferenceError: window is not defined
-    });
-}
+// document.getElementById('executeCode').onclick = function () {
+//     const code = Blockly.JavaScript.workspaceToCode(workspace);
+//     document.getElementById('code').value = code;
+//     fetch('/execute-code', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({ code: code})
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log(data);
+//         alert("See console.log"); // For testing only!
+//         // alert(JSON.stringify(data)); // Throws ReferenceError: window is not defined
+//     });
+// }

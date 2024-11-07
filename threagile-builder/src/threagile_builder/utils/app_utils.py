@@ -57,8 +57,8 @@ def create_app(config=Config):
     db.init_app(app)
 
     # Register blueprints
-    app.register_blueprint(main_bp)
-    app.register_blueprint(build_bp)
+    app.register_blueprint(main_bp, url_prefix='/')
+    app.register_blueprint(build_bp, url_prefix='/builds')
 
     # Define metrics
     request_count = meter.create_counter(
