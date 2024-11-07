@@ -52,7 +52,7 @@
     $ hatch build
     ```
 
-    To run the application, use:
+    要运行该应用程序，请使用：
 
     Linux：
 
@@ -108,7 +108,7 @@
 pip install threagile-builder
 ```
 
-## 版本来源
+## Version source
 
 -   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 
