@@ -43,7 +43,7 @@
 2.  軟體依賴性
 3.  最新版本
 4.  API參考
-5.  Build and Test:
+5.  建置和測試：
 
     要建立您的程式碼，請使用：
 
@@ -123,7 +123,7 @@ pip install threagile-builder
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
-    -   use the [應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
+    -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
 
 ## 執照
 
