@@ -12,7 +12,7 @@
 
 > 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
 
--   [Glossary](./GLOSSARY.md)
+-   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 
@@ -86,7 +86,7 @@
 
 # API文档
 
-导航至`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
+导航至`http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
 
 # 指标
 
@@ -141,6 +141,6 @@ pip install threagile-builder
 
 看[README.md](./300/README.md)
 
-## 400 - Conclusion
+## 400 - 结论
 
 看[README.md](./400/README.md)
