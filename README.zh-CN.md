@@ -1,4 +1,4 @@
-threagile-builder
+威胁建造者
 
 # 威胁建造者
 
@@ -66,7 +66,7 @@ threagile-builder
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    然后：
 
     ```bash
     $ cd threagile-builder
@@ -102,7 +102,7 @@ threagile-builder
 -   [建造](#build)
 -   [执照](#license)
 
-## Installation
+## 安装
 
 ```console
 pip install threagile-builder
