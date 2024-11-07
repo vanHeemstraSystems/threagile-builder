@@ -33,7 +33,54 @@
             {% endfor %}
         </ul>
 
-        <div id="blocklyDiv" class="border border-gray-300 mb-4" style="height: 480px; width: 600px;"></div>
+        <div style="width:900px; margin:0 auto;" id="example-frame">
+
+            <div class="btn-group" data-toggle="buttons" data-bind="visible: !assignment.upload()">
+                <label onclick="editor.setMode('block');">
+                    <input type="radio" name="blockpy-mode-set" autocomplete="off"> Blocks
+                </label>
+                <label onclick="editor.setMode('split');">
+                    <input type="radio" name="blockpy-mode-set" autocomplete="off" checked=""> Split
+                </label>
+                <label onclick="editor.setMode('text');">
+                    <input type="radio" name="blockpy-mode-set" autocomplete="off"> Text
+                </label>
+            </div>
+        
+            <div class="btn-group" data-toggle="buttons" style="display: inline-block">
+                <label>
+                    <input type="checkbox" name="blockpy-mode-set" checked="" onclick="editor.setImageMode(!editor.configuration.imageMode);">
+                    Image Mode
+                </label>
+            </div>
+        
+        
+            <div id="blockmirror-editor">
+                <div style="box-sizing: border-box;"></div>
+                <div style="box-sizing: border-box; float: left; width: 60%; height: 500px;">
+                    <div style="box-sizing: border-box; position: absolute; width: 540px; height: 500px;">
+                        <div class="injectionDiv geras-renderer classic-theme" tabindex="0" aria-label="Blockly Workspace" dir="LTR">
+                            <div class="blocklyToolboxDiv blocklyNonSelectable" dir="LTR" style="left: 0px; height: 500px; display: block;">
+                                <div role="tree" aria-selected="false" aria-level="0" aria-labelledby="blockly:0.label" aria-expanded="false" class="blocklyTreeRoot" hidefocus="true" tabindex="0" aria-activedescendant="blockly:1">
+                                    <div id="blockly:0" role="group">
+                                        <div class="blocklyTreeRow blocklyHidden" id="blockly:0.label" role="presentation" style="padding-left: 0px;">
+                                            <span class="" style="display: inline-block;"></span>
+                                            <span class="blocklyTreeLabel"></span>
+                                        </div>
+                                        <div style="background-position: -100px 0px;">
+                                           <!-- MORE -->
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>                 
+                    </div>            
+                </div>                
+            </div><!-- blockmirror-editor -->
+
+        <div id="blocklyDiv" class="border border-gray-300 mb-4" style="height: 480px; width: 600px;"></div>  
+        <textarea id="code" placeholder="Generated code will appear here..."></textarea>
+        <button id="executeCode" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Execute Code</button>
         <button id="runBuild" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Run Build</button>
         <pre id="result" class="mt-4 p-2 border border-gray-300 bg-white"></pre>
     </div>
