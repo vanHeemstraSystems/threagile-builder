@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<span class="title">
+    <h1>{% block title %} Builds {% endblock %}</h1>
+</span>
+<div class="content">
+    <a href="{{ url_for('build.new_build') }}">Create New Build</a>
+    <ul>
+        {% for build in builds %}
+        <li>
+            {{ build.title }}
+            <a href="{{ url_for('build.edit_build', build_id=build.id) }}">Edit</a>
+            <form action="{{ url_for('build.delete_build', build_id=build.id) }}" method="POST" style="display:inline;">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
