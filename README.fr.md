@@ -52,7 +52,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch build
     ```
 
-    To run the application, use:
+    Pour exécuter l'application, utilisez :
 
     Linux :
 
