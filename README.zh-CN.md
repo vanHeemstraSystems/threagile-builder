@@ -20,7 +20,7 @@
 
 在您自己的系统上启动并运行您的代码。
 
-**笔记**: 确保您满足[要求](./200/README.md).
+**笔记**: 确保您满足[requirements](./200/README.md).
 
 1.  安装过程：
     ```bash
@@ -125,7 +125,7 @@ pip install threagile-builder
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
     -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
-## 执照
+## License
 
 `threagile-builder`是根据以下条款分发的[和](https://spdx.org/licenses/MIT.html)执照。
 
