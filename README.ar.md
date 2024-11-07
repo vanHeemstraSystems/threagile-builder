@@ -99,7 +99,7 @@
 -   [تثبيت](#installation)
 -   [مصدر النسخة](#version-source)
 -   [البيئات](#environments)
--   [Build](#build)
+-   [يبني](#build)
 -   [رخصة](#license)
 
 ## تثبيت
@@ -123,11 +123,11 @@ pip install threagile-builder
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
-    -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/) build target to build standalone distributions for every platform
+    -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
 
 ## رخصة
 
-`threagile-builder` is distributed under the terms of the [مع](https://spdx.org/licenses/MIT.html)رخصة.
+`threagile-builder`يتم توزيعها بموجب شروط[مع](https://spdx.org/licenses/MIT.html)رخصة.
 
 ## 100- مقدمة
 
