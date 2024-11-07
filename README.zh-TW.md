@@ -20,7 +20,7 @@
 
 在您自己的系統上啟動並運行您的程式碼。
 
-**筆記**: Make sure you fulfill the [要求](./200/README.md).
+**筆記**: 確保您滿足[要求](./200/README.md).
 
 1.  安裝過程：
     ```bash
@@ -41,7 +41,7 @@
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  軟體依賴性
-3.  Latest releases
+3.  最新版本
 4.  API參考
 5.  建置和測試：
 
@@ -117,11 +117,11 @@ pip install threagile-builder
 -   整齊地定義在一個獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
 
-## Build
+## 建造
 
 -   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
--   這[build](.github/workflows/build.yml)GitHub 工作流程展示如何：
+-   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
     -   使用[應用程式](https://hatch.pypa.io/latest/plugins/builder/app/)建構目標為每個平台建立獨立發行版
 
