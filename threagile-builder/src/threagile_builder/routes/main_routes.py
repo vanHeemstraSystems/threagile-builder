@@ -1,4 +1,4 @@
-# threagile-builder/scr/threagile_builder/routes/main_routes
+# threagile-builder/src/threagile_builder/routes/main_routes.py
 import logging
 from apiflask import APIBlueprint
 from flask import render_template, redirect, url_for, flash
