@@ -16,7 +16,7 @@ threagile-bouwer
 -   [Referenties](./REFERENCES.md)
 -   [Documentatie](./DOCUMENTATION.md)
 
-**Samenvatting**
+**Executive Summary**
 
 Uw code op uw eigen systeem operationeel krijgen.
 
@@ -42,7 +42,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     ```
 2.  Software-afhankelijkheden
 3.  Nieuwste releases
-4.  API references
+4.  API-referenties
 5.  Bouwen en testen:
 
     Om uw code samen te stellen, gebruikt u:
