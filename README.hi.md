@@ -18,7 +18,7 @@ thregile-बिल्डर
 
 **कार्यकारी सारांश**
 
-Getting your code up and running on your own system.
+अपना कोड तैयार करना और अपने सिस्टम पर चलाना।
 
 **टिप्पणी**: सुनिश्चित करें कि आप इसे पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
@@ -40,8 +40,8 @@ Getting your code up and running on your own system.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
-2.  Software dependencies
-3.  Latest releases
+2.  सॉफ़्टवेयर निर्भरताएँ
+3.  नवीनतम रिलीज़
 4.  एपीआई संदर्भ
 5.  निर्माण और परीक्षण:
 
@@ -94,7 +94,7 @@ Getting your code up and running on your own system.
 
 **_नया_**
 
-**Table of Contents**
+**विषयसूची**
 
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
