@@ -16,7 +16,7 @@ thregile-बिल्डर
 -   [संदर्भ](./REFERENCES.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 
-**कार्यकारी सारांश**
+**Executive Summary**
 
 अपना कोड तैयार करना और अपने सिस्टम पर चलाना।
 
@@ -94,7 +94,7 @@ thregile-बिल्डर
 
 **_नया_**
 
-**विषयसूची**
+**Table of Contents**
 
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
@@ -115,19 +115,19 @@ pip install threagile-builder
 ## वातावरण
 
 -   एक स्टैंडअलोन में बड़े करीने से परिभाषित किया गया[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   `test`मैट्रिक्स का उपयोग करता है[हैच-कंटेनर](https://github.com/ofek/hatch-containers)डॉकर कंटेनर के अंदर प्रत्येक वातावरण को चलाने के लिए प्लगइन; उपयोग में देखा जा सकता है[परीक्षा](.github/workflows/test.yml)GitHub वर्कफ़्लो
+-   `test` matrix uses the [हैच-कंटेनर](https://github.com/ofek/hatch-containers)डॉकर कंटेनर के अंदर प्रत्येक वातावरण को चलाने के लिए प्लगइन; उपयोग में देखा जा सकता है[परीक्षा](.github/workflows/test.yml)GitHub वर्कफ़्लो
 
 ## निर्माण
 
 -   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)शिप करने के लिए हुक प्लगइन बनाएं`_version.py`फ़ाइल करें ताकि संस्करण का उपयोग रनटाइम पर किया जा सके
--   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
+-   पहिये का उपयोग करते हैं[hatch-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे करें:
-    -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
+    -   use [सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
     -   उपयोग[अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)प्रत्येक प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण बनाने का लक्ष्य बनाएं
 
 ## लाइसेंस
 
-`threagile-builder`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html) license.
+`threagile-builder`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
 
 ## 100 - परिचय
 
