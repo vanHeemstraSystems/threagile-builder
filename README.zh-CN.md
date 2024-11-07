@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## 版本来源
 
--   The [孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
+-   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 
 ## 环境
 
