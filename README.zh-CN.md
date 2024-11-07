@@ -52,7 +52,7 @@
     $ hatch build
     ```
 
-    To run the application, use:
+    要运行该应用程序，请使用：
 
     Linux：
 
