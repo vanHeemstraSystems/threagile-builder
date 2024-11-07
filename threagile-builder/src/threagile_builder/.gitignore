@@ -32,7 +32,7 @@ migrations/
 *.log
 
 # node modules
-app/node_modules
+node_modules
 
 # Coverage reports
 .coverage
