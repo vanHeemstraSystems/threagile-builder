@@ -16,7 +16,7 @@ threagile-bouwer
 -   [Referenties](./REFERENCES.md)
 -   [Documentatie](./DOCUMENTATION.md)
 
-**Executive Summary**
+**Samenvatting**
 
 Uw code op uw eigen systeem operationeel krijgen.
 
