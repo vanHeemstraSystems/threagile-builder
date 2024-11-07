@@ -74,7 +74,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`en su navegador web.
+    Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
 
     Para ejecutar pruebas, utilice:
 
