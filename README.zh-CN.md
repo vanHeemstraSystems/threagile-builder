@@ -10,7 +10,7 @@
 
 * * *
 
-> 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[threagile](https://threagile.io)YAML 文件
+> 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
 
 -   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## 执照
 
-`threagile-builder`是根据以下条款分发的[MIT](https://spdx.org/licenses/MIT.html)执照。
+`threagile-builder`是根据以下条款分发的[和](https://spdx.org/licenses/MIT.html)执照。
 
 ## 100 - 简介
 
@@ -143,4 +143,4 @@ pip install threagile-builder
 
 ## 400 - 结论
 
-See [README.md](./400/README.md)
+看[README.md](./400/README.md)
