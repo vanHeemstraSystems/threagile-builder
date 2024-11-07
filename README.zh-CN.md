@@ -20,7 +20,7 @@
 
 在您自己的系统上启动并运行您的代码。
 
-**笔记**: 确保您满足[要求](./200/README.md).
+**注意事项**: 确保您满足[要求](./200/README.md).
 
 1.  安装过程：
     ```bash
@@ -86,7 +86,7 @@
 
 # API文档
 
-导航至`http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
+导航至`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
 
 # 指标
 
@@ -121,7 +121,7 @@ pip install threagile-builder
 
 -   所有构建目标都使用[孵化VCS](https://github.com/ofek/hatch-vcs)构建钩子插件来发送`_version.py`文件，以便可以在运行时使用该版本
 -   轮子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)构建钩子插件以首先编译所有代码[Mypyc](https://github.com/mypyc/mypyc)
--   这[建造](.github/workflows/build.yml)GitHub 工作流程展示了如何：
+-   这[build](.github/workflows/build.yml)GitHub 工作流程展示了如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)为每个平台分发二进制轮子
     -   使用[应用程序](https://hatch.pypa.io/latest/plugins/builder/app/)构建目标为每个平台构建独立发行版
 
@@ -131,7 +131,7 @@ pip install threagile-builder
 
 ## 100 - 简介
 
-看[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - 要求
 
@@ -143,4 +143,4 @@ pip install threagile-builder
 
 ## 400 - 结论
 
-看[README.md](./400/README.md)
+See [README.md](./400/README.md)
