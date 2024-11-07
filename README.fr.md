@@ -90,7 +90,7 @@ Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou télécharg
 
 # Métrique
 
-Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
+Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 
 **_NOUVEAU_**
 
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## Source de la version
 
--   Le[hatch-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
+-   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
 
 ## Environnements
 
@@ -137,7 +137,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Construire notre application
+## 300 - Créer notre application
 
 Voir[README.md](./300/README.md)
 
