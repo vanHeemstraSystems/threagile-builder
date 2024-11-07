@@ -45,7 +45,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 4.  Références API
 5.  Construire et tester :
 
-    Pour construire votre code, utilisez :
+    To build your code, use:
 
     ```bash
     $ cd threagile-builder
@@ -74,7 +74,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
+    Then, navigate to `http://127.0.0.1:5000/`dans votre navigateur Internet.
 
     Pour exécuter des tests, utilisez :
 
