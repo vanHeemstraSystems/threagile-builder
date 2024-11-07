@@ -20,7 +20,7 @@
 
 الحصول على التعليمات البرمجية الخاصة بك وتشغيلها على النظام الخاص بك.
 
-**ملحوظة**: تأكد من الوفاء[متطلبات](./200/README.md).
+**ملحوظة**: تأكد من الوفاء[requirements](./200/README.md).
 
 1.  عملية التثبيت:
     ```bash
@@ -45,7 +45,7 @@
 4.  مراجع واجهة برمجة التطبيقات
 5.  البناء والاختبار:
 
-    لبناء الكود الخاص بك، استخدم:
+    To build your code, use:
 
     ```bash
     $ cd threagile-builder
@@ -115,11 +115,11 @@ pip install threagile-builder
 ## البيئات
 
 -   تم تعريفها بدقة في قائمة بذاتها[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
+-   ال`test` matrix uses the [حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
 
 ## يبني
 
--   جميع أهداف البناء تستخدم[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py` file so the version can be used at runtime
+-   جميع أهداف البناء تستخدم[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
