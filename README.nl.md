@@ -13,7 +13,7 @@ threagile-bouwer
 > A[op blokken gebaseerd](https://developers.google.com/blockly)no-code webapplicatie om te maken[ragiel](https://threagile.io)YAML-bestanden
 
 -   [Glossarium](./GLOSSARY.md)
--   [Referenties](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [Documentatie](./DOCUMENTATION.md)
 
 **Samenvatting**
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
@@ -125,7 +125,7 @@ pip install threagile-builder
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
-## Licentie
+## License
 
 `threagile-builder`wordt verspreid onder de voorwaarden van de[MET](https://spdx.org/licenses/MIT.html)licentie.
 
