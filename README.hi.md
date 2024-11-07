@@ -84,7 +84,7 @@ thregile-बिल्डर
     $ pytest tests/
     ```
 
-# API Documentation
+# एपीआई दस्तावेज़ीकरण
 
 पर नेविगेट करें`http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
 
@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## लाइसेंस
 
-`threagile-builder` is distributed under the terms of the [साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
+`threagile-builder`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
 
 ## 100 - परिचय
 
