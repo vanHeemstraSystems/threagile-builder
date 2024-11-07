@@ -44,7 +44,7 @@ def update_build(id):
     build.title = data["title"]
     db.session.commit()
     return jsonify({"id": build.id, "title": build.title}), 200
-  
+
 
 # Delete a Build by ID
 @build_bp.route("/builds/<int:id>", methods=["DELETE"])
@@ -52,10 +52,23 @@ def delete_build(id):
     build = Build.query.get_or_404(id)
     db.session.delete(build)
     db.session.commit()
-    flash("Build deleted successfully!", "success")
     return jsonify({"message": "Build deleted successfully."}), 204
 
-# Run Build Workflow
+
+# Edit a Build
+@build_bp.route("/builds/<int:id>/edit", methods=["GET", "POST"])
+def edit_build(id):
+    build = Build.query.get_or_404(id)
+    form = BuildForm(obj=build)
+    if form.validate_on_submit():
+        build.title = form.title.data
+        db.session.commit()
+        flash("Build updated successfully!", "success")
+        return redirect(url_for("build.get_builds"))
+    return render_template("build/edit_build.html", form=form, build=build)
+
+
+# Run a Build
 @build_bp.route("/run-build", methods=["POST"])
 def run_build():
     logging.info("Received request to run the Build's workflow.")
@@ -70,7 +83,8 @@ def run_build():
         logging.error(f"Error occurred while running the workflow: {e}")
         return {"error": "An error occurred while processing your request."}, 500
 
-# Execute Code Workflow
+
+# Execute Code
 @build_bp.route("/execute-code", methods=["POST"])
 def execute_code():
     logging.info("Received request to run the Build's execute code workflow.")
@@ -84,3 +98,4 @@ def execute_code():
     except Exception as e:
         logging.error(e)
         return {"error": "An error occured while processing your request."}    
+
