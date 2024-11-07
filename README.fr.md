@@ -45,7 +45,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 4.  Références API
 5.  Construire et tester :
 
-    To build your code, use:
+    Pour construire votre code, utilisez :
 
     ```bash
     $ cd threagile-builder
@@ -74,7 +74,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`dans votre navigateur Internet.
+    Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
 
     Pour exécuter des tests, utilisez :
 
@@ -108,7 +108,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 pip install threagile-builder
 ```
 
-## Source de la version
+## Version source
 
 -   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
 
