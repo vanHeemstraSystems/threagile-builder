@@ -10,7 +10,7 @@
 
 * * *
 
-> أ[على أساس الكتلة](https://developers.google.com/blockly)تطبيق ويب بدون كود للإنشاء[ثريجيل](https://threagile.io)ملفات YAML
+> أ[على أساس الكتلة](https://developers.google.com/blockly) no-code web application to create [ثريجيل](https://threagile.io)ملفات YAML
 
 -   [مسرد](./GLOSSARY.md)
 -   [مراجع](./REFERENCES.md)
@@ -43,7 +43,7 @@
 2.  تبعيات البرمجيات
 3.  أحدث الإصدارات
 4.  مراجع واجهة برمجة التطبيقات
-5.  البناء والاختبار:
+5.  Build and Test:
 
     لبناء الكود الخاص بك، استخدم:
 
@@ -120,14 +120,14 @@ pip install threagile-builder
 ## يبني
 
 -   جميع أهداف البناء تستخدم[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
--   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
--   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
+-   Wheels use the [Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
+-   ال[build](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
     -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
     -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
 
 ## رخصة
 
-`threagile-builder`يتم توزيعها بموجب شروط[مع](https://spdx.org/licenses/MIT.html)رخصة.
+`threagile-builder`يتم توزيعها بموجب شروط[MIT](https://spdx.org/licenses/MIT.html)رخصة.
 
 ## 100- مقدمة
 
