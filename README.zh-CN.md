@@ -20,7 +20,7 @@
 
 在您自己的系统上启动并运行您的代码。
 
-**笔记**: 确保您满足[要求](./200/README.md).
+**笔记**: 确保您满足[requirements](./200/README.md).
 
 1.  安装过程：
     ```bash
@@ -86,7 +86,7 @@
 
 # API文档
 
-导航至`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
+导航至`http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
 
 # 指标
 
@@ -102,7 +102,7 @@
 -   [建造](#build)
 -   [执照](#license)
 
-## Installation
+## 安装
 
 ```console
 pip install threagile-builder
