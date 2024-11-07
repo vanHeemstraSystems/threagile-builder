@@ -1,7 +1,4 @@
 'use strict';
-
-// ALL IMPLEMENTED AS ORIGINAL
-
 /**
  * Worth noting - Blockly uses a setTimeOut of 0 steps to make events
  * wait. That has some confusing interaction with trying to make things percolate.

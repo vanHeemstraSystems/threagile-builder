@@ -158,6 +158,9 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
             'not ___'
         ]},
         TOOLBOX_CATEGORY.SEP,
+        {name: "ThreatModels", colour: "OO", blocks: [
+            "threatmodel ___: pass"
+        ]},
         {name: "Classes", colour: "OO", blocks: [
             "class ___: pass",
             "class ___(___): pass",
