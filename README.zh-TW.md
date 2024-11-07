@@ -66,7 +66,7 @@
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    然後：
 
     ```bash
     $ cd threagile-builder
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## 版本來源
 
--   這[孵化VCS](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
+-   這[hatch-vcs](https://github.com/ofek/hatch-vcs)版本來源外掛程式使用 Git 標籤來確定專案版本
 
 ## 環境
 
@@ -129,7 +129,7 @@ pip install threagile-builder
 
 `threagile-builder`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
 
-## 100 - Introduction
+## 100 - 簡介
 
 看[README.md](./100/README.md)
 
