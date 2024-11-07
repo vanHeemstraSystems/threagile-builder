@@ -20,7 +20,7 @@ threagile-bouwer
 
 Uw code op uw eigen systeem operationeel krijgen.
 
-**Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
+**Opmerking**: Zorg ervoor dat u voldoet aan de[requirements](./200/README.md).
 
 1.  Installatieproces:
     ```bash
@@ -66,7 +66,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ setx SECRET_KEY secret
     ```
 
-    Dan:
+    Then:
 
     ```bash
     $ cd threagile-builder
@@ -76,7 +76,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
     Navigeer vervolgens naar`http://127.0.0.1:5000/`in uw webbrowser.
 
-    Om tests uit te voeren, gebruikt u:
+    To run tests, use:
 
     ```bash
     $ cd threagile-builder
@@ -86,7 +86,7 @@ Uw code op uw eigen systeem operationeel krijgen.
 
 # API-documentatie
 
-Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openapi.json van`http://127.0.0.1:5000/openapi.json`.
+Navigate to `http://127.0.0.1:5000/docs`in uw webbrowser, of download de openapi.json van`http://127.0.0.1:5000/openapi.json`.
 
 # Statistieken
 
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
