@@ -88,7 +88,7 @@ Cómo poner en marcha su código en su propio sistema.
 
 Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
 
-# Metrics
+# Métrica
 
 Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
 
