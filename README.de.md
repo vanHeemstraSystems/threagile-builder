@@ -66,7 +66,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ setx SECRET_KEY secret
     ```
 
-    Dann:
+    Then:
 
     ```bash
     $ cd threagile-builder
