@@ -13,15 +13,15 @@ from utils.db_utils import db
 build_bp = APIBlueprint("build", __name__)
 
 # New Build
-@build_bp.route('/new')
+@build_bp.route('/new', methods=["GET", "POST"])
 def new_build():
     form = BuildForm()
     if form.validate_on_submit():
-        new_build = Build(name=form.name.data)
+        new_build = Build(title=form.title.data, description=form.description.data)
         db.session.add(new_build)
         db.session.commit()
-        return redirect(url_for('list_builds'))
-    return render_template('new_build.html', form=form)
+        return redirect(url_for('build.list_builds'))
+    return render_template('build/new_build.html', form=form)
 
 
 # Create a Build
@@ -83,7 +83,7 @@ def edit_build(build_id):
         build.title = form.title.data
         db.session.commit()
         # flash("Build updated successfully!", "success")
-        return redirect(url_for("list_builds"))
+        return redirect(url_for("build.list_builds"))
     return render_template("build/edit_build.html", form=form, build=build)
 
 
