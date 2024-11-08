@@ -45,7 +45,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 4.  API-Referenzen
 5.  Erstellen und testen:
 
-    To build your code, use:
+    Um Ihren Code zu erstellen, verwenden Sie:
 
     ```bash
     $ cd threagile-builder
@@ -74,7 +74,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Navigieren Sie dann zu`http://127.0.0.1:5000/` in your web browser.
+    Navigieren Sie dann zu`http://127.0.0.1:5000/`in Ihrem Webbrowser.
 
     Um Tests auszuführen, verwenden Sie:
 
@@ -129,7 +129,7 @@ pip install threagile-builder
 
 `threagile-builder`wird gemäß den Bedingungen der verteilt[MIT](https://spdx.org/licenses/MIT.html)Lizenz.
 
-## 100 - Introduction
+## 100 - Einführung
 
 Sehen[README.md](./100/README.md)
 
