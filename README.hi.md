@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## लाइसेंस
 
-`threagile-builder`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
+`threagile-builder`की शर्तों के तहत वितरित किया जाता है[MIT](https://spdx.org/licenses/MIT.html)लाइसेंस.
 
 ## 100 - परिचय
 
@@ -143,4 +143,4 @@ pip install threagile-builder
 
 ## 400 - निष्कर्ष
 
-देखना[README.md](./400/README.md)
+See [README.md](./400/README.md)
