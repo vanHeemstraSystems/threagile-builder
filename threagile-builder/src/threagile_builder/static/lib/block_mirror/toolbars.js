@@ -15,28 +15,28 @@ TOOLBOX_CATEGORY.THREAT_MODELS = {
     ]
 };
 TOOLBOX_CATEGORY.DATA_ASSETS = {
-    name: "Data Assets", colour: "OO", blocks: [
+    name: "Data Assets", colour: "DATA_ASSETS", blocks: [
         "data assets:",
         "  foo: text",
         "  bar: text",
     ]
 };
 TOOLBOX_CATEGORY.TECHNICAL_COMPONENTS = {
-    name: "Technical Components", colour: "OO", blocks: [
+    name: "Technical Components", colour: "TECHNICAL_COMPONENTS", blocks: [
         "technical components:",
         "  foo: text",
         "  bar: text",
     ]
 };
 TOOLBOX_CATEGORY.COMMUNICATION_LINKS = {
-    name: "Communication Links", colour: "OO", blocks: [
+    name: "Communication Links", colour: "COMMUNICATION_LINKS", blocks: [
         "communication links:",
         "  foo: text",
         "  bar: text",
     ]
 };
 TOOLBOX_CATEGORY.TRUST_BOUNDARIES = {
-    name: "Trust Boundaries", colour: "OO", blocks: [
+    name: "Trust Boundaries", colour: "TRUST_BOUNDARIES", blocks: [
         "trust boundaries:",
         "  foo: text",
         "  bar: text",
