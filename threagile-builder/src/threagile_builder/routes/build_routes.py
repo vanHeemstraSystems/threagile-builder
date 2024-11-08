@@ -82,6 +82,7 @@ def edit_build(build_id):
     form = BuildForm(obj=build)
     if form.validate_on_submit():
         build.title = form.title.data
+        build.description = form.description.data
         db.session.commit()
         # flash("Build updated successfully!", "success")
         return redirect(url_for("build.list_builds"))
