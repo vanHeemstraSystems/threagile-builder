@@ -71,7 +71,8 @@ def delete_build(build_id):
     build = Build.query.get_or_404(build_id)
     db.session.delete(build)
     db.session.commit()
-    return jsonify({"message": "Build deleted successfully."}), 204
+    # return jsonify({"message": "Build deleted successfully."}), 204
+    return redirect(url_for("build.list_builds"))
 
 
 # Edit a Build
