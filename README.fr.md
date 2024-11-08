@@ -66,7 +66,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    Alors:
 
     ```bash
     $ cd threagile-builder
