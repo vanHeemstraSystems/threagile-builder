@@ -16,7 +16,7 @@ constructor-threagil
 -   [Referencias](./REFERENCES.md)
 -   [Documentación](./DOCUMENTATION.md)
 
-**Resumen ejecutivo**
+**Executive Summary**
 
 Cómo poner en marcha su código en su propio sistema.
 
@@ -86,7 +86,7 @@ Cómo poner en marcha su código en su propio sistema.
 
 # Documentación API
 
-Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
+Navigate to `http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
 
 # Métrica
 
