@@ -18,7 +18,7 @@
 
 **執行摘要**
 
-Getting your code up and running on your own system.
+在您自己的系統上啟動並運行您的程式碼。
 
 **筆記**: 確保您滿足[要求](./200/README.md).
 
