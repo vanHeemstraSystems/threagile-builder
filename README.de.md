@@ -22,7 +22,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 **Notiz**: Stellen Sie sicher, dass Sie die erfüllen[Anforderungen](./200/README.md).
 
-1.  Installationsprozess:
+1.  Installation process: 
     ```bash
     $ cd threagile-builder
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## Versionsquelle
 
--   Der[hatch-vcs](https://github.com/ofek/hatch-vcs) version source plugin determines the project version using Git tags
+-   Der[hatch-vcs](https://github.com/ofek/hatch-vcs)Das Versionsquellen-Plugin bestimmt die Projektversion mithilfe von Git-Tags
 
 ## Umgebungen
 

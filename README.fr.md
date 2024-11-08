@@ -20,7 +20,7 @@ constructeur de menaces
 
 Faire en sorte que votre code soit opérationnel sur votre propre système.
 
-**Note**: Make sure you fulfill the [exigences](./200/README.md).
+**Note**: Assurez-vous de remplir les[exigences](./200/README.md).
 
 1.  Processus d'installation :
     ```bash
@@ -66,7 +66,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    Alors:
 
     ```bash
     $ cd threagile-builder
@@ -119,9 +119,9 @@ pip install threagile-builder
 
 ## Construire
 
--   Toutes les cibles de build utilisent le[hatch-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
+-   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
 -   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
--   The [construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
+-   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
     -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
     -   utiliser le[application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
 
@@ -129,7 +129,7 @@ pip install threagile-builder
 
 `threagile-builder`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 
