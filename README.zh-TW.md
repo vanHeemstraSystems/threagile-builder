@@ -13,7 +13,7 @@
 > 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
 -   [詞彙表](./GLOSSARY.md)
--   [References](./REFERENCES.md)
+-   [參考](./REFERENCES.md)
 -   [文件](./DOCUMENTATION.md)
 
 **執行摘要**
