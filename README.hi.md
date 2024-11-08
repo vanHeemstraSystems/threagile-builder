@@ -74,7 +74,7 @@ thregile-बिल्डर
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    फिर, नेविगेट करें`http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
+    Then, navigate to `http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
 
     परीक्षण चलाने के लिए, उपयोग करें:
 
