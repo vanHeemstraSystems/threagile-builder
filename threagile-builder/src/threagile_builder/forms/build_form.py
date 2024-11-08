@@ -7,4 +7,4 @@ from wtforms.validators import DataRequired
 class BuildForm(FlaskForm):
     title = StringField("Build Title", validators=[DataRequired()])
     description = TextAreaField('Description')
-    submit = SubmitField("Create Build")
+    submit = SubmitField("Submit")
