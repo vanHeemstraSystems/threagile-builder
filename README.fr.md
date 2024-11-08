@@ -10,7 +10,7 @@ constructeur de menaces
 
 * * *
 
-> UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[threagile](https://threagile.io)Fichiers YAML
+> UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[fragile](https://threagile.io)Fichiers YAML
 
 -   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
@@ -66,7 +66,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ setx SECRET_KEY secret
     ```
 
-    Alors:
+    Then:
 
     ```bash
     $ cd threagile-builder

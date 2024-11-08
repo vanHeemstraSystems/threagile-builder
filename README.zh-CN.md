@@ -13,7 +13,7 @@
 > 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
 
 -   [词汇表](./GLOSSARY.md)
--   [References](./REFERENCES.md)
+-   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 
 **执行摘要**
@@ -135,7 +135,7 @@ pip install threagile-builder
 
 ## 200 - 要求
 
-See [README.md](./200/README.md)
+看[README.md](./200/README.md)
 
 ## 300 - 构建我们的应用程序
 

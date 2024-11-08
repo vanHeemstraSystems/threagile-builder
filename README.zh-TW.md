@@ -13,7 +13,7 @@
 > 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
 -   [詞彙表](./GLOSSARY.md)
--   [參考](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [文件](./DOCUMENTATION.md)
 
 **執行摘要**
@@ -45,7 +45,7 @@
 4.  API參考
 5.  建置和測試：
 
-    To build your code, use:
+    要建立您的程式碼，請使用：
 
     ```bash
     $ cd threagile-builder
@@ -97,7 +97,7 @@
 **目錄**
 
 -   [安裝](#installation)
--   [版本來源](#version-source)
+-   [Version source](#version-source)
 -   [環境](#environments)
 -   [建造](#build)
 -   [執照](#license)
@@ -119,7 +119,7 @@ pip install threagile-builder
 
 ## 建造
 
--   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
+-   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py` file so the version can be used at runtime
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
