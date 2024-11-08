@@ -16,7 +16,7 @@ Threagile-Builder
 -   [Referenzen](./REFERENCES.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 
-**Zusammenfassung**
+**Executive Summary**
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
@@ -45,7 +45,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 4.  API-Referenzen
 5.  Erstellen und testen:
 
-    To build your code, use:
+    Um Ihren Code zu erstellen, verwenden Sie:
 
     ```bash
     $ cd threagile-builder
@@ -115,7 +115,7 @@ pip install threagile-builder
 ## Umgebungen
 
 -   Ordentlich in einem Standalone definiert[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Der`test`Matrix verwendet die[Lukencontainer](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml) GitHub workflow
+-   Der`test`Matrix verwendet die[hatch-containers](https://github.com/ofek/hatch-containers)Plugin zum Ausführen jeder Umgebung in Docker-Containern; Die Verwendung ist in der zu sehen[prüfen](.github/workflows/test.yml)GitHub-Workflow
 
 ## Bauen
 
@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## Lizenz
 
-`threagile-builder`wird gemäß den Bedingungen der verteilt[MIT](https://spdx.org/licenses/MIT.html)Lizenz.
+`threagile-builder` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html)Lizenz.
 
 ## 100 - Einführung
 
