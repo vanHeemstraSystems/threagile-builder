@@ -4,17 +4,17 @@
   <div class="container mx-auto p-4">
     <h1 class="text-2xl font-bold mb-4">Edit Build</h1>
 
-    <form method="POST">
+    <form method="POST" class="bg-white shadow-md rounded-lg p-6">
       {{ form.hidden_tag() }}
       <div class="mb-4">
-        {{ form.title.label(class="block text-gray-700") }} {{
-        form.title(class="mt-1 block w-full border-gray-300 rounded-md shadow-sm
-        focus:ring focus:ring-opacity-50") }}
+        {{ form.title.label(class="block text-gray-700") }}
+        {{ form.title(class="mt-1 block w-full p-2 border rounded") }}
       </div>
-      <div>
-        {{ form.submit(class="bg-blue-500 text-white py-2 px-4 rounded
-        hover:bg-blue-600") }}
+      <div class="mb-4">
+        {{ form.description.label(class="block text-gray-700") }}
+        {{ form.description(class="mt-1 block w-full p-2 border rounded") }}
       </div>
+      {{ form.submit(class="bg-blue-500 text-white rounded py-2 px-4") }}
     </form>
 
     <!-- START Blockly Editor -->
@@ -22,22 +22,13 @@
     <button id="make-image">Make Image</button>
     <div id="image-spot"></div>
     <div style="width: 900px; margin: 0 auto" id="example-frame">
-      <div
-        class="btn-group"
-        data-toggle="buttons"
-        data-bind="visible: !assignment.upload()"
-      >
+      <div class="btn-group" data-toggle="buttons" data-bind="visible: !assignment.upload()">
         <label onclick="editor.setMode('block');">
           <input type="radio" name="blockpy-mode-set" autocomplete="off" />
           Blocks
         </label>
         <label onclick="editor.setMode('split');">
-          <input
-            type="radio"
-            name="blockpy-mode-set"
-            autocomplete="off"
-            checked
-          />
+          <input type="radio" name="blockpy-mode-set" autocomplete="off" checked />
           Split
         </label>
         <label onclick="editor.setMode('text');">
@@ -45,18 +36,10 @@
         </label>
       </div>
 
-      <div
-        class="btn-group"
-        data-toggle="buttons"
-        style="display: inline-block"
-      >
+      <div class="btn-group" data-toggle="buttons" style="display: inline-block">
         <label>
-          <input
-            type="checkbox"
-            name="blockpy-mode-set"
-            checked
-            onclick="editor.setImageMode(!editor.configuration.imageMode);"
-          />
+          <input type="checkbox" name="blockpy-mode-set" checked
+            onclick="editor.setImageMode(!editor.configuration.imageMode);" />
           Image Mode
         </label>
       </div>
