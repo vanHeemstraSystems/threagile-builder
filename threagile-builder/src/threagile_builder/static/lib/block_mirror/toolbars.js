@@ -4,6 +4,7 @@ BlockMirrorBlockEditor.EXTRA_TOOLS = {};
 
 const TOOLBOX_CATEGORY = {};
 
+TOOLBOX_CATEGORY.THREAT_MODELS = { name: 'Threat Models', colour: 'THREAT MODELS', custom: 'THREAT MODEL' };
 TOOLBOX_CATEGORY.VARIABLES = { name: 'Variables', colour: 'VARIABLES', custom: 'VARIABLE' };
 TOOLBOX_CATEGORY.DECISIONS = {
     name: "Decisions", colour: "LOGIC", blocks: [
@@ -191,7 +192,7 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
         },
         TOOLBOX_CATEGORY.SEP,
         {
-            name: "ThreatModels", colour: "OO", blocks: [
+            name: "Threat Models", colour: "OO", blocks: [
                 "threatmodel ___: pass"
             ]
         },
@@ -395,6 +396,12 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
     //******************************************************
     'threagile': [
         // TODO: What should live in here?
+        {
+            name: "Threat Models", colour: "OO", blocks: [
+                "threatmodel ___: pass"
+            ]
+        },
+        TOOLBOX_CATEGORY.SEP,
         TOOLBOX_CATEGORY.VARIABLES,
     ],
 };
