@@ -397,25 +397,41 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
     'threagile': [
         {
             name: "Threat Models", colour: "OO", blocks: [
-                "threagile_version: ___",
-                "title: ___",
-                "date: ___",
-                "author: ___",
-            ]
-        },
-        TOOLBOX_CATEGORY.SEP,
-        {
-            name: "Constants", colour: "TEXT", blocks: [
-                "text",
-                "___.___.___",
-            ]
-        },
-        {
-            name: "Author", colour: "TEXT", blocks: [
+                "threagile_version: 1.0.0",
+                "title: text",
+                "date: 1970-01-01",
                 "author:",
-                "  name: ___",
-                "  homepage: ___"
+                "  name: text",
+                "  homepage: url"
             ]
         },
+        {
+            name: "Data Assets", colour: "OO", blocks: [
+                "data assets:",
+                "  foo: text",
+                "  bar: text",
+            ]
+        },
+        {
+            name: "Technical Components", colour: "OO", blocks: [
+                "technical components:",
+                "  foo: text",
+                "  bar: text",
+            ]
+        },
+        {
+            name: "Communication Links", colour: "OO", blocks: [
+                "communication links:",
+                "  foo: text",
+                "  bar: text",
+            ]
+        },
+        {
+            name: "Trust Boundaries", colour: "OO", blocks: [
+                "trust boundaries:",
+                "  foo: text",
+                "  bar: text",
+            ]
+        },        
     ],
 };
