@@ -10,7 +10,7 @@
 
 * * *
 
-> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io) YAML files
+> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
@@ -97,9 +97,9 @@
 **目錄**
 
 -   [安裝](#installation)
--   [版本來源](#version-source)
+-   [Version source](#version-source)
 -   [環境](#environments)
--   [建造](#build)
+-   [Build](#build)
 -   [執照](#license)
 
 ## 安裝
