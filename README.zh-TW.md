@@ -10,7 +10,7 @@
 
 * * *
 
-> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
+> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io) YAML files
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
@@ -74,7 +74,7 @@
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    然後，導航至`http://127.0.0.1:5000/`在您的網頁瀏覽器中。
+    Then, navigate to `http://127.0.0.1:5000/`在您的網頁瀏覽器中。
 
     若要執行測試，請使用：
 
@@ -115,7 +115,7 @@ pip install threagile-builder
 ## 環境
 
 -   整齊地定義在一個獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   The `test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
+-   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
 
@@ -137,7 +137,7 @@ pip install threagile-builder
 
 看[README.md](./200/README.md)
 
-## 300 - 建立我們的應用程式
+## 300 - Building Our Application
 
 看[README.md](./300/README.md)
 
