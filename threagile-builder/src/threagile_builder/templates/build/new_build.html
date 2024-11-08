@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <div class="container mx-auto p-6">
+        <h1 class="text-2xl font-bold mb-4">Create New Build</h1>
+        <form method="POST" class="bg-white shadow-md rounded-lg p-6">
+            {{ form.hidden_tag() }}
+            <div class="mb-4">
+                {{ form.title.label(class="block text-gray-700") }}
+                {{ form.title(class="mt-1 block w-full p-2 border rounded") }}
+            </div>
+            <div class="mb-4">
+                {{ form.description.label(class="block text-gray-700") }}
+                {{ form.description(class="mt-1 block w-full p-2 border rounded") }}
+            </div>
+            {{ form.submit(class="bg-blue-500 text-white rounded py-2 px-4") }}
+        </form>
+        <a href="{{ url_for('build.list_builds') }}">Back to Builds</a>
+    </div>
+</section>
+{% endblock %}
