@@ -18,7 +18,7 @@ threagile-bouwer
 
 **Samenvatting**
 
-Uw code op uw eigen systeem operationeel krijgen.
+Getting your code up and running on your own system.
 
 **Opmerking**: Zorg ervoor dat u voldoet aan de[vereisten](./200/README.md).
 
@@ -94,7 +94,7 @@ Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:9464/metrics`
 
 **_NIEUW_**
 
-**Inhoudsopgave**
+**Table of Contents**
 
 -   [Installatie](#installation)
 -   [Versiebron](#version-source)
