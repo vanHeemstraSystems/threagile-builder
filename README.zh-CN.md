@@ -42,7 +42,7 @@
     ```
 2.  软件依赖性
 3.  最新版本
-4.  API参考
+4.  API references
 5.  构建和测试：
 
     要构建您的代码，请使用：
@@ -76,7 +76,7 @@
 
     然后，导航至`http://127.0.0.1:5000/`在您的网络浏览器中。
 
-    要运行测试，请使用：
+    To run tests, use:
 
     ```bash
     $ cd threagile-builder
