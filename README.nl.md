@@ -98,8 +98,8 @@ Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:9464/metrics`
 
 -   [Installatie](#installation)
 -   [Versiebron](#version-source)
--   [Environments](#environments)
--   [Build](#build)
+-   [Omgevingen](#environments)
+-   [Bouwen](#build)
 -   [Licentie](#license)
 
 ## Installatie

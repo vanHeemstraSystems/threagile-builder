@@ -60,7 +60,7 @@ thregile-बिल्डर
     $ export SECRET_KEY="secret"
     ```
 
-    Windows:
+    खिड़कियाँ:
 
     ```bash
     $ setx SECRET_KEY secret

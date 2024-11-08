@@ -10,7 +10,7 @@ Threagile-Builder
 
 * * *
 
-> A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagil](https://threagile.io)YAML-Dateien
+> A[block-based](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagil](https://threagile.io)YAML-Dateien
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
@@ -41,7 +41,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  Softwareabhängigkeiten
-3.  Neueste Veröffentlichungen
+3.  Latest releases
 4.  API-Referenzen
 5.  Erstellen und testen:
 
