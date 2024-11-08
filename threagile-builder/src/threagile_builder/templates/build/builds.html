@@ -25,6 +25,40 @@
 </section>
 
 <section>
+    <div class="container mx-auto p-6">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-2xl font-bold">Builds</h1>
+            <a href="{{ url_for('build.new_build') }}" class="bg-blue-500 text-white py-2 px-4 rounded">New Build</a>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="py-2 px-4 border">Title</th>
+                        <th class="py-2 px-4 border">Description</th>
+                        <th class="py-2 px-4 border">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for build in builds %}
+                    <tr class="border-b">
+                        <td class="py-2 px-4">{{ build.title }}</td>
+                        <td class="py-2 px-4">{{ build.description }}</td>
+                        <td class="py-2 px-4">
+                            <a href="{{ url_for('build.edit_build', build_id=build.id) }}" class="text-blue-500 hover:underline">Edit</a>
+                            <form action="{{ url_for('build.delete_build', build_id=build.id) }}" method="POST" style="display:inline;">
+                                <button type="submit" class="text-red-500 hover:underline">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section>
     <table id="default-table">
         <thead>
             <tr>
