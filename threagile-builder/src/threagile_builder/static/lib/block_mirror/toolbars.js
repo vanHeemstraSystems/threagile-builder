@@ -395,13 +395,27 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
     ],
     //******************************************************
     'threagile': [
-        // TODO: What should live in here?
         {
             name: "Threat Models", colour: "OO", blocks: [
-                "threagile_version: 1.0.0"
+                "threagile_version: ___",
+                "title: ___",
+                "date: ___",
+                "author: ___",
             ]
         },
         TOOLBOX_CATEGORY.SEP,
-        TOOLBOX_CATEGORY.VARIABLES,
+        {
+            name: "Constants", colour: "TEXT", blocks: [
+                "text",
+                "___.___.___",
+            ]
+        },
+        {
+            name: "Author", colour: "TEXT", blocks: [
+                "author:",
+                "  name: ___",
+                "  homepage: ___"
+            ]
+        },
     ],
 };
