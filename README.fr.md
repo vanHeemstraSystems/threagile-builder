@@ -10,9 +10,9 @@ constructeur de menaces
 
 * * *
 
-> UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[fragile](https://threagile.io)Fichiers YAML
+> UN[basé sur des blocs](https://developers.google.com/blockly)application web sans code à créer[threagile](https://threagile.io)Fichiers YAML
 
--   [Glossary](./GLOSSARY.md)
+-   [Glossaire](./GLOSSARY.md)
 -   [Références](./REFERENCES.md)
 -   [Documentation](./DOCUMENTATION.md)
 
@@ -129,7 +129,7 @@ pip install threagile-builder
 
 `threagile-builder`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 

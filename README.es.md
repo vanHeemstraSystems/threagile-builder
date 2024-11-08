@@ -16,9 +16,9 @@ constructor-threagil
 -   [Referencias](./REFERENCES.md)
 -   [Documentación](./DOCUMENTATION.md)
 
-**Executive Summary**
+**Resumen ejecutivo**
 
-Cómo poner en marcha su código en su propio sistema.
+Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -86,7 +86,7 @@ Cómo poner en marcha su código en su propio sistema.
 
 # Documentación API
 
-Navigate to `http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
+Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.json desde`http://127.0.0.1:5000/openapi.json`.
 
 # Métrica
 
@@ -131,7 +131,7 @@ pip install threagile-builder
 
 ## 100 - Introducción
 
-Ver[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - Requisitos
 

@@ -41,7 +41,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  Softwareabhängigkeiten
-3.  Latest releases
+3.  Neueste Veröffentlichungen
 4.  API-Referenzen
 5.  Erstellen und testen:
 
@@ -119,7 +119,7 @@ pip install threagile-builder
 
 ## Bauen
 
--   Alle Build-Ziele verwenden die[hatch-vcs](https://github.com/ofek/hatch-vcs)Erstellen Sie ein Hook-Plugin, um ein zu versenden`_version.py` file so the version can be used at runtime
+-   Alle Build-Ziele verwenden die[hatch-vcs](https://github.com/ofek/hatch-vcs)Erstellen Sie ein Hook-Plugin, um ein zu versenden`_version.py`Datei, damit die Version zur Laufzeit verwendet werden kann
 -   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build-Hook-Plugin, mit dem zunächst der gesamte Code kompiliert werden soll[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Der GitHub-Workflow zeigt, wie Sie:
     -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)binäre Räder für jede Plattform zu verteilen
