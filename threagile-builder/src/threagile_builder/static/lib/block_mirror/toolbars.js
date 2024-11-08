@@ -12,7 +12,36 @@ TOOLBOX_CATEGORY.THREAT_MODELS = {
         "author:",
         "  name: my name",
         "  homepage: url"
-    ] };
+    ]
+};
+TOOLBOX_CATEGORY.DATA_ASSETS = {
+    name: "Data Assets", colour: "OO", blocks: [
+        "data assets:",
+        "  foo: text",
+        "  bar: text",
+    ]
+};
+TOOLBOX_CATEGORY.TECHNICAL_COMPONENTS = {
+    name: "Technical Components", colour: "OO", blocks: [
+        "technical components:",
+        "  foo: text",
+        "  bar: text",
+    ]
+};
+TOOLBOX_CATEGORY.COMMUNICATION_LINKS = {
+    name: "Communication Links", colour: "OO", blocks: [
+        "communication links:",
+        "  foo: text",
+        "  bar: text",
+    ]
+};
+TOOLBOX_CATEGORY.TRUST_BOUNDARIES = {
+    name: "Trust Boundaries", colour: "OO", blocks: [
+        "trust boundaries:",
+        "  foo: text",
+        "  bar: text",
+    ]
+};
 TOOLBOX_CATEGORY.VARIABLES = { name: 'Variables', colour: 'VARIABLES', custom: 'VARIABLE' };
 TOOLBOX_CATEGORY.DECISIONS = {
     name: "Decisions", colour: "LOGIC", blocks: [
@@ -200,6 +229,10 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
         },
         TOOLBOX_CATEGORY.SEP,
         TOOLBOX_CATEGORY.THREAT_MODELS,
+        TOOLBOX_CATEGORY.DATA_ASSETS,
+        TOOLBOX_CATEGORY.TECHNICAL_COMPONENTS,
+        TOOLBOX_CATEGORY.COMMUNICATION_LINKS,
+        TOOLBOX_CATEGORY.TRUST_BOUNDARIES,  
         {
             name: "Classes", colour: "OO", blocks: [
                 "class ___: pass",
@@ -400,33 +433,9 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
     //******************************************************
     'threagile': [
         TOOLBOX_CATEGORY.THREAT_MODELS,
-        {
-            name: "Data Assets", colour: "OO", blocks: [
-                "data assets:",
-                "  foo: text",
-                "  bar: text",
-            ]
-        },
-        {
-            name: "Technical Components", colour: "OO", blocks: [
-                "technical components:",
-                "  foo: text",
-                "  bar: text",
-            ]
-        },
-        {
-            name: "Communication Links", colour: "OO", blocks: [
-                "communication links:",
-                "  foo: text",
-                "  bar: text",
-            ]
-        },
-        {
-            name: "Trust Boundaries", colour: "OO", blocks: [
-                "trust boundaries:",
-                "  foo: text",
-                "  bar: text",
-            ]
-        },        
+        TOOLBOX_CATEGORY.DATA_ASSETS,
+        TOOLBOX_CATEGORY.TECHNICAL_COMPONENTS,
+        TOOLBOX_CATEGORY.COMMUNICATION_LINKS,
+        TOOLBOX_CATEGORY.TRUST_BOUNDARIES,        
     ],
 };
