@@ -40,7 +40,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
-2.  Software dependencies
+2.  Softwareabhängigkeiten
 3.  Neueste Veröffentlichungen
 4.  API-Referenzen
 5.  Erstellen und testen:
