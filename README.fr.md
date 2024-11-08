@@ -20,7 +20,7 @@ constructeur de menaces
 
 Faire en sorte que votre code soit opérationnel sur votre propre système.
 
-**Note**: Assurez-vous de remplir les[requirements](./200/README.md).
+**Note**: Assurez-vous de remplir les[exigences](./200/README.md).
 
 1.  Processus d'installation :
     ```bash
@@ -97,7 +97,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 **Table des matières**
 
 -   [Installation](#installation)
--   [Version source](#version-source)
+-   [Source de la version](#version-source)
 -   [Environnements](#environments)
 -   [Construire](#build)
 -   [Licence](#license)
@@ -129,7 +129,7 @@ pip install threagile-builder
 
 `threagile-builder`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
