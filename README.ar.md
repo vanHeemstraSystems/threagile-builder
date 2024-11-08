@@ -41,7 +41,7 @@
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  تبعيات البرمجيات
-3.  Latest releases
+3.  أحدث الإصدارات
 4.  مراجع واجهة برمجة التطبيقات
 5.  البناء والاختبار:
 
