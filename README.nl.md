@@ -74,7 +74,7 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Navigeer vervolgens naar`http://127.0.0.1:5000/`in uw webbrowser.
+    Navigeer vervolgens naar`http://127.0.0.1:5000/` in your web browser.
 
     Om tests uit te voeren, gebruikt u:
 
@@ -98,7 +98,7 @@ Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:9464/metrics`
 
 -   [Installatie](#installation)
 -   [Versiebron](#version-source)
--   [Omgevingen](#environments)
+-   [Environments](#environments)
 -   [Bouwen](#build)
 -   [Licentie](#license)
 
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## Licentie
 
-`threagile-builder`wordt verspreid onder de voorwaarden van de[MET](https://spdx.org/licenses/MIT.html)licentie.
+`threagile-builder`wordt verspreid onder de voorwaarden van de[MIT](https://spdx.org/licenses/MIT.html)licentie.
 
 ## 100 - Inleiding
 
