@@ -398,7 +398,7 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
         // TODO: What should live in here?
         {
             name: "Threat Models", colour: "OO", blocks: [
-                "threatmodel ___: pass"
+                "threagile_version: 1.0.0"
             ]
         },
         TOOLBOX_CATEGORY.SEP,
