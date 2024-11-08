@@ -398,10 +398,10 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
         {
             name: "Threat Models", colour: "OO", blocks: [
                 "threagile_version: 1.0.0",
-                "title: text",
+                "title: my title",
                 "date: 1970-01-01",
                 "author:",
-                "  name: text",
+                "  name: my name",
                 "  homepage: url"
             ]
         },
