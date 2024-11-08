@@ -20,7 +20,7 @@ constructor-threagil
 
 Poner en funcionamiento su código en su propio sistema.
 
-**Note**: Asegúrese de cumplir con los[requisitos](./200/README.md).
+**Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
 1.  Proceso de instalación:
     ```bash
