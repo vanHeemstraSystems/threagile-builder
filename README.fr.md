@@ -88,7 +88,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
 
-# Métrique
+# Metrics
 
 Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 
