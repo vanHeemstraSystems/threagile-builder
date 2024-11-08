@@ -10,10 +10,10 @@
 
 * * *
 
-> 一個[block-based](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
+> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
 -   [詞彙表](./GLOSSARY.md)
--   [參考](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [文件](./DOCUMENTATION.md)
 
 **執行摘要**
@@ -41,7 +41,7 @@
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  軟體依賴性
-3.  Latest releases
+3.  最新版本
 4.  API參考
 5.  建置和測試：
 
