@@ -112,10 +112,10 @@ pip install threagile-builder
 
 -   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 
-## Environments
+## 环境
 
 -   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   这`test` matrix uses the [孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
+-   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
 
