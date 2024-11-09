@@ -135,7 +135,7 @@ BlockMirrorTextToBlocks.prototype.isSingleChar = function (text) {
 BlockMirrorTextToBlocks.prototype.isDocString = function (node, parent) {
     return (parent._astname === 'Expr' &&
         parent._parent &&
-        ['FunctionDef', 'ClassDef'].indexOf(parent._parent._astname) !== -1 &&
+        ['FunctionDef', 'ClassDef', 'AuthorDef'].indexOf(parent._parent._astname) !== -1 &&
         parent._parent.body[0] === parent);
 };
 

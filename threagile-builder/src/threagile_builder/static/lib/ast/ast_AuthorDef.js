@@ -70,6 +70,7 @@ Blockly.Blocks['ast_AuthorDef'] = {
 };
 
 Blockly.Python['ast_AuthorDef'] = function (block) {     // Name
+    console.debug("Blockly.Python['ast_AuthorDef']");
     let name = Blockly.Python.variableDB_.getName(block.getFieldValue('NAME'), Blockly.Variables.NAME_TYPE);
     // Decorators
     let decorators = new Array(block.decorators_);
@@ -105,6 +106,7 @@ Blockly.Python['ast_AuthorDef'] = function (block) {     // Name
 };
 
 BlockMirrorTextToBlocks.prototype['ast_AuthorDef'] = function (node, parent) {
+    console.debug("BlockMirrorTextToBlocks['ast_AuthorDef']");    
     let name = node.name;
     let bases = node.bases;
     let keywords = node.keywords;

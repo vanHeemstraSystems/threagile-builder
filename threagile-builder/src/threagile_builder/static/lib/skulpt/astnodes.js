@@ -224,6 +224,34 @@ Sk.astnodes.ClassDef = function ClassDef(/* {identifier} */ name, /* {asdl_seq
 }
 
 /** @constructor */
+Sk.astnodes.AuthorDef = function AuthorDef(/* {identifier} */ name, /* {asdl_seq
+    *} */ bases, /* {asdl_seq *} */
+    keywords, /* {asdl_seq *} */
+    body, /* {asdl_seq *} */
+    decorator_list, /* {string} */
+    docstring, /* {int} */ lineno, /*
+    {int} */ col_offset, /* {int} */
+    end_lineno, /* {int} */
+    end_col_offset)
+{
+Sk.asserts.assert(lineno !== null && lineno !== undefined);
+Sk.asserts.assert(col_offset !== null && col_offset !== undefined);
+Sk.asserts.assert(end_lineno !== null && end_lineno !== undefined);
+Sk.asserts.assert(end_col_offset !== null && end_col_offset !== undefined);
+this.name = name;
+this.bases = bases;
+this.keywords = keywords;
+this.body = body;
+this.decorator_list = decorator_list;
+this.docstring = docstring;
+this.lineno = lineno;
+this.col_offset = col_offset;
+this.end_lineno = end_lineno;
+this.end_col_offset = end_col_offset;
+return this;
+}
+
+/** @constructor */
 Sk.astnodes.Return = function Return(/* {expr_ty} */ value, /* {int} */ lineno,
                                           /* {int} */ col_offset, /* {int} */
                                           end_lineno, /* {int} */
@@ -1437,6 +1465,15 @@ Sk.astnodes.AsyncFunctionDef.prototype._fields = [
 ];
 Sk.astnodes.ClassDef.prototype._astname = "ClassDef";
 Sk.astnodes.ClassDef.prototype._fields = [
+    "name", function(n) { return n.name; },
+    "bases", function(n) { return n.bases; },
+    "keywords", function(n) { return n.keywords; },
+    "body", function(n) { return n.body; },
+    "decorator_list", function(n) { return n.decorator_list; },
+    "docstring", function(n) { return n.docstring; }
+];
+Sk.astnodes.AuthorDef.prototype._astname = "AuthorDef";
+Sk.astnodes.AuthorDef.prototype._fields = [
     "name", function(n) { return n.name; },
     "bases", function(n) { return n.bases; },
     "keywords", function(n) { return n.keywords; },

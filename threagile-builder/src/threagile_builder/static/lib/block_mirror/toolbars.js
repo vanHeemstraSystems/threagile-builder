@@ -13,9 +13,9 @@ TOOLBOX_CATEGORY.THREAT_MODELS = {
 };
 TOOLBOX_CATEGORY.AUTHOR = {
     name: 'Author', colour: 'AUTHOR', blocks: [
-        "def author(): ___",
-        "name: my name",
-        "homepage: my url",
+        "author:",
+        "    name: my name",
+        "    homepage: my url",
     ]
 };
 TOOLBOX_CATEGORY.DATA_ASSETS = {

@@ -516,7 +516,7 @@ function astForDecorators (c, n) {
 }
 
 function ast_for_decorated (c, n) {
-    /* decorated: decorators (classdef | funcdef | async_funcdef) */
+    /* decorated: decorators (authordef | classdef | funcdef | async_funcdef) */
     var thing = null;
     var decorator_seq = null;
 
@@ -525,12 +525,15 @@ function ast_for_decorated (c, n) {
     decorator_seq = astForDecorators(c, CHILD(n, 0));
     Sk.asserts.assert(TYPE(CHILD(n, 1)) == SYM.funcdef ||
             TYPE(CHILD(n, 1)) == SYM.async_funcdef ||
-            TYPE(CHILD(n, 1)) == SYM.classdef);
+            TYPE(CHILD(n, 1)) == SYM.classdef ||
+            TYPE(CHILD(n, 1)) == SYM.authordef);
 
     if (TYPE(CHILD(n, 1)) == SYM.funcdef) {
         thing = ast_for_funcdef(c, CHILD(n, 1), decorator_seq);
     } else if (TYPE(CHILD(n, 1)) == SYM.classdef) {
         thing = astForClassdef(c, CHILD(n, 1), decorator_seq);
+    } else if (TYPE(CHILD(n, 1)) == SYM.authordef) {
+        thing = astForAuthordef(c, CHILD(n, 1), decorator_seq);
     } else if (TYPE(CHILD(n, 1)) == SYM.async_funcdef) {
         thing = ast_for_async_funcdef(c, CHILD(n, 1), decorator_seq);
     }
@@ -1575,6 +1578,58 @@ function astForClassdef (c, n, decoratorSeq) {
                                decoratorSeq, /*TODO docstring*/null, LINENO(n), n.col_offset,
                                n.end_lineno, n.end_col_offset);
 }
+
+
+
+
+function astForAuthordef (c, n, decoratorSeq) {
+    /* authordef: 'author' NAME ['(' arglist ')'] ':' suite */
+    var classname;
+    var call;
+    var s;
+
+    REQ(n, SYM.authordef);
+
+    if (NCH(n) == 4) { /* class NAME ':' suite */
+        s = astForSuite(c, CHILD(n, 3));
+        classname = new_identifier(CHILD(n, 1).value);
+        forbiddenCheck(c, CHILD(n,3), classname, n.lineno);
+
+        return new Sk.astnodes.AuthorDef(classname, [], [], s, decoratorSeq,
+                                    /*TODO docstring*/null, LINENO(n), n.col_offset,
+                                    n.end_lineno, n.end_col_offset);
+    }
+
+    if (TYPE(CHILD(n, 3)) === TOK.T_RPAR) { /* class NAME '(' ')' ':' suite */
+        s = astForSuite(c, CHILD(n, 5));
+        classname = new_identifier(CHILD(n, 1).value);
+        forbiddenCheck(c, CHILD(n, 3), classname, CHILD(n, 3).lineno);
+        return new Sk.astnodes.AuthorDef(classname, [], [], s, decoratorSeq,
+                                    /*TODO docstring*/null, LINENO(n), n.col_offset,
+                                    n.end_lineno, n.end_col_offset);
+    }
+
+    /* class NAME '(' arglist ')' ':' suite */
+    /* build up a fake Call node so we can extract its pieces */
+    {
+        var dummy_name;
+        var dummy;
+        dummy_name = new_identifier(CHILD(n, 1));
+        dummy = new Sk.astnodes.Name(dummy_name, Sk.astnodes.Load, LINENO(n), n.col_offset,
+                                      n.end_lineno, n.end_col_offset);
+        call = ast_for_call(c, CHILD(n, 3), dummy, false);
+    }
+    s = astForSuite(c, CHILD(n, 6));
+    classname = new_identifier(CHILD(n, 1).value);
+    forbiddenCheck(c, CHILD(n,1), classname, CHILD(n,1).lineno);
+
+    return new Sk.astnodes.AuthorDef(classname, call.args, call.keywords, s,
+                               decoratorSeq, /*TODO docstring*/null, LINENO(n), n.col_offset,
+                               n.end_lineno, n.end_col_offset);
+}
+
+
+
 
 function astForLambdef (c, n) {
     /* lambdef: 'lambda' [varargslist] ':' test */
@@ -3082,7 +3137,7 @@ function astForStmt (c, n) {
     }
     else {
         /* compound_stmt: if_stmt | while_stmt | for_stmt | try_stmt
-                        | funcdef | classdef | decorated | async_stmt
+                        | funcdef | classdef | authordef | decorated | async_stmt
         */
         ch = CHILD(n, 0);
         REQ(n, SYM.compound_stmt);
@@ -3101,6 +3156,8 @@ function astForStmt (c, n) {
                 return ast_for_funcdef(c, ch, []);
             case SYM.classdef:
                 return astForClassdef(c, ch, []);
+            case SYM.authordef:
+                return astForAuthordef(c, ch, []);
             case SYM.decorated:
                 return ast_for_decorated(c, ch);
             case SYM.async_stmt:
@@ -3240,6 +3297,7 @@ Sk.INHERITANCE_MAP = {
     'stmt': [Sk.astnodes.FunctionDef,
              Sk.astnodes.AsyncFunctionDef,
              Sk.astnodes.ClassDef,
+             Sk.astnodes.AuthorDef,
              Sk.astnodes.Return,
              Sk.astnodes.Delete,
              Sk.astnodes.Assign,

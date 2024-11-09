@@ -1,5 +1,3 @@
-// ALL IMPLEMENTED AS ORIGINAL
-
 function BlockMirrorTextToBlocks(blockMirror) {
   console.debug('BlockMirrorTextToBlocks');
   this.blockMirror = blockMirror;

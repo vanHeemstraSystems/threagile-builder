@@ -136,7 +136,8 @@ sym:
  xor_expr: 340,
  yield_arg: 341,
  yield_expr: 342,
- yield_stmt: 343},
+ yield_stmt: 343,
+ authordef: 344},
 number2symbol:
 {256: 'single_input',
  257: 'and_expr',
@@ -225,7 +226,8 @@ number2symbol:
  340: 'xor_expr',
  341: 'yield_arg',
  342: 'yield_expr',
- 343: 'yield_stmt'},
+ 343: 'yield_stmt',
+ 344: 'authordef'},
 dfas:
 {256: [[[[1, 1], [2, 2], [3, 1]], [[0, 1]], [[3, 1]]],
        {3: 1,
@@ -1704,7 +1706,8 @@ labels:
  [338, null],
  [257, null],
  [32, null],
- [341, null]],
+ [341, null]
+ [344, 'author']],
 keywords:
 {'False': 23,
  'null': 13,
@@ -1740,7 +1743,8 @@ keywords:
  'try': 21,
  'while': 9,
  'with': 31,
- 'yield': 8},
+ 'yield': 8,
+ 'author': 344},
 tokens:
 {0: 112,
  1: 28,
