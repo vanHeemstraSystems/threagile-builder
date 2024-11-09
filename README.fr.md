@@ -60,7 +60,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ export SECRET_KEY="secret"
     ```
 
-    Windows:
+    Fenêtres :
 
     ```bash
     $ setx SECRET_KEY secret
