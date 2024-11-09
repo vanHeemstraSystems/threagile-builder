@@ -9,9 +9,6 @@ TOOLBOX_CATEGORY.THREAT_MODELS = {
         "threagile_version: 1.0.0",
         "title: my title",
         "date: 1970-01-01",
-        "author:",
-        "  name: my name",
-        "  homepage: url"
     ]
 };
 TOOLBOX_CATEGORY.DATA_ASSETS = {
@@ -433,6 +430,16 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
     //******************************************************
     'threagile': [
         TOOLBOX_CATEGORY.THREAT_MODELS,
+        { 
+            name: 'Author', colour: 'THREAT MODELS', blocks: [
+                "author: pass",
+                "def ___(___): pass",
+                "def ___(___: int)->str: pass",
+                "return ___",
+                "yield ___",
+                "lambda ___: ___"
+            ]
+        },
         TOOLBOX_CATEGORY.DATA_ASSETS,
         TOOLBOX_CATEGORY.TECHNICAL_COMPONENTS,
         TOOLBOX_CATEGORY.COMMUNICATION_LINKS,
