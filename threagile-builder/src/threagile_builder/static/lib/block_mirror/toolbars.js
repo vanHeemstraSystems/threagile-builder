@@ -20,28 +20,28 @@ TOOLBOX_CATEGORY.AUTHOR = {
 };
 TOOLBOX_CATEGORY.DATA_ASSETS = {
     name: "Data Assets", colour: "DATA_ASSETS", blocks: [
-        "data assets:",
-        "  foo: text",
-        "  bar: text",
+        "data_assets:",
+        "  Some Data Asset:",
+        "      id: some-data-asset",
     ]
 };
-TOOLBOX_CATEGORY.TECHNICAL_COMPONENTS = {
-    name: "Technical Components", colour: "TECHNICAL_COMPONENTS", blocks: [
-        "technical components:",
-        "  foo: text",
-        "  bar: text",
+TOOLBOX_CATEGORY.TECHNICAL_ASSETS = {
+    name: "Technical Assets", colour: "TECHNICAL_ASSETS", blocks: [
+        "technical_assets:",
+        "  Some Technical Asset:",
+        "      id: some-technical-asset",
     ]
 };
 TOOLBOX_CATEGORY.COMMUNICATION_LINKS = {
     name: "Communication Links", colour: "COMMUNICATION_LINKS", blocks: [
-        "communication links:",
+        "communication_links:",
         "  foo: text",
         "  bar: text",
     ]
 };
 TOOLBOX_CATEGORY.TRUST_BOUNDARIES = {
     name: "Trust Boundaries", colour: "TRUST_BOUNDARIES", blocks: [
-        "trust boundaries:",
+        "trust_boundaries:",
         "  foo: text",
         "  bar: text",
     ]
@@ -439,7 +439,7 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
         TOOLBOX_CATEGORY.THREAT_MODELS,
         TOOLBOX_CATEGORY.AUTHOR,
         TOOLBOX_CATEGORY.DATA_ASSETS,
-        TOOLBOX_CATEGORY.TECHNICAL_COMPONENTS,
+        TOOLBOX_CATEGORY.TECHNICAL_ASSETS,
         TOOLBOX_CATEGORY.COMMUNICATION_LINKS,
         TOOLBOX_CATEGORY.TRUST_BOUNDARIES,
     ],
