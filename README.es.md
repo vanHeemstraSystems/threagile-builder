@@ -66,7 +66,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ setx SECRET_KEY secret
     ```
 
-    Then:
+    Entonces:
 
     ```bash
     $ cd threagile-builder
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## Fuente de la versión
 
--   El[escotilla-vcs](https://github.com/ofek/hatch-vcs)El complemento fuente de la versión determina la versión del proyecto usando etiquetas Git.
+-   The [escotilla-vcs](https://github.com/ofek/hatch-vcs)El complemento fuente de la versión determina la versión del proyecto usando etiquetas Git.
 
 ## Ambientes
 
@@ -120,12 +120,12 @@ pip install threagile-builder
 ## Construir
 
 -   Todos los objetivos de construcción utilizan el[escotilla-vcs](https://github.com/ofek/hatch-vcs)construir complemento de gancho para enviar un`_version.py`archivo para que la versión pueda usarse en tiempo de ejecución
--   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[Mypyc](https://github.com/mypyc/mypyc)
+-   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
     -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
 
-## License
+## Licencia
 
 `threagile-builder`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html)licencia.
 
