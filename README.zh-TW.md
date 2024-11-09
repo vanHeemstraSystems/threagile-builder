@@ -45,7 +45,7 @@
 4.  API參考
 5.  建置和測試：
 
-    To build your code, use:
+    要建立您的程式碼，請使用：
 
     ```bash
     $ cd threagile-builder
@@ -94,7 +94,7 @@
 
 **_新的_**
 
-**Table of Contents**
+**目錄**
 
 -   [安裝](#installation)
 -   [版本來源](#version-source)
@@ -119,7 +119,7 @@ pip install threagile-builder
 
 ## 建造
 
--   所有建置目標都使用[hatch-vcs](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
+-   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
