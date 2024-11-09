@@ -86,7 +86,7 @@
 
 # وثائق واجهة برمجة التطبيقات
 
-انتقل إلى`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
+انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
 # المقاييس
 
