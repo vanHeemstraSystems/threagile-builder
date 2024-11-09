@@ -10,7 +10,7 @@ thregile-बिल्डर
 
 * * *
 
-> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io) YAML files
+> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
@@ -99,7 +99,7 @@ thregile-बिल्डर
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
 -   [वातावरण](#environments)
--   [निर्माण](#build)
+-   [Build](#build)
 -   [लाइसेंस](#license)
 
 ## इंस्टालेशन
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## संस्करण स्रोत
 
--   [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
+-   [hatch-vcs](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
 
 ## वातावरण
 
@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## लाइसेंस
 
-`threagile-builder` is distributed under the terms of the [साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
+`threagile-builder`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
 
 ## 100 - परिचय
 
