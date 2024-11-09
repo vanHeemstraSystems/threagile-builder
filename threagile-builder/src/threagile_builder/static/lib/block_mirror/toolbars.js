@@ -432,12 +432,9 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
         TOOLBOX_CATEGORY.THREAT_MODELS,
         { 
             name: 'Author', colour: 'AUTHOR', blocks: [
-                "author: pass",
-                "def ___(___): pass",
-                "def ___(___: int)->str: pass",
-                "return ___",
-                "yield ___",
-                "lambda ___: ___"
+                "def author(): ___",
+                "name: my name",
+                "homepage: my url",
             ]
         },
         TOOLBOX_CATEGORY.DATA_ASSETS,
