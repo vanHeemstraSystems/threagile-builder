@@ -10,15 +10,15 @@ constructor-threagil
 
 * * *
 
-> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
+> A[basado en bloques](https://developers.google.com/blockly) no-code web application to create [amenazante](https://threagile.io)Archivos YAML
 
--   [Glosario](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
 -   [Documentación](./DOCUMENTATION.md)
 
 **Resumen ejecutivo**
 
-Poner en funcionamiento su código en su propio sistema.
+Cómo poner en marcha su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## Licencia
 
-`threagile-builder`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html) license.
+`threagile-builder`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html)licencia.
 
 ## 100 - Introducción
 
