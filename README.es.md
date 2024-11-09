@@ -12,7 +12,7 @@ constructor-threagil
 
 > A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
 
--   [Glosario](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
 -   [Documentación](./DOCUMENTATION.md)
 
@@ -74,7 +74,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
+    Luego, navegue hasta`http://127.0.0.1:5000/` in your web browser.
 
     Para ejecutar pruebas, utilice:
 
