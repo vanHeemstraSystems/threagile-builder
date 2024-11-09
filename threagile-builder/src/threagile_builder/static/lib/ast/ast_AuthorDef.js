@@ -16,9 +16,9 @@ Blockly.Blocks['ast_AuthorDef'] = {
     domToMutation: function (xmlElement) { },
 };
 
-Blockly.Python['ast_AuthorDef'] = function (block) {};
+Blockly.Python['ast_AuthorDef'] = function (block) { };
 
-BlockMirrorTextToBlocks.prototype['ast_AuthorDef'] = function (node, parent) {};
+BlockMirrorTextToBlocks.prototype['ast_AuthorDef'] = function (node, parent) { };
 
 // MORE
 
