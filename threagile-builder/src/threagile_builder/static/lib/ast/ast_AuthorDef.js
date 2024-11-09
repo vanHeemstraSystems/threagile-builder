@@ -19,6 +19,3 @@ Blockly.Blocks['ast_AuthorDef'] = {
 Blockly.Python['ast_AuthorDef'] = function (block) { };
 
 BlockMirrorTextToBlocks.prototype['ast_AuthorDef'] = function (node, parent) { };
-
-// MORE
-
