@@ -1,6 +1,6 @@
 威脅建造者
 
-# Threagile Builder
+# 威脅建造者
 
 |           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -45,7 +45,7 @@
 4.  API參考
 5.  建置和測試：
 
-    要建立您的程式碼，請使用：
+    To build your code, use:
 
     ```bash
     $ cd threagile-builder
@@ -94,7 +94,7 @@
 
 **_新的_**
 
-**目錄**
+**Table of Contents**
 
 -   [安裝](#installation)
 -   [版本來源](#version-source)
@@ -114,12 +114,12 @@ pip install threagile-builder
 
 ## 環境
 
--   整齊地定義在獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   整齊地定義在一個獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
 
--   所有建置目標都使用[孵化VCS](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
+-   所有建置目標都使用[hatch-vcs](https://github.com/ofek/hatch-vcs)建立鉤子插件來發送`_version.py`文件，以便可以在運行時使用該版本
 -   輪子使用[孵化 mypyc](https://github.com/ofek/hatch-mypyc)建立鉤子插件以首先編譯所有程式碼[Mypyc](https://github.com/mypyc/mypyc)
 -   這[建造](.github/workflows/build.yml)GitHub 工作流程展示如何：
     -   使用[cibuildwheel](https://github.com/pypa/cibuildwheel)為每個平台分發二進制輪子
@@ -129,7 +129,7 @@ pip install threagile-builder
 
 `threagile-builder`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
 
-## 100 - Introduction
+## 100 - 簡介
 
 看[README.md](./100/README.md)
 
