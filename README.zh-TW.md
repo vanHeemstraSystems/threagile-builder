@@ -10,7 +10,7 @@
 
 * * *
 
-> A [基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
+> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
@@ -52,7 +52,7 @@
     $ hatch build
     ```
 
-    要運行該應用程序，請使用：
+    To run the application, use:
 
     Linux：
 
