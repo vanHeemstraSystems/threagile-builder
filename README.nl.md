@@ -84,13 +84,13 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ pytest tests/
     ```
 
-# API-documentatie
+# API Documentation
 
 Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openapi.json van`http://127.0.0.1:5000/openapi.json`.
 
 # Statistieken
 
-Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
+Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:9464/metrics`.
 
 **_NIEUW_**
 
@@ -119,7 +119,7 @@ pip install threagile-builder
 
 ## Bouwen
 
--   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
+-   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
