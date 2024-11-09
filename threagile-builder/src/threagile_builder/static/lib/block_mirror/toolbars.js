@@ -4,11 +4,18 @@ BlockMirrorBlockEditor.EXTRA_TOOLS = {};
 
 const TOOLBOX_CATEGORY = {};
 
-TOOLBOX_CATEGORY.THREAT_MODELS = { 
+TOOLBOX_CATEGORY.THREAT_MODELS = {
     name: 'Threat Models', colour: 'THREAT_MODELS', blocks: [
         "threagile_version: 1.0.0",
         "title: my title",
         "date: 1970-01-01",
+    ]
+};
+TOOLBOX_CATEGORY.AUTHOR = {
+    name: 'Author', colour: 'AUTHOR', blocks: [
+        "def author(): ___",
+        "name: my name",
+        "homepage: my url",
     ]
 };
 TOOLBOX_CATEGORY.DATA_ASSETS = {
@@ -229,7 +236,7 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
         TOOLBOX_CATEGORY.DATA_ASSETS,
         TOOLBOX_CATEGORY.TECHNICAL_COMPONENTS,
         TOOLBOX_CATEGORY.COMMUNICATION_LINKS,
-        TOOLBOX_CATEGORY.TRUST_BOUNDARIES,  
+        TOOLBOX_CATEGORY.TRUST_BOUNDARIES,
         {
             name: "Classes", colour: "OO", blocks: [
                 "class ___: pass",
@@ -430,16 +437,10 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
     //******************************************************
     'threagile': [
         TOOLBOX_CATEGORY.THREAT_MODELS,
-        { 
-            name: 'Author', colour: 'AUTHOR', blocks: [
-                "def author(): ___",
-                "name: my name",
-                "homepage: my url",
-            ]
-        },
+        TOOLBOX_CATEGORY.AUTHOR,
         TOOLBOX_CATEGORY.DATA_ASSETS,
         TOOLBOX_CATEGORY.TECHNICAL_COMPONENTS,
         TOOLBOX_CATEGORY.COMMUNICATION_LINKS,
-        TOOLBOX_CATEGORY.TRUST_BOUNDARIES,        
+        TOOLBOX_CATEGORY.TRUST_BOUNDARIES,
     ],
 };
