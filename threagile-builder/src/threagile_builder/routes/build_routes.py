@@ -17,7 +17,7 @@ build_bp = APIBlueprint("build", __name__)
 def new_build():
     form = BuildForm()
     if form.validate_on_submit():
-        new_build = Build(title=form.title.data, description=form.description.data)
+        new_build = Build(title=form.title.data, description=form.description.data, code=form.code.data)
         db.session.add(new_build)
         db.session.commit()
         return redirect(url_for('build.list_builds'))
@@ -31,7 +31,7 @@ def create_build():
     new_build = Build(title=data["title"])
     db.session.add(new_build)
     db.session.commit()
-    return jsonify({"id": new_build.id, "title": new_build.title}), 201
+    return jsonify({"id": new_build.id, "title": new_build.title, "description": new_build.description, "code": new_build.code}), 201
 
 
 # List all Builds
@@ -52,7 +52,7 @@ def list_builds():
 @build_bp.route("/<int:build_id>", methods=["GET"])
 def get_build(build_id):
     build = Build.query.get_or_404(build_id)
-    return jsonify({"build_id": build.id, "title": build.title}), 200
+    return jsonify({"build_id": build.id, "title": build.title, "description": build.description, "code": build.code}), 200
 
 
 # Update a Build by ID
@@ -62,7 +62,7 @@ def update_build(build_id):
     data = request.json
     build.title = data["title"]
     db.session.commit()
-    return jsonify({"build_id": build.id, "title": build.title}), 200
+    return jsonify({"build_id": build.id, "title": build.title, "description": build.description, "code": build.code}), 200
 
 
 # Delete a Build by ID
@@ -83,6 +83,7 @@ def edit_build(build_id):
     if form.validate_on_submit():
         build.title = form.title.data
         build.description = form.description.data
+        build.code = form.code.data
         db.session.commit()
         # flash("Build updated successfully!", "success")
         return redirect(url_for("build.list_builds"))
