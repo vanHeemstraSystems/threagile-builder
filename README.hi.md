@@ -14,7 +14,7 @@ thregile-बिल्डर
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
--   [प्रलेखन](./DOCUMENTATION.md)
+-   [Documentation](./DOCUMENTATION.md)
 
 **कार्यकारी सारांश**
 
@@ -99,7 +99,7 @@ thregile-बिल्डर
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
 -   [वातावरण](#environments)
--   [Build](#build)
+-   [निर्माण](#build)
 -   [लाइसेंस](#license)
 
 ## इंस्टालेशन
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## संस्करण स्रोत
 
--   [hatch-vcs](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
+-   [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
 
 ## वातावरण
 
