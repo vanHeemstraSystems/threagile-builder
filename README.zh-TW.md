@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## 執照
 
-`threagile-builder`是根據以下條款分發的[MIT](https://spdx.org/licenses/MIT.html)執照。
+`threagile-builder`是根據以下條款分發的[和](https://spdx.org/licenses/MIT.html)執照。
 
 ## 100 - 簡介
 
