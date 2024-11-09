@@ -13,6 +13,7 @@
                     <tr class="bg-gray-200">
                         <th class="py-2 px-4 border">Title</th>
                         <th class="py-2 px-4 border">Description</th>
+                        <th class="py-2 px-4 border">Code</th>
                         <th class="py-2 px-4 border">Actions</th>
                     </tr>
                 </thead>
@@ -21,6 +22,7 @@
                     <tr class="border-b">
                         <td class="py-2 px-4">{{ build.title }}</td>
                         <td class="py-2 px-4">{{ build.description }}</td>
+                        <td class="py-2 px-4">{{ build.code }}</td>
                         <td class="py-2 px-4">
                             <a href="{{ url_for('build.edit_build', build_id=build.id) }}" class="text-blue-500 hover:underline">Edit</a>
                             <form action="{{ url_for('build.delete_build', build_id=build.id) }}" method="POST" style="display:inline;">
