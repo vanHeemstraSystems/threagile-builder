@@ -12,7 +12,7 @@ constructor-threagil
 
 > A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
 
--   [Glossary](./GLOSSARY.md)
+-   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
 -   [Documentación](./DOCUMENTATION.md)
 
@@ -20,7 +20,7 @@ constructor-threagil
 
 Cómo poner en marcha su código en su propio sistema.
 
-**Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
+**Note**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
 1.  Proceso de instalación:
     ```bash
@@ -74,7 +74,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Luego, navegue hasta`http://127.0.0.1:5000/` in your web browser.
+    Luego, navegue hasta`http://127.0.0.1:5000/`en su navegador web.
 
     Para ejecutar pruebas, utilice:
 
@@ -127,7 +127,7 @@ pip install threagile-builder
 
 ## Licencia
 
-`threagile-builder`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html)licencia.
+`threagile-builder` is distributed under the terms of the [CON](https://spdx.org/licenses/MIT.html)licencia.
 
 ## 100 - Introducción
 
