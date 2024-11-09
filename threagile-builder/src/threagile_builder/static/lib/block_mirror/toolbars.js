@@ -5,7 +5,7 @@ BlockMirrorBlockEditor.EXTRA_TOOLS = {};
 const TOOLBOX_CATEGORY = {};
 
 TOOLBOX_CATEGORY.THREAT_MODELS = { 
-    name: 'Threat Models', colour: 'THREAT MODELS', blocks: [
+    name: 'Threat Models', colour: 'THREAT_MODELS', blocks: [
         "threagile_version: 1.0.0",
         "title: my title",
         "date: 1970-01-01",
@@ -431,7 +431,7 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
     'threagile': [
         TOOLBOX_CATEGORY.THREAT_MODELS,
         { 
-            name: 'Author', colour: 'THREAT MODELS', blocks: [
+            name: 'Author', colour: 'AUTHOR', blocks: [
                 "author: pass",
                 "def ___(___): pass",
                 "def ___(___: int)->str: pass",
