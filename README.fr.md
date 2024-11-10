@@ -1,4 +1,4 @@
-constructeur de menaces
+threagile-builder
 
 # Constructeur dangereux
 
@@ -66,7 +66,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ setx SECRET_KEY secret
     ```
 
-    Alors:
+    Then:
 
     ```bash
     $ cd threagile-builder
@@ -115,7 +115,7 @@ pip install threagile-builder
 ## Environnements
 
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
+-   The `test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
 ## Construire
 
@@ -129,7 +129,7 @@ pip install threagile-builder
 
 `threagile-builder`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
@@ -137,7 +137,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Créer notre application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 
