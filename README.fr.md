@@ -102,8 +102,8 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Vous pouvez personnaliser l'analyse en :
 
--   Définition des niveaux de règle (0-9) : Ajouter`--level 8`
--   Utilisation d'un fichier de configuration : Ajouter`-c phpstan.neon`
+    -   Définition des niveaux de règle (0-9) : Ajouter`--level 8`
+    -   Utilisation d'un fichier de configuration : Ajouter`-c phpstan.neon`
 
 # Documentation API
 
