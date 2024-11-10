@@ -10,7 +10,7 @@ Threagile-Builder
 
 * * *
 
-> A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagil](https://threagile.io) YAML files
+> A[blockbasiert](https://developers.google.com/blockly)No-Code-Webanwendung zum Erstellen[threagil](https://threagile.io)YAML-Dateien
 
 -   [Glossar](./GLOSSARY.md)
 -   [Referenzen](./REFERENCES.md)
@@ -102,7 +102,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     Sie können die Analyse anpassen, indem Sie:
 
-    -   Regelstufen einstellen (0-9): Add`--level 8`
+    -   Regelebenen einstellen (0-9): Add`--level 8`
     -   Verwenden einer Konfigurationsdatei: Hinzufügen`-c phpstan.neon`
 
 # API-Dokumentation
