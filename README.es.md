@@ -10,7 +10,7 @@ constructor-threagil
 
 * * *
 
-> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)Archivos YAML
+> A[basado en bloques](https://developers.google.com/blockly)aplicación web sin código para crear[amenazante](https://threagile.io)archivos YAML
 
 -   [Glosario](./GLOSSARY.md)
 -   [Referencias](./REFERENCES.md)
@@ -18,7 +18,7 @@ constructor-threagil
 
 **Resumen ejecutivo**
 
-Cómo poner en marcha su código en su propio sistema.
+Poner en funcionamiento su código en su propio sistema.
 
 **Nota**: Asegúrese de cumplir con los[requisitos](./200/README.md).
 
@@ -84,7 +84,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ pytest tests/
     ```
 
-    Nota: PHPStan es una herramienta de análisis estático que encuentra errores en su código PHP sin ejecutarlo. Para ejecutar PHPStan en un contenedor Docker:
+    Note: PHPStan is a static analysis tool that finds bugs in your PHP code without running it. To run PHPStan in a Docker container:
 
     En Unix/Linux/macOS:
 
@@ -121,7 +121,7 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
 -   [Fuente de la versión](#version-source)
 -   [Ambientes](#environments)
 -   [Construir](#build)
--   [License](#license)
+-   [Licencia](#license)
 
 ## Instalación
 
@@ -136,7 +136,7 @@ pip install threagile-builder
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
@@ -152,7 +152,7 @@ pip install threagile-builder
 
 ## 100 - Introducción
 
-See [README.md](./100/README.md)
+Ver[README.md](./100/README.md)
 
 ## 200 - Requisitos
 
