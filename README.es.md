@@ -1,4 +1,4 @@
-constructor-threagil
+threagile-builder
 
 # Constructor amenazante
 
@@ -60,7 +60,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ export SECRET_KEY="secret"
     ```
 
-    Ventanas:
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
@@ -123,11 +123,11 @@ pip install threagile-builder
 -   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
-    -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
+    -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/) build target to build standalone distributions for every platform
 
 ## Licencia
 
-`threagile-builder` is distributed under the terms of the [CON](https://spdx.org/licenses/MIT.html)licencia.
+`threagile-builder`se distribuye bajo los términos del[MIT](https://spdx.org/licenses/MIT.html)licencia.
 
 ## 100 - Introducción
 
