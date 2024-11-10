@@ -10,3 +10,4 @@
 - [Python uses execjs to execute JS code containing objects such as document and window, and uses JSDOM to solve the problem](https://www.cnblogs.com/huchong/p/11044238.html)
 - [BlockMirror](https://github.com/blockpy-edu/BlockMirror)
 - [FlowBite Datatables](https://flowbite.com/docs/plugins/datatables/)
+- [CodeRabbit](https://coderabbit.org)

@@ -80,6 +80,24 @@ Getting your code up and running on your own system.
     $ pytest tests/
     ```
 
+    Note: PHPStan is a static analysis tool that finds bugs in your PHP code without running it. To run PHPStan in a Docker container:
+
+    On Unix/Linux/macOS:
+    ```bash
+    $ cd threagile-builder
+    $ docker run --rm -v $(pwd):/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
+    ```
+   
+    On Windows:
+    ```bash
+    $ cd threagile-builder
+    $ docker run --rm -v %CD%:/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
+    ```
+
+    You can customize the analysis by:
+    - Setting rule levels (0-9): Add `--level 8`
+    - Using a config file: Add `-c phpstan.neon`
+
 # API Documentation
 
 Navigate to `http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.

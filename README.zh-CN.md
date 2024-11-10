@@ -84,6 +84,27 @@
     $ pytest tests/
     ```
 
+    注意：PHPStan 是一个静态分析工具，无需运行 PHP 代码即可发现其中的错误。要在 Docker 容器中运行 PHPStan：
+
+    在 Unix/Linux/macOS 上：
+
+    ```bash
+    $ cd threagile-builder
+    $ docker run --rm -v $(pwd):/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
+    ```
+
+    在 Windows 上：
+
+    ```bash
+    $ cd threagile-builder
+    $ docker run --rm -v %CD%:/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
+    ```
+
+    您可以通过以下方式自定义分析：
+
+    -   设置规则级别（0-9）：添加`--level 8`
+    -   使用配置文件：添加`-c phpstan.neon`
+
 # API文档
 
 导航至`http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
@@ -110,12 +131,12 @@ pip install threagile-builder
 
 ## 版本来源
 
--   这[孵化VCS](https://github.com/ofek/hatch-vcs) version source plugin determines the project version using Git tags
+-   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 
 ## 环境
 
--   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml) GitHub workflow
+-   整齐地定义在独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
 
