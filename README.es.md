@@ -118,10 +118,10 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
 **Tabla de contenido**
 
 -   [Instalación](#installation)
--   [Version source](#version-source)
+-   [Fuente de la versión](#version-source)
 -   [Ambientes](#environments)
 -   [Construir](#build)
--   [Licencia](#license)
+-   [License](#license)
 
 ## Instalación
 
@@ -152,7 +152,7 @@ pip install threagile-builder
 
 ## 100 - Introducción
 
-Ver[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - Requisitos
 
