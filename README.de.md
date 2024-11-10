@@ -86,7 +86,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     Hinweis: PHPStan ist ein statisches Analysetool, das Fehler in Ihrem PHP-Code findet, ohne ihn auszuführen. So führen Sie PHPStan in einem Docker-Container aus:
 
-    Unter Unix/Linux/MacOS:
+    Unter Unix/Linux/macOS:
 
     ```bash
     $ cd threagile-builder
@@ -102,10 +102,10 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     Sie können die Analyse anpassen, indem Sie:
 
--   Regelstufen einstellen (0-9): Add`--level 8`
+-   Regelebenen einstellen (0-9): Add`--level 8`
 -   Verwenden einer Konfigurationsdatei: Hinzufügen`-c phpstan.neon`
 
-# API Documentation
+# API-Dokumentation
 
 Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
 
