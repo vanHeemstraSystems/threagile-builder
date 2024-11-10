@@ -1,4 +1,4 @@
-threagile-builder
+constructor-threagil
 
 # Constructor amenazante
 
@@ -60,7 +60,7 @@ Cómo poner en marcha su código en su propio sistema.
     $ export SECRET_KEY="secret"
     ```
 
-    Windows:
+    Ventanas:
 
     ```bash
     $ setx SECRET_KEY secret
@@ -115,7 +115,7 @@ pip install threagile-builder
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`La matriz utiliza el[hatch-containers](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
@@ -123,11 +123,11 @@ pip install threagile-builder
 -   Las ruedas utilizan el[hatch-mypyc](https://github.com/ofek/hatch-mypyc)complemento de enlace de compilación para compilar primero todo el código[mipyc](https://github.com/mypyc/mypyc)
 -   El[construir](.github/workflows/build.yml)El flujo de trabajo de GitHub muestra cómo:
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
-    -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/) build target to build standalone distributions for every platform
+    -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
 
 ## Licencia
 
-`threagile-builder`se distribuye bajo los términos del[MIT](https://spdx.org/licenses/MIT.html)licencia.
+`threagile-builder`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html)licencia.
 
 ## 100 - Introducción
 
@@ -141,6 +141,6 @@ Ver[README.md](./200/README.md)
 
 Ver[README.md](./300/README.md)
 
-## 400 - Conclusión
+## 400 - Conclusion
 
 Ver[README.md](./400/README.md)
