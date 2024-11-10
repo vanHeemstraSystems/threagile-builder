@@ -10,7 +10,7 @@ thregile-बिल्डर
 
 * * *
 
-> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io) YAML files
+> ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
 -   [शब्दकोष](./GLOSSARY.md)
 -   [संदर्भ](./REFERENCES.md)
@@ -102,8 +102,8 @@ thregile-बिल्डर
 
     आप विश्लेषण को इसके द्वारा अनुकूलित कर सकते हैं:
 
--   नियम स्तर सेट करना (0-9): जोड़ें`--level 8`
--   कॉन्फ़िग फ़ाइल का उपयोग करना: जोड़ें`-c phpstan.neon`
+    -   नियम स्तर सेट करना (0-9): जोड़ें`--level 8`
+    -   कॉन्फ़िग फ़ाइल का उपयोग करना: जोड़ें`-c phpstan.neon`
 
 # एपीआई दस्तावेज़ीकरण
 
@@ -113,7 +113,7 @@ thregile-बिल्डर
 
 प्रोमेथियस जैसे उपकरण को परिमार्जन करने दें`http://127.0.0.1:9464/metrics`.
 
-**_नया_**
+**_ NEW _**
 
 **विषयसूची**
 
@@ -144,7 +144,7 @@ pip install threagile-builder
 -   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे करें:
     -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
-    -   use the [अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)प्रत्येक प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण बनाने का लक्ष्य बनाएं
+    -   उपयोग[अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)प्रत्येक प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण बनाने का लक्ष्य बनाएं
 
 ## लाइसेंस
 
