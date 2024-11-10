@@ -102,8 +102,8 @@ Cómo poner en marcha su código en su propio sistema.
 
     Puede personalizar el análisis mediante:
 
--   Configuración de niveles de regla (0-9): Agregar`--level 8`
--   Usando un archivo de configuración: Agregar`-c phpstan.neon`
+    -   Configuración de niveles de regla (0-9): Agregar`--level 8`
+    -   Usando un archivo de configuración: Agregar`-c phpstan.neon`
 
 # Documentación API
 
@@ -118,7 +118,7 @@ Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
 **Tabla de contenido**
 
 -   [Instalación](#installation)
--   [Fuente de la versión](#version-source)
+-   [Version source](#version-source)
 -   [Ambientes](#environments)
 -   [Construir](#build)
 -   [Licencia](#license)
@@ -146,11 +146,11 @@ pip install threagile-builder
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
     -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
 
-## License
+## Licencia
 
 `threagile-builder`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html)licencia.
 
-## 100 - Introduction
+## 100 - Introducción
 
 Ver[README.md](./100/README.md)
 
