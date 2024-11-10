@@ -52,7 +52,7 @@
     $ hatch build
     ```
 
-     To run the application, use:
+    لتشغيل التطبيق استخدم:
 
     لينكس:
 
@@ -76,7 +76,7 @@
 
     ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
 
-     To run tests, use:
+    لتشغيل الاختبارات استخدم:
 
     ```bash
     $ cd threagile-builder
@@ -86,7 +86,7 @@
 
     ملاحظة: PHPStan هي أداة تحليل ثابتة تكتشف الأخطاء في كود PHP الخاص بك دون تشغيلها. لتشغيل PHPStan في حاوية Docker:
 
-    على نظام التشغيل Unix/Linux/MacOS:
+    على نظام التشغيل Unix/Linux/macOS:
 
     ```bash
     $ cd threagile-builder
@@ -129,7 +129,7 @@
 pip install threagile-builder
 ```
 
-## Version source
+## مصدر النسخة
 
 -   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
