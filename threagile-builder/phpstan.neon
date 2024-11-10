@@ -1,0 +1,4 @@
+parameters:
+  path:
+    - src
+    - tests
