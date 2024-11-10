@@ -102,8 +102,8 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     Sie können die Analyse anpassen, indem Sie:
 
--   Regelebenen einstellen (0-9): Add`--level 8`
--   Verwenden einer Konfigurationsdatei: Hinzufügen`-c phpstan.neon`
+    -   Regelebenen einstellen (0-9): Add`--level 8`
+    -   Verwenden einer Konfigurationsdatei: Hinzufügen`-c phpstan.neon`
 
 # API-Dokumentation
 
@@ -158,7 +158,7 @@ Sehen[README.md](./100/README.md)
 
 Sehen[README.md](./200/README.md)
 
-## 300 – Erstellen unserer Anwendung
+## 300 - Building Our Application
 
 Sehen[README.md](./300/README.md)
 
