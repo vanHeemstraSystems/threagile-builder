@@ -54,7 +54,7 @@
 
     لتشغيل التطبيق استخدم:
 
-    Linux:
+    لينكس:
 
     ```bash
     $ export SECRET_KEY="secret"
@@ -84,7 +84,7 @@
     $ pytest tests/
     ```
 
-# API Documentation
+# وثائق واجهة برمجة التطبيقات
 
 انتقل إلى`http://127.0.0.1:5000/docs`في متصفح الويب الخاص بك، أو قم بتنزيل openapi.json من`http://127.0.0.1:5000/openapi.json`.
 
@@ -96,7 +96,7 @@
 
 **جدول المحتويات**
 
--   [Installation](#installation)
+-   [تثبيت](#installation)
 -   [مصدر النسخة](#version-source)
 -   [البيئات](#environments)
 -   [يبني](#build)
@@ -112,7 +112,7 @@ pip install threagile-builder
 
 -   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
-## Environments
+## البيئات
 
 -   تم تعريفها بدقة في قائمة بذاتها[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   ال`test`تستخدم المصفوفة[حاويات الفتحة](https://github.com/ofek/hatch-containers)مكون إضافي لتشغيل كل بيئة داخل حاويات Docker؛ يمكن رؤية الاستخدام في[امتحان](.github/workflows/test.yml)سير عمل جيثب
@@ -122,7 +122,7 @@ pip install threagile-builder
 -   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
-    -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
+    -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel) to distribute binary wheels for every platform
     -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
 
 ## رخصة
