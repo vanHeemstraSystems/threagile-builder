@@ -82,7 +82,7 @@ Getting your code up and running on your own system.
 
     Note: PHPStan is a static analysis tool that finds bugs in your PHP code without running it. To run PHPStan in a Docker container:
 
-   On Unix/Linux/MacOS:
+   On Unix/Linux/macOS:
    ```bash
    $ cd threagile-builder
    $ docker run --rm -v $(pwd):/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
