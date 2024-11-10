@@ -10,19 +10,19 @@
 
 * * *
 
-> 一个[基于块的](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
+> 一个[block-based](https://developers.google.com/blockly)创建无代码 Web 应用程序[威胁性的](https://threagile.io)YAML 文件
 
--   [词汇表](./GLOSSARY.md)
+-   [Glossary](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
 
-**执行摘要**
+**Executive Summary**
 
 在您自己的系统上启动并运行您的代码。
 
-**笔记**: 确保您满足[要求](./200/README.md).
+**Note**: 确保您满足[要求](./200/README.md).
 
-1.  安装过程：
+1.  Installation process: 
     ```bash
     $ cd threagile-builder
     $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
@@ -60,7 +60,7 @@
     $ export SECRET_KEY="secret"
     ```
 
-    视窗：
+    Windows:
 
     ```bash
     $ setx SECRET_KEY secret
@@ -86,7 +86,7 @@
 
 # API文档
 
-导航至`http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
+Navigate to `http://127.0.0.1:5000/docs`在您的网络浏览器中，或从以下位置下载 openapi.json`http://127.0.0.1:5000/openapi.json`.
 
 # 指标
 
@@ -108,7 +108,7 @@
 pip install threagile-builder
 ```
 
-## 版本来源
+## Version source
 
 -   这[孵化VCS](https://github.com/ofek/hatch-vcs)版本源插件使用 Git 标签确定项目版本
 
