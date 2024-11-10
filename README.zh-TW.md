@@ -43,7 +43,7 @@
 2.  軟體依賴性
 3.  最新版本
 4.  API參考
-5.  Build and Test:
+5.  建置和測試：
 
     要建立您的程式碼，請使用：
 
@@ -86,7 +86,7 @@
 
     注意：PHPStan 是一個靜態分析工具，無需執行 PHP 程式碼即可發現其中的錯誤。要在 Docker 容器中運行 PHPStan：
 
-    在 Unix/Linux/MacOS 上：
+    在 Unix/Linux/macOS 上：
 
     ```bash
     $ cd threagile-builder
@@ -135,7 +135,7 @@ pip install threagile-builder
 
 ## 環境
 
--   整齊地定義在一個獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   整齊地定義在獨立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   這`test`矩陣使用[孵化貨櫃](https://github.com/ofek/hatch-containers)用於運行 Docker 容器內每個環境的插件；用法可以在[測試](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
