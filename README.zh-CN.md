@@ -41,7 +41,7 @@
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
 2.  软件依赖性
-3.  最新版本
+3.  Latest releases
 4.  API参考
 5.  构建和测试：
 
