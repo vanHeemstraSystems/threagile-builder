@@ -4876,6 +4876,7 @@ Parser.prototype.classify = function (type, value, context) {
 
     if (ilabel) {
       //print("is keyword");
+      console.debug("+++++ " + value + " is a keyword"); // wvh For testing only
       return ilabel;
     }
   }

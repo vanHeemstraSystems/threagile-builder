@@ -391,6 +391,7 @@ BlockMirrorTextToBlocks.prototype.isTopLevel = function (parent) {
 BlockMirrorTextToBlocks.prototype.convert = function (node, parent) {
   console.debug('BlockMirrorTextToBlocks.convert');
   let functionName = 'ast_' + node._astname;
+  console.debug("+++++" + node._astname) // wvh For testing only
   if (this[functionName] === undefined) {
     throw new Error('Could not find function: ' + functionName);
   }
