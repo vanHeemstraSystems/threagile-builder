@@ -84,7 +84,7 @@ thregile-बिल्डर
     $ pytest tests/
     ```
 
-    Note: PHPStan is a static analysis tool that finds bugs in your PHP code without running it. To run PHPStan in a Docker container:
+    ध्यान दें: PHPStan एक स्थैतिक विश्लेषण उपकरण है जो आपके PHP कोड को चलाए बिना बग ढूंढता है। डॉकर कंटेनर में PHPStan चलाने के लिए:
 
     यूनिक्स/लिनक्स/मैकओएस पर:
 
@@ -107,7 +107,7 @@ thregile-बिल्डर
 
 # एपीआई दस्तावेज़ीकरण
 
-Navigate to `http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
+पर नेविगेट करें`http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
 
 # मेट्रिक्स
 
