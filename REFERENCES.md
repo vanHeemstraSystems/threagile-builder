@@ -11,3 +11,4 @@
 - [BlockMirror](https://github.com/blockpy-edu/BlockMirror)
 - [FlowBite Datatables](https://flowbite.com/docs/plugins/datatables/)
 - [CodeRabbit](https://coderabbit.org)
+- [Python Static Analysis Tools](https://luminousmen.com/post/python-static-analysis-tools)
