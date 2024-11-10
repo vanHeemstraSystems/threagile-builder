@@ -13,7 +13,7 @@ thregile-बिल्डर
 > ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
 -   [शब्दकोष](./GLOSSARY.md)
--   [References](./REFERENCES.md)
+-   [संदर्भ](./REFERENCES.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 
 **कार्यकारी सारांश**
@@ -42,10 +42,10 @@ thregile-बिल्डर
     ```
 2.  सॉफ़्टवेयर निर्भरताएँ
 3.  नवीनतम रिलीज़
-4.  API references
+4.  एपीआई संदर्भ
 5.  निर्माण और परीक्षण:
 
-    To build your code, use:
+    अपना कोड बनाने के लिए, इसका उपयोग करें:
 
     ```bash
     $ cd threagile-builder
@@ -90,7 +90,7 @@ thregile-बिल्डर
 
 # मेट्रिक्स
 
-Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
+प्रोमेथियस जैसे उपकरण को परिमार्जन करने दें`http://127.0.0.1:9464/metrics`.
 
 **_नया_**
 
