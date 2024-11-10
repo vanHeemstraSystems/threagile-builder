@@ -86,7 +86,7 @@
 
     注意：PHPStan 是一个静态分析工具，无需运行 PHP 代码即可发现其中的错误。要在 Docker 容器中运行 PHPStan：
 
-    在 Unix/Linux/MacOS 上：
+    在 Unix/Linux/macOS 上：
 
     ```bash
     $ cd threagile-builder
@@ -135,7 +135,7 @@ pip install threagile-builder
 
 ## 环境
 
--   整齐地定义在一个独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
+-   整齐地定义在独立的[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   这`test`矩阵使用[孵化集装箱](https://github.com/ofek/hatch-containers)用于运行 Docker 容器内每个环境的插件；用法可以在[测试](.github/workflows/test.yml)GitHub 工作流程
 
 ## 建造
