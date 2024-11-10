@@ -100,7 +100,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ docker run --rm -v %CD%:/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
     ```
 
-    You can customize the analysis by:
+    Vous pouvez personnaliser l'analyse en :
 
     -   Définition des niveaux de règle (0-9) : Ajouter`--level 8`
     -   Utilisation d'un fichier de configuration : Ajouter`-c phpstan.neon`
@@ -138,7 +138,7 @@ pip install threagile-builder
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
 -   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
-## Build
+## Construire
 
 -   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
 -   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
@@ -158,7 +158,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Building Our Application
+## 300 - Construire notre application
 
 Voir[README.md](./300/README.md)
 
