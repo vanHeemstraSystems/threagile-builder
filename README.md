@@ -88,7 +88,7 @@ Getting your code up and running on your own system.
    $ docker run --rm -v $(pwd):/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
    ```
    
-   # On Windows:
+   On Windows:
    ```bash
    $ cd threagile-builder
    $ docker run --rm -v %CD%:/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
