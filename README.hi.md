@@ -13,7 +13,7 @@ thregile-बिल्डर
 > ए[ब्लॉक आधारित](https://developers.google.com/blockly)नो-कोड वेब एप्लिकेशन बनाने के लिए[threagile](https://threagile.io)वाईएएमएल फ़ाइलें
 
 -   [शब्दकोष](./GLOSSARY.md)
--   [संदर्भ](./REFERENCES.md)
+-   [References](./REFERENCES.md)
 -   [प्रलेखन](./DOCUMENTATION.md)
 
 **कार्यकारी सारांश**
@@ -42,10 +42,10 @@ thregile-बिल्डर
     ```
 2.  सॉफ़्टवेयर निर्भरताएँ
 3.  नवीनतम रिलीज़
-4.  एपीआई संदर्भ
+4.  API references
 5.  निर्माण और परीक्षण:
 
-    अपना कोड बनाने के लिए, इसका उपयोग करें:
+    To build your code, use:
 
     ```bash
     $ cd threagile-builder
@@ -86,11 +86,11 @@ thregile-बिल्डर
 
 # एपीआई दस्तावेज़ीकरण
 
-Navigate to `http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
+पर नेविगेट करें`http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
 
 # मेट्रिक्स
 
-प्रोमेथियस जैसे उपकरण को परिमार्जन करने दें`http://127.0.0.1:9464/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
 
 **_नया_**
 
@@ -110,7 +110,7 @@ pip install threagile-builder
 
 ## संस्करण स्रोत
 
--   [hatch-vcs](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
+-   [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
 
 ## वातावरण
 
