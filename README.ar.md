@@ -52,7 +52,7 @@
     $ hatch build
     ```
 
-    لتشغيل التطبيق استخدم:
+     To run the application, use:
 
     لينكس:
 
@@ -76,13 +76,34 @@
 
     ثم انتقل إلى`http://127.0.0.1:5000/`في متصفح الويب الخاص بك.
 
-    لتشغيل الاختبارات استخدم:
+     To run tests, use:
 
     ```bash
     $ cd threagile-builder
     $ pip install pytest # optional
     $ pytest tests/
     ```
+
+    ملاحظة: PHPStan هي أداة تحليل ثابتة تكتشف الأخطاء في كود PHP الخاص بك دون تشغيلها. لتشغيل PHPStan في حاوية Docker:
+
+    على نظام التشغيل Unix/Linux/MacOS:
+
+    ```bash
+    $ cd threagile-builder
+    $ docker run --rm -v $(pwd):/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
+    ```
+
+    على نظام التشغيل Windows:
+
+    ```bash
+    $ cd threagile-builder
+    $ docker run --rm -v %CD%:/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
+    ```
+
+    يمكنك تخصيص التحليل عن طريق:
+
+-   تحديد مستويات القاعدة (0-9): إضافة`--level 8`
+-   باستخدام ملف التكوين: أضف`-c phpstan.neon`
 
 # وثائق واجهة برمجة التطبيقات
 
@@ -108,7 +129,7 @@
 pip install threagile-builder
 ```
 
-## مصدر النسخة
+## Version source
 
 -   ال[Hatch-vcs](https://github.com/ofek/hatch-vcs)يحدد البرنامج المساعد لمصدر الإصدار إصدار المشروع باستخدام علامات Git
 
@@ -122,7 +143,7 @@ pip install threagile-builder
 -   تستخدم جميع أهداف البناء[Hatch-vcs](https://github.com/ofek/hatch-vcs)بناء البرنامج المساعد هوك لشحن أ`_version.py`ملف بحيث يمكن استخدام الإصدار في وقت التشغيل
 -   تستخدم العجلات[Hatch-mypyc](https://github.com/ofek/hatch-mypyc)أنشئ ملحقًا ربطًا لتجميع جميع التعليمات البرمجية أولاً[Mypyc](https://github.com/mypyc/mypyc)
 -   ال[يبني](.github/workflows/build.yml)يوضح سير عمل GitHub كيفية:
-    -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel) to distribute binary wheels for every platform
+    -   يستخدم[cibuildwheel](https://github.com/pypa/cibuildwheel)لتوزيع العجلات الثنائية لكل منصة
     -   استخدم[برنامج](https://hatch.pypa.io/latest/plugins/builder/app/)بناء الهدف لبناء توزيعات مستقلة لكل منصة
 
 ## رخصة
