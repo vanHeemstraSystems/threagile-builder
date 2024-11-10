@@ -86,7 +86,7 @@ Cómo poner en marcha su código en su propio sistema.
 
     Nota: PHPStan es una herramienta de análisis estático que encuentra errores en su código PHP sin ejecutarlo. Para ejecutar PHPStan en un contenedor Docker:
 
-    En Unix/Linux/MacOS:
+    En Unix/Linux/macOS:
 
     ```bash
     $ cd threagile-builder
@@ -146,11 +146,11 @@ pip install threagile-builder
     -   usar[cibuildwheel](https://github.com/pypa/cibuildwheel)distribuir ruedas binarias para cada plataforma
     -   utilizar el[aplicación](https://hatch.pypa.io/latest/plugins/builder/app/)construir objetivo para crear distribuciones independientes para cada plataforma
 
-## Licencia
+## License
 
 `threagile-builder`se distribuye bajo los términos del[CON](https://spdx.org/licenses/MIT.html)licencia.
 
-## 100 - Introducción
+## 100 - Introduction
 
 Ver[README.md](./100/README.md)
 
