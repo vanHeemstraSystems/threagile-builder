@@ -84,6 +84,27 @@ thregile-बिल्डर
     $ pytest tests/
     ```
 
+    ध्यान दें: PHPStan एक स्थैतिक विश्लेषण उपकरण है जो आपके PHP कोड को चलाए बिना बग ढूंढता है। डॉकर कंटेनर में PHPStan चलाने के लिए:
+
+    यूनिक्स/लिनक्स/मैकओएस पर:
+
+    ```bash
+    $ cd threagile-builder
+    $ docker run --rm -v $(pwd):/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
+    ```
+
+    विंडोज़ पर:
+
+    ```bash
+    $ cd threagile-builder
+    $ docker run --rm -v %CD%:/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
+    ```
+
+    आप विश्लेषण को इसके द्वारा अनुकूलित कर सकते हैं:
+
+-   नियम स्तर सेट करना (0-9): जोड़ें`--level 8`
+-   कॉन्फ़िग फ़ाइल का उपयोग करना: जोड़ें`-c phpstan.neon`
+
 # एपीआई दस्तावेज़ीकरण
 
 पर नेविगेट करें`http://127.0.0.1:5000/docs`अपने वेब ब्राउज़र में, या openapi.json डाउनलोड करें`http://127.0.0.1:5000/openapi.json`.
@@ -141,6 +162,6 @@ pip install threagile-builder
 
 देखना[README.md](./300/README.md)
 
-## 400 - निष्कर्ष
+## 400 - Conclusion
 
 देखना[README.md](./400/README.md)
