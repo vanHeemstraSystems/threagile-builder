@@ -90,7 +90,7 @@ Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openap
 
 # Statistieken
 
-Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
+Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:9464/metrics`.
 
 **_NIEUW_**
 
@@ -131,7 +131,7 @@ pip install threagile-builder
 
 ## 100 - Inleiding
 
-Zien[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - Vereisten
 
