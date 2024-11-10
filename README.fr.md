@@ -86,7 +86,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Remarque : PHPStan est un outil d'analyse statique qui trouve les bugs dans votre code PHP sans l'exécuter. Pour exécuter PHPStan dans un conteneur Docker :
 
-    Sous Unix/Linux/MacOS :
+    Sous Unix/Linux/macOS :
 
     ```bash
     $ cd threagile-builder
