@@ -76,7 +76,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
     Ensuite, accédez à`http://127.0.0.1:5000/`dans votre navigateur Internet.
 
-    To run tests, use:
+    Pour exécuter des tests, utilisez :
 
     ```bash
     $ cd threagile-builder
@@ -140,15 +140,15 @@ pip install threagile-builder
 
 ## Construire
 
--   All build targets use the [trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
+-   Toutes les cibles de build utilisent le[trappe-vcs](https://github.com/ofek/hatch-vcs)construire un plugin hook pour expédier un`_version.py`fichier afin que la version puisse être utilisée au moment de l'exécution
 -   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
 -   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
     -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
-    -   use the [application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
+    -   utiliser le[application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
 
 ## Licence
 
-`threagile-builder`est distribué selon les termes du[MIT](https://spdx.org/licenses/MIT.html)licence.
+`threagile-builder`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
 ## 100 - Introduction
 

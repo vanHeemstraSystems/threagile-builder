@@ -11,3 +11,5 @@
 - [BlockMirror](https://github.com/blockpy-edu/BlockMirror)
 - [FlowBite Datatables](https://flowbite.com/docs/plugins/datatables/)
 - [CodeRabbit](https://coderabbit.org)
+- [Python Static Analysis Tools](https://luminousmen.com/post/python-static-analysis-tools)
+- [Generate Python UML Diagrams with Pyreverse](https://medium.com/@softoft/python-uml-class-diagram-generation-pdgen-documentation-2bd842352fb1)

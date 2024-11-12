@@ -84,7 +84,7 @@ Poner en funcionamiento su código en su propio sistema.
     $ pytest tests/
     ```
 
-    Note: PHPStan is a static analysis tool that finds bugs in your PHP code without running it. To run PHPStan in a Docker container:
+    Nota: PHPStan es una herramienta de análisis estático que encuentra errores en su código PHP sin ejecutarlo. Para ejecutar PHPStan en un contenedor Docker:
 
     En Unix/Linux/macOS:
 
