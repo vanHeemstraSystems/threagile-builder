@@ -436,11 +436,21 @@ BlockMirrorBlockEditor.prototype.TOOLBOXES = {
     ],
     //******************************************************
     'threagile': [
-        TOOLBOX_CATEGORY.THREAT_MODELS,
-        TOOLBOX_CATEGORY.AUTHOR,
-        TOOLBOX_CATEGORY.DATA_ASSETS,
-        TOOLBOX_CATEGORY.TECHNICAL_ASSETS,
-        TOOLBOX_CATEGORY.COMMUNICATION_LINKS,
-        TOOLBOX_CATEGORY.TRUST_BOUNDARIES,
+        // TOOLBOX_CATEGORY.THREAT_MODELS,
+        // TOOLBOX_CATEGORY.AUTHOR,
+        {
+            name: "Author", colour: "OO", blocks: [
+                "author ___: pass",
+            ]
+        },
+        // TOOLBOX_CATEGORY.DATA_ASSETS,
+        // TOOLBOX_CATEGORY.TECHNICAL_ASSETS,
+        // TOOLBOX_CATEGORY.COMMUNICATION_LINKS,
+        // TOOLBOX_CATEGORY.TRUST_BOUNDARIES,
+        {
+            name: "Classes", colour: "OO", blocks: [
+                "class ___: pass",
+            ]
+        },
     ],
 };

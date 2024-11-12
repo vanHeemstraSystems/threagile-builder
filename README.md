@@ -50,6 +50,10 @@ Getting your code up and running on your own system.
     $ hatch build
     ```
 
+    To use AI for pull request reviews, use:
+
+    https://app.coderabbit.ai/dashboard (uses ```phpstan.neon```)
+
     To run the application, use:
 
     Linux:

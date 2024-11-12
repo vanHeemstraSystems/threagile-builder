@@ -60,6 +60,13 @@ BlockMirror.prototype.validateConfiguration = function (configuration) {
     throw new Error('Invalid configuration: Missing "container" property.');
   } // blocklyPath
 
+  // wvh Custom
+  if ('codeMirrorMode' in configuration) {
+    this.configuration.codeMirrorMode = configuration.codeMirrorMode;
+  } else {
+    throw new Error('Invalid configuration: Missing "codeMirrorMode" property.');
+  } // blocklyPath
+
   if ('blocklyMediaPath' in configuration) {
     this.configuration.blocklyMediaPath = configuration.blocklyMediaPath;
   } else {

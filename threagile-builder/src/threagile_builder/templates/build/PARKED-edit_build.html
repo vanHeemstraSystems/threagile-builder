@@ -1,0 +1,99 @@
+{% extends 'base.html' %} {% block content %}
+
+<section class="bg-white dark:bg-gray-900">
+  <div class="container mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-4">Edit Build</h1>
+
+    <form method="POST" class="bg-white shadow-md rounded-lg p-6">
+      {{ form.hidden_tag() }}
+      <div class="mb-4">
+        {{ form.title.label(class="block text-gray-700") }}
+        {{ form.title(class="mt-1 block w-full p-2 border rounded") }}
+      </div>
+      <div class="mb-4">
+        {{ form.description.label(class="block text-gray-700") }}
+        {{ form.description(class="mt-1 block w-full p-2 border rounded") }}
+      </div>
+      <div class="mb-4">
+        {{ form.code.label(class="block text-gray-700") }}
+        {{ form.code(class="mt-1 block w-full p-2 border rounded") }}
+      </div>      
+      {{ form.submit(class="bg-blue-500 text-white rounded py-2 px-4") }}
+    </form>
+
+    <!-- START Blockly Editor -->
+    <button id="go">GO</button>
+    <button id="make-image">Make Image</button>
+    <div id="image-spot"></div>
+    <div style="width: 900px; margin: 0 auto" id="example-frame">
+      <div class="btn-group" data-toggle="buttons" data-bind="visible: !assignment.upload()">
+        <label onclick="editor.setMode('block');">
+          <input type="radio" name="blockpy-mode-set" autocomplete="off" />
+          Blocks
+        </label>
+        <label onclick="editor.setMode('split');">
+          <input type="radio" name="blockpy-mode-set" autocomplete="off" checked />
+          Split
+        </label>
+        <label onclick="editor.setMode('text');">
+          <input type="radio" name="blockpy-mode-set" autocomplete="off" /> Text
+        </label>
+      </div>
+
+      <div class="btn-group" data-toggle="buttons" style="display: inline-block">
+        <label>
+          <input type="checkbox" name="blockpy-mode-set" checked
+            onclick="editor.setImageMode(!editor.configuration.imageMode);" />
+          Image Mode
+        </label>
+      </div>
+
+      <div id="blockmirror-editor"></div>
+    </div>
+    <!-- example-frame -->
+
+    <!-- END Blockly Editor -->
+  </div>
+
+  <script type="text/javascript">
+    console.log('BlockMirror Editor started');
+    var editor = new BlockMirror({
+      container: document.getElementById('blockmirror-editor'),
+      blocklyMediaPath: '../../static/lib/blockly/media/',
+      toolbox: 'threagile',
+      // 'full'
+    });
+    editor.addChangeListener(function (event) {
+      console.log('Change! Better save:', event);
+      // console.debug(document.getElementById('code').innerText);
+    });
+    editor.setCode(''); // 'class X:\n    return\n    threagile_version: 1.0.0'
+    // MORE
+    $('#make-image').click(function () {
+      editor.blockEditor.getPngFromBlocks((u, i) => $('#image-spot').html(i));
+    });
+    $('#go').click(function () {
+      /*alert('Starting!')
+        var filename = 'main';
+        var code = `import pedal`;
+        //console.time('Run');
+        Sk.importMainWithBody(filename, false, code, true).$d;
+        //console.timeEnd('Run');
+        alert('Done!')*/
+      runTests();
+    });
+    var TESTS = ['for ___ in ___:\n    pass']; // Add tests
+
+    function runTests() {
+      console.debug('runTests');
+      for (let i = 0; i < TESTS.length; i += 1) {
+        let test = TESTS[i];
+        editor.textEditor.setCode(test, true);
+        // MORE
+      }
+    }
+    // MORE
+  </script>
+</section>
+
+{% endblock %}

@@ -1,10 +1,14 @@
 function BlockMirrorTextToBlocks(blockMirror) {
   console.debug('BlockMirrorTextToBlocks');
   this.blockMirror = blockMirror;
+  BlockMirrorTextToBlocks.CODE_MIRROR_MODE = blockMirror.configuration.codeMirrorMode.toLowerCase() || ""; // wvh Custom
   this.hiddenImports = ['plt'];
   this.strictAnnotations = ['int', 'float', 'str', 'bool'];
   Blockly.defineBlocksWithJsonArray(BlockMirrorTextToBlocks.BLOCKS);
 }
+
+// wvh Custom
+BlockMirrorTextToBlocks.CODE_MIRROR_MODE = "";
 
 BlockMirrorTextToBlocks.xmlToString = function (xml) {
   console.debug('BlockMirrorTextToBlocks.xmlToString');
@@ -540,7 +544,12 @@ BlockMirrorTextToBlocks.create_block = function (
 BlockMirrorTextToBlocks.raw_block = function (txt) {
   console.debug('BlockMirrorTextToBlocks.raw_block');
   // TODO: lineno as second parameter!
-  return BlockMirrorTextToBlocks.create_block('ast_Raw', 0, { TEXT: txt });
+  // wvh Custom
+  if(this.CODE_MIRROR_MODE === 'yaml') {
+    return BlockMirrorTextToBlocks.create_block('ast_Yaml', 0, { TEXT: txt });
+  } else {
+    return BlockMirrorTextToBlocks.create_block('ast_Raw', 0, { TEXT: txt });
+  }
 };
 
 BlockMirrorTextToBlocks.BLOCKS = [];

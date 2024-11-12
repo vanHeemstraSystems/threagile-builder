@@ -1,99 +1,124 @@
 {% extends 'base.html' %} {% block content %}
 
 <section class="bg-white dark:bg-gray-900">
-  <div class="container mx-auto p-4">
-    <h1 class="text-2xl font-bold mb-4">Edit Build</h1>
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">Edit Build</h1>
 
-    <form method="POST" class="bg-white shadow-md rounded-lg p-6">
-      {{ form.hidden_tag() }}
-      <div class="mb-4">
-        {{ form.title.label(class="block text-gray-700") }}
-        {{ form.title(class="mt-1 block w-full p-2 border rounded") }}
-      </div>
-      <div class="mb-4">
-        {{ form.description.label(class="block text-gray-700") }}
-        {{ form.description(class="mt-1 block w-full p-2 border rounded") }}
-      </div>
-      <div class="mb-4">
-        {{ form.code.label(class="block text-gray-700") }}
-        {{ form.code(class="mt-1 block w-full p-2 border rounded") }}
-      </div>      
-      {{ form.submit(class="bg-blue-500 text-white rounded py-2 px-4") }}
-    </form>
+        <form method="POST" class="bg-white shadow-md rounded-lg p-6">
+            {{ form.hidden_tag() }}
+            <div class="mb-4">
+                {{ form.title.label(class="block text-gray-700") }}
+                {{ form.title(class="mt-1 block w-full p-2 border rounded") }}
+            </div>
+            <div class="mb-4">
+                {{ form.description.label(class="block text-gray-700") }}
+                {{ form.description(class="mt-1 block w-full p-2 border rounded") }}
+            </div>
+            <div class="mb-4">
+                {{ form.code.label(class="block text-gray-700") }}
+                {{ form.code(class="mt-1 block w-full p-2 border rounded") }}
+            </div>
+            {{ form.submit(class="bg-blue-500 text-white rounded py-2 px-4") }}
+        </form>
 
-    <!-- START Blockly Editor -->
-    <button id="go">GO</button>
-    <button id="make-image">Make Image</button>
-    <div id="image-spot"></div>
-    <div style="width: 900px; margin: 0 auto" id="example-frame">
-      <div class="btn-group" data-toggle="buttons" data-bind="visible: !assignment.upload()">
-        <label onclick="editor.setMode('block');">
-          <input type="radio" name="blockpy-mode-set" autocomplete="off" />
-          Blocks
-        </label>
-        <label onclick="editor.setMode('split');">
-          <input type="radio" name="blockpy-mode-set" autocomplete="off" checked />
-          Split
-        </label>
-        <label onclick="editor.setMode('text');">
-          <input type="radio" name="blockpy-mode-set" autocomplete="off" /> Text
-        </label>
-      </div>
+        <!-- START Blockly Editor -->
 
-      <div class="btn-group" data-toggle="buttons" style="display: inline-block">
-        <label>
-          <input type="checkbox" name="blockpy-mode-set" checked
-            onclick="editor.setImageMode(!editor.configuration.imageMode);" />
-          Image Mode
-        </label>
-      </div>
+        <div style="width: 900px; margin: 0 auto" id="example-frame">
+            <div class="btn-group" data-toggle="buttons" data-bind="visible: !assignment.upload()">
+                <label onclick="editor.setMode('block');">
+                    <input type="radio" name="blockpy-mode-set" autocomplete="off" />
+                    Blocks
+                </label>
+                <label onclick="editor.setMode('split');">
+                    <input type="radio" name="blockpy-mode-set" autocomplete="off" checked />
+                    Split
+                </label>
+                <label onclick="editor.setMode('text');">
+                    <input type="radio" name="blockpy-mode-set" autocomplete="off" /> Text
+                </label>
+            </div>
+            <div id="blockmirror-editor"></div>
+        </div>
+        <!-- example-frame -->
 
-      <div id="blockmirror-editor"></div>
+        <!-- END Blockly Editor -->
+
+        <!-- 
+          Define the Custom Blockly Block.
+          Create a Blockly block that captures author information in YAML format.
+        -->
+        <xml xmlns="http://www.w3.org/1999/xhtml">
+            <block type="author_info" id="author_info_block">
+                <field name="name">John Doe</field>
+                <field name="homepage">https://example.com</field>
+            </block>
+        </xml>
+
     </div>
-    <!-- example-frame -->
 
-    <!-- END Blockly Editor -->
-  </div>
+    <script type="text/javascript">
+        console.log('BlockMirror Editor started');
+        var editor = new BlockMirror({
+            container: document.getElementById('blockmirror-editor'),
+            blocklyMediaPath: '../../static/lib/blockly/media/',
+            skipSkulpt: true,
+            codeMirrorMode: 'yaml',
+            toolbox: 'empty',
+            // 'full', 'threagile'
+        });
+        editor.addChangeListener(function (event) {
+            console.log('Change! Better save:', event);
+            // console.debug(document.getElementById('code').innerText);
+        });
+        editor.setCode('author_info'); // 'class X:\n    return\n    threagile_version: 1.0.0'
+        /* Blockly Block Definition
+         * Set up the Blockly block in your JavaScript code.
+         */
+        Blockly.Blocks['author_info'] = {
+            init: function () {
+                this.appendDummyInput()
+                    .appendField("Author Name")
+                    .appendField(new Blockly.FieldTextInput("John Doe"), "name");
+                this.appendDummyInput()
+                    .appendField("Homepage")
+                    .appendField(new Blockly.FieldTextInput("https://example.com"), "homepage");
+                this.setColour(160);
+                this.setTooltip("Author information in YAML format");
+                this.setHelpUrl("");
+            }
+        };
+        /* Generate YAML from Blockly
+         * Create a function to generate the YAML representation from the Blockly block.
+         */
+        function generateYAMLFromBlockly() {
+            const block = Blockly.getMainWorkspace().getBlockById('author_info_block'); // Use actual block ID
+            const name = block.getFieldValue('name');
+            const homepage = block.getFieldValue('homepage');
 
-  <script type="text/javascript">
-    console.log('BlockMirror Editor started');
-    var editor = new BlockMirror({
-      container: document.getElementById('blockmirror-editor'),
-      blocklyMediaPath: '../../static/lib/blockly/media/',
-      toolbox: 'threagile',
-      // 'full'
-    });
-    editor.addChangeListener(function (event) {
-      console.log('Change! Better save:', event);
-      // console.debug(document.getElementById('code').innerText);
-    });
-    editor.setCode('class X:\n    return a\n'); // 'threagile_version: 1.0.0'
-    // MORE
-    $('#make-image').click(function () {
-      editor.blockEditor.getPngFromBlocks((u, i) => $('#image-spot').html(i));
-    });
-    $('#go').click(function () {
-      /*alert('Starting!')
-        var filename = 'main';
-        var code = `import pedal`;
-        //console.time('Run');
-        Sk.importMainWithBody(filename, false, code, true).$d;
-        //console.timeEnd('Run');
-        alert('Done!')*/
-      runTests();
-    });
-    var TESTS = ['for ___ in ___:\n    pass']; // Add tests
+            // Construct YAML string
+            const yamlOutput = `
+author:
+  name: ${name}
+  homepage: ${homepage}
+`.trim();
 
-    function runTests() {
-      console.debug('runTests');
-      for (let i = 0; i < TESTS.length; i += 1) {
-        let test = TESTS[i];
-        editor.textEditor.setCode(test, true);
-        // MORE
-      }
-    }
-    // MORE
-  </script>
+            return yamlOutput;
+        }
+
+        /* Update CodeMirror
+         * Insert the generated YAML code into the CodeMirror editor.
+         */
+        function updateCodeMirror() {
+            const yamlOutput = generateYAMLFromBlockly();
+            editor.setValue(yamlOutput);
+        }
+
+        // Call this function initially to set the value
+        updateCodeMirror();
+
+
+    </script>
+
 </section>
 
 {% endblock %}
