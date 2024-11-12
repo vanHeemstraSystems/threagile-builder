@@ -20,7 +20,7 @@ thregile-बिल्डर
 
 अपना कोड तैयार करना और अपने सिस्टम पर चलाना।
 
-**Note**: सुनिश्चित करें कि आप इसे पूरा करते हैं[आवश्यकताएं](./200/README.md).
+**टिप्पणी**: सुनिश्चित करें कि आप इसे पूरा करते हैं[आवश्यकताएं](./200/README.md).
 
 1.  स्थापना प्रक्रिया:
     ```bash
@@ -152,7 +152,7 @@ pip install threagile-builder
 
 ## लाइसेंस
 
-`threagile-builder`की शर्तों के तहत वितरित किया जाता है[साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
+`threagile-builder` is distributed under the terms of the [साथ](https://spdx.org/licenses/MIT.html)लाइसेंस.
 
 ## 100 - परिचय
 
