@@ -52,6 +52,10 @@ thregile-बिल्डर
     $ hatch build
     ```
 
+    पुल अनुरोध समीक्षा के लिए AI का उपयोग करने के लिए, इसका उपयोग करें:
+
+    <https://app.coderabbit.ai/dashboard>(उपयोग करता है`phpstan.neon`)
+
     एप्लिकेशन चलाने के लिए, उपयोग करें:
 
     लिनक्स:
@@ -74,7 +78,7 @@ thregile-बिल्डर
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    फिर, नेविगेट करें`http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
+    फिर, नेविगेट करें`http://127.0.0.1:5000/` in your web browser.
 
     परीक्षण चलाने के लिए, उपयोग करें:
 
@@ -84,9 +88,9 @@ thregile-बिल्डर
     $ pytest tests/
     ```
 
-    ध्यान दें: PHPStan एक स्थिर विश्लेषण उपकरण है जो आपके PHP कोड को चलाए बिना बग ढूंढता है। डॉकर कंटेनर में PHPStan चलाने के लिए:
+    Note: PHPStan is a static analysis tool that finds bugs in your PHP code without running it. To run PHPStan in a Docker container:
 
-    यूनिक्स/लिनक्स/मैकओएस पर:
+    On Unix/Linux/macOS:
 
     ```bash
     $ cd threagile-builder
@@ -113,9 +117,9 @@ thregile-बिल्डर
 
 प्रोमेथियस जैसे उपकरण को परिमार्जन करने दें`http://127.0.0.1:9464/metrics`.
 
-**_नया_**
+**_ NEW _**
 
-**विषयसूची**
+**Table of Contents**
 
 -   [इंस्टालेशन](#installation)
 -   [संस्करण स्रोत](#version-source)
@@ -131,7 +135,7 @@ pip install threagile-builder
 
 ## संस्करण स्रोत
 
--   [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
+-   The [हैच-वीसीएस](https://github.com/ofek/hatch-vcs)संस्करण स्रोत प्लगइन Git टैग का उपयोग करके प्रोजेक्ट संस्करण निर्धारित करता है
 
 ## वातावरण
 
@@ -141,7 +145,7 @@ pip install threagile-builder
 ## निर्माण
 
 -   सभी निर्माण लक्ष्य इसका उपयोग करते हैं[हैच-वीसीएस](https://github.com/ofek/hatch-vcs)शिप करने के लिए हुक प्लगइन बनाएं`_version.py`फ़ाइल करें ताकि संस्करण का उपयोग रनटाइम पर किया जा सके
--   पहिये का उपयोग करते हैं[हैच-mypyc](https://github.com/ofek/hatch-mypyc)पहले सभी कोड संकलित करने के लिए हुक प्लगइन बनाएं[Mypyc](https://github.com/mypyc/mypyc)
+-   Wheels use the [हैच-mypyc](https://github.com/ofek/hatch-mypyc) build hook plugin to first compile all code with [Mypyc](https://github.com/mypyc/mypyc)
 -   [निर्माण](.github/workflows/build.yml)GitHub वर्कफ़्लो दिखाता है कि कैसे करें:
     -   उपयोग[सिबिल्डव्हील](https://github.com/pypa/cibuildwheel)प्रत्येक प्लेटफ़ॉर्म के लिए बाइनरी व्हील वितरित करना
     -   उपयोग[अनुप्रयोग](https://hatch.pypa.io/latest/plugins/builder/app/)प्रत्येक प्लेटफ़ॉर्म के लिए स्टैंडअलोन वितरण बनाने का लक्ष्य बनाएं
@@ -154,7 +158,7 @@ pip install threagile-builder
 
 देखना[README.md](./100/README.md)
 
-## 200 - आवश्यकताएँ
+## 200 - Requirements
 
 देखना[README.md](./200/README.md)
 
