@@ -20,29 +20,29 @@
             </div>
             {{ form.submit(class="bg-blue-500 text-white rounded py-2 px-4") }}
         </form>
-
-        <!-- START Blockly Editor -->
-
-        <div style="width: 900px; margin: 0 auto" id="example-frame">
-            <div class="btn-group" data-toggle="buttons" data-bind="visible: !assignment.upload()">
-                <label onclick="editor.setMode('block');">
-                    <input type="radio" name="blockpy-mode-set" autocomplete="off" />
-                    Blocks
-                </label>
-                <label onclick="editor.setMode('split');">
-                    <input type="radio" name="blockpy-mode-set" autocomplete="off" checked />
-                    Split
-                </label>
-                <label onclick="editor.setMode('text');">
-                    <input type="radio" name="blockpy-mode-set" autocomplete="off" /> Text
-                </label>
-            </div>
-            <div id="blockmirror-editor"></div>
-        </div>
-        <!-- example-frame -->
-
-        <!-- END Blockly Editor -->
     </div>
+
+    <!-- START Blockly Editor -->
+
+    <div class="container mx-auto p-4" id="example-frame">
+        <div class="btn-group" data-toggle="buttons" data-bind="visible: !assignment.upload()">
+            <label onclick="editor.setMode('block');">
+                <input type="radio" name="blockpy-mode-set" autocomplete="off" />
+                Blocks
+            </label>
+            <label onclick="editor.setMode('split');">
+                <input type="radio" name="blockpy-mode-set" autocomplete="off" checked />
+                Split
+            </label>
+            <label onclick="editor.setMode('text');">
+                <input type="radio" name="blockpy-mode-set" autocomplete="off" /> Text
+            </label>
+        </div>
+        <div id="blockmirror-editor"></div>
+    </div>
+    <!-- example-frame -->
+
+    <!-- END Blockly Editor -->
 
     <script type="text/javascript">
         console.log('BlockMirror Editor started');
@@ -59,54 +59,56 @@
             // console.debug(document.getElementById('code').innerText);
         });
         editor.setCode('threagile_version: 1.0.0'); // 'class X:\n    return\n    threagile_version: 1.0.0'
-//         /* Blockly Block Definition
-//          * Set up the Blockly block in your JavaScript code.
-//          */
-//         Blockly.Blocks['author_info'] = {
-//             init: function () {
-//                 this.appendDummyInput()
-//                     .appendField("Author Name")
-//                     .appendField(new Blockly.FieldTextInput("John Doe"), "name");
-//                 this.appendDummyInput()
-//                     .appendField("Homepage")
-//                     .appendField(new Blockly.FieldTextInput("https://example.com"), "homepage");
-//                 this.setColour(160);
-//                 this.setTooltip("Author information in YAML format");
-//                 this.setHelpUrl("");
-//             }
-//         };
-//         /* Generate YAML from Blockly
-//          * Create a function to generate the YAML representation from the Blockly block.
-//          */
-//         function generateYAMLFromBlockly() {
-//             const block = Blockly.getMainWorkspace().getBlockById('author_info_block'); // Use actual block ID
-//             const name = block.getFieldValue('name');
-//             const homepage = block.getFieldValue('homepage');
+        //         /* Blockly Block Definition
+        //          * Set up the Blockly block in your JavaScript code.
+        //          */
+        //         Blockly.Blocks['author_info'] = {
+        //             init: function () {
+        //                 this.appendDummyInput()
+        //                     .appendField("Author Name")
+        //                     .appendField(new Blockly.FieldTextInput("John Doe"), "name");
+        //                 this.appendDummyInput()
+        //                     .appendField("Homepage")
+        //                     .appendField(new Blockly.FieldTextInput("https://example.com"), "homepage");
+        //                 this.setColour(160);
+        //                 this.setTooltip("Author information in YAML format");
+        //                 this.setHelpUrl("");
+        //             }
+        //         };
+        //         /* Generate YAML from Blockly
+        //          * Create a function to generate the YAML representation from the Blockly block.
+        //          */
+        //         function generateYAMLFromBlockly() {
+        //             const block = Blockly.getMainWorkspace().getBlockById('author_info_block'); // Use actual block ID
+        //             const name = block.getFieldValue('name');
+        //             const homepage = block.getFieldValue('homepage');
 
-//             // Construct YAML string
-//             const yamlOutput = `
-// author:
-//   name: ${name}
-//   homepage: ${homepage}
-// `.trim();
+        //             // Construct YAML string
+        //             const yamlOutput = `
+        // author:
+        //   name: ${name}
+        //   homepage: ${homepage}
+        // `.trim();
 
-//             return yamlOutput;
-//         }
+        //             return yamlOutput;
+        //         }
 
-//         /* Update CodeMirror
-//          * Insert the generated YAML code into the CodeMirror editor.
-//          */
-//         function updateCodeMirror() {
-//             const yamlOutput = generateYAMLFromBlockly();
-//             editor.setValue(yamlOutput);
-//         }
+        //         /* Update CodeMirror
+        //          * Insert the generated YAML code into the CodeMirror editor.
+        //          */
+        //         function updateCodeMirror() {
+        //             const yamlOutput = generateYAMLFromBlockly();
+        //             editor.setValue(yamlOutput);
+        //         }
 
-//         // Call this function initially to set the value
-//         updateCodeMirror();
+        //         // Call this function initially to set the value
+        //         updateCodeMirror();
 
 
     </script>
 
 </section>
+
+<br />
 
 {% endblock %}
