@@ -106,7 +106,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
     Sie können die Analyse anpassen, indem Sie:
 
-    -   Regelebenen einstellen (0-9): Add`--level 8`
+    -   Regelstufen einstellen (0-9): Add`--level 8`
     -   Verwenden einer Konfigurationsdatei: Hinzufügen`-c phpstan.neon`
 
 # API-Dokumentation
