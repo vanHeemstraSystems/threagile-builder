@@ -42,18 +42,6 @@
         <!-- example-frame -->
 
         <!-- END Blockly Editor -->
-
-        <!-- 
-          Define the Custom Blockly Block.
-          Create a Blockly block that captures author information in YAML format.
-        -->
-        <xml xmlns="http://www.w3.org/1999/xhtml">
-            <block type="author_info" id="author_info_block">
-                <field name="name">John Doe</field>
-                <field name="homepage">https://example.com</field>
-            </block>
-        </xml>
-
     </div>
 
     <script type="text/javascript">
@@ -70,51 +58,51 @@
             console.log('Change! Better save:', event);
             // console.debug(document.getElementById('code').innerText);
         });
-        editor.setCode('author_info'); // 'class X:\n    return\n    threagile_version: 1.0.0'
-        /* Blockly Block Definition
-         * Set up the Blockly block in your JavaScript code.
-         */
-        Blockly.Blocks['author_info'] = {
-            init: function () {
-                this.appendDummyInput()
-                    .appendField("Author Name")
-                    .appendField(new Blockly.FieldTextInput("John Doe"), "name");
-                this.appendDummyInput()
-                    .appendField("Homepage")
-                    .appendField(new Blockly.FieldTextInput("https://example.com"), "homepage");
-                this.setColour(160);
-                this.setTooltip("Author information in YAML format");
-                this.setHelpUrl("");
-            }
-        };
-        /* Generate YAML from Blockly
-         * Create a function to generate the YAML representation from the Blockly block.
-         */
-        function generateYAMLFromBlockly() {
-            const block = Blockly.getMainWorkspace().getBlockById('author_info_block'); // Use actual block ID
-            const name = block.getFieldValue('name');
-            const homepage = block.getFieldValue('homepage');
+        editor.setCode('threagile_version: 1.0.0'); // 'class X:\n    return\n    threagile_version: 1.0.0'
+//         /* Blockly Block Definition
+//          * Set up the Blockly block in your JavaScript code.
+//          */
+//         Blockly.Blocks['author_info'] = {
+//             init: function () {
+//                 this.appendDummyInput()
+//                     .appendField("Author Name")
+//                     .appendField(new Blockly.FieldTextInput("John Doe"), "name");
+//                 this.appendDummyInput()
+//                     .appendField("Homepage")
+//                     .appendField(new Blockly.FieldTextInput("https://example.com"), "homepage");
+//                 this.setColour(160);
+//                 this.setTooltip("Author information in YAML format");
+//                 this.setHelpUrl("");
+//             }
+//         };
+//         /* Generate YAML from Blockly
+//          * Create a function to generate the YAML representation from the Blockly block.
+//          */
+//         function generateYAMLFromBlockly() {
+//             const block = Blockly.getMainWorkspace().getBlockById('author_info_block'); // Use actual block ID
+//             const name = block.getFieldValue('name');
+//             const homepage = block.getFieldValue('homepage');
 
-            // Construct YAML string
-            const yamlOutput = `
-author:
-  name: ${name}
-  homepage: ${homepage}
-`.trim();
+//             // Construct YAML string
+//             const yamlOutput = `
+// author:
+//   name: ${name}
+//   homepage: ${homepage}
+// `.trim();
 
-            return yamlOutput;
-        }
+//             return yamlOutput;
+//         }
 
-        /* Update CodeMirror
-         * Insert the generated YAML code into the CodeMirror editor.
-         */
-        function updateCodeMirror() {
-            const yamlOutput = generateYAMLFromBlockly();
-            editor.setValue(yamlOutput);
-        }
+//         /* Update CodeMirror
+//          * Insert the generated YAML code into the CodeMirror editor.
+//          */
+//         function updateCodeMirror() {
+//             const yamlOutput = generateYAMLFromBlockly();
+//             editor.setValue(yamlOutput);
+//         }
 
-        // Call this function initially to set the value
-        updateCodeMirror();
+//         // Call this function initially to set the value
+//         updateCodeMirror();
 
 
     </script>
