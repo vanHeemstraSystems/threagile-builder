@@ -52,6 +52,10 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
     $ hatch build
     ```
 
+    Um KI für Pull-Request-Reviews zu verwenden, verwenden Sie:
+
+    <https://app.coderabbit.ai/dashboard>(verwendet`phpstan.neon`)
+
     Um die Anwendung auszuführen, verwenden Sie:
 
     Linux:
@@ -107,7 +111,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 # API-Dokumentation
 
-Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
+Navigieren Sie zu`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
 
 # Metriken
 
@@ -119,7 +123,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)
--   [Umgebungen](#environments)
+-   [Environments](#environments)
 -   [Bauen](#build)
 -   [Lizenz](#license)
 
@@ -140,7 +144,7 @@ pip install threagile-builder
 
 ## Bauen
 
--   All build targets use the [hatch-vcs](https://github.com/ofek/hatch-vcs)Erstellen Sie ein Hook-Plugin, um ein zu versenden`_version.py`Datei, damit die Version zur Laufzeit verwendet werden kann
+-   Alle Build-Ziele verwenden die[hatch-vcs](https://github.com/ofek/hatch-vcs)Erstellen Sie ein Hook-Plugin, um ein zu versenden`_version.py`Datei, damit die Version zur Laufzeit verwendet werden kann
 -   Räder verwenden die[hatch-mypyc](https://github.com/ofek/hatch-mypyc)Build-Hook-Plugin, mit dem zunächst der gesamte Code kompiliert werden soll[Mypyc](https://github.com/mypyc/mypyc)
 -   Der[bauen](.github/workflows/build.yml)Der GitHub-Workflow zeigt, wie Sie:
     -   verwenden[cibuildwheel](https://github.com/pypa/cibuildwheel)binäre Räder für jede Plattform zu verteilen
