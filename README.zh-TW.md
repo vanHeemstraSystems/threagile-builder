@@ -10,7 +10,7 @@
 
 * * *
 
-> 一個[基於區塊的](https://developers.google.com/blockly) no-code web application to create [威脅性的](https://threagile.io)YAML 文件
+> 一個[基於區塊的](https://developers.google.com/blockly)建立無程式碼 Web 應用程式[威脅性的](https://threagile.io)YAML 文件
 
 -   [詞彙表](./GLOSSARY.md)
 -   [參考](./REFERENCES.md)
