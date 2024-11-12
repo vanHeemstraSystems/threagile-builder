@@ -16,7 +16,7 @@ constructeur de menaces
 -   [Références](./REFERENCES.md)
 -   [Documentation](./DOCUMENTATION.md)
 
-**Résumé exécutif**
+**Executive Summary**
 
 Faire en sorte que votre code soit opérationnel sur votre propre système.
 
@@ -51,6 +51,10 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
     $ cd threagile-builder
     $ hatch build
     ```
+
+    Pour utiliser l'IA pour les révisions de demandes d'extraction, utilisez :
+
+    <https://app.coderabbit.ai/dashboard>(utilise`phpstan.neon`)
 
     Pour exécuter l'application, utilisez :
 
@@ -107,7 +111,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 
 # Documentation API
 
-Accédez à`http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
+Navigate to `http://127.0.0.1:5000/docs`dans votre navigateur Web, ou téléchargez le fichier openapi.json depuis`http://127.0.0.1:5000/openapi.json`.
 
 # Métrique
 
@@ -121,7 +125,7 @@ Laissez un outil comme Prometheus gratter`http://127.0.0.1:9464/metrics`.
 -   [Source de la version](#version-source)
 -   [Environnements](#environments)
 -   [Construire](#build)
--   [Licence](#license)
+-   [License](#license)
 
 ## Installation
 
@@ -131,12 +135,12 @@ pip install threagile-builder
 
 ## Source de la version
 
--   Le[trappe-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
+-   Le[hatch-vcs](https://github.com/ofek/hatch-vcs)Le plugin source de version détermine la version du projet à l'aide des balises Git
 
 ## Environnements
 
 -   Bien défini dans un environnement autonome[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   Le`test`la matrice utilise le[conteneurs-écoutilles](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
+-   Le`test`la matrice utilise le[conteneurs à écoutille](https://github.com/ofek/hatch-containers)plugin pour exécuter chaque environnement dans les conteneurs Docker ; l'utilisation peut être vue dans le[test](.github/workflows/test.yml)Flux de travail GitHub
 
 ## Construire
 
@@ -144,13 +148,13 @@ pip install threagile-builder
 -   Les roues utilisent le[trappe-mypyc](https://github.com/ofek/hatch-mypyc)construire un plugin hook pour compiler d'abord tout le code avec[Monpyc](https://github.com/mypyc/mypyc)
 -   Le[construire](.github/workflows/build.yml)Le workflow GitHub montre comment :
     -   utiliser[roue cibuild](https://github.com/pypa/cibuildwheel)distribuer des roues binaires pour chaque plateforme
-    -   utiliser le[application](https://hatch.pypa.io/latest/plugins/builder/app/)construire une cible pour créer des distributions autonomes pour chaque plate-forme
+    -   utiliser le[application](https://hatch.pypa.io/latest/plugins/builder/app/) build target to build standalone distributions for every platform
 
 ## Licence
 
 `threagile-builder`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Introduction
+## 100 - Présentation
 
 Voir[README.md](./100/README.md)
 
@@ -158,7 +162,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Construire notre application
+## 300 - Créer notre application
 
 Voir[README.md](./300/README.md)
 
