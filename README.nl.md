@@ -121,7 +121,7 @@ Laat een stuk gereedschap als Prometheus schrapen`http://127.0.0.1:9464/metrics`
 
 **Inhoudsopgave**
 
--   [Installatie](#installation)
+-   [Installation](#installation)
 -   [Versiebron](#version-source)
 -   [Omgevingen](#environments)
 -   [Bouwen](#build)
@@ -160,7 +160,7 @@ Zien[README.md](./100/README.md)
 
 ## 200 - Vereisten
 
-See [README.md](./200/README.md)
+Zien[README.md](./200/README.md)
 
 ## 300 - Onze applicatie bouwen
 
