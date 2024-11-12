@@ -111,7 +111,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
 # API-Dokumentation
 
-Navigieren Sie zu`http://127.0.0.1:5000/docs` in your web browser, or download the openapi.json from `http://127.0.0.1:5000/openapi.json`.
+Navigieren Sie zu`http://127.0.0.1:5000/docs`in Ihrem Webbrowser oder laden Sie openapi.json herunter von`http://127.0.0.1:5000/openapi.json`.
 
 # Metriken
 
@@ -123,7 +123,7 @@ Lassen Sie ein Werkzeug wie Prometheus kratzen`http://127.0.0.1:9464/metrics`.
 
 -   [Installation](#installation)
 -   [Versionsquelle](#version-source)
--   [Environments](#environments)
+-   [Umgebungen](#environments)
 -   [Bauen](#build)
 -   [Lizenz](#license)
 
