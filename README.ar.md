@@ -40,7 +40,7 @@
     $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
     $ hatch run python src/threagile_builder/app.py # starts the app 
     ```
-2.  Software dependencies
+2.  تبعيات البرمجيات
 3.  أحدث الإصدارات
 4.  مراجع واجهة برمجة التطبيقات
 5.  البناء والاختبار:
