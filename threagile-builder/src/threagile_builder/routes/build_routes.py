@@ -90,6 +90,13 @@ def edit_build(build_id):
     return render_template("build/edit_build.html", form=form, build=build)
 
 
+# View a Build
+@build_bp.route("/<int:build_id>/view", methods=["GET"])
+def view_build(build_id):
+    build = Build.query.get_or_404(build_id)
+    return render_template("build/view_build.html", build=build)
+
+
 # # Run a Build
 # @build_bp.route("/run-build", methods=["POST"])
 # def run_build():
