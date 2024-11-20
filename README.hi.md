@@ -78,7 +78,7 @@ thregile-बिल्डर
     $ hatch run python src/threagile_builder/app.py
     ```
 
-    Then, navigate to `http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
+    फिर, नेविगेट करें`http://127.0.0.1:5000/`आपके वेब ब्राउज़र में.
 
     परीक्षण चलाने के लिए, उपयोग करें:
 
@@ -87,27 +87,6 @@ thregile-बिल्डर
     $ pip install pytest # optional
     $ pytest tests/
     ```
-
-    ध्यान दें: PHPStan एक स्थिर विश्लेषण उपकरण है जो आपके PHP कोड को चलाए बिना बग ढूंढता है। डॉकर कंटेनर में PHPStan चलाने के लिए:
-
-    यूनिक्स/लिनक्स/मैकओएस पर:
-
-    ```bash
-    $ cd threagile-builder
-    $ docker run --rm -v $(pwd):/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
-    ```
-
-    विंडोज़ पर:
-
-    ```bash
-    $ cd threagile-builder
-    $ docker run --rm -v %CD%:/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
-    ```
-
-    आप विश्लेषण को इसके द्वारा अनुकूलित कर सकते हैं:
-
-    -   नियम स्तर सेट करना (0-9): जोड़ें`--level 8`
-    -   कॉन्फ़िग फ़ाइल का उपयोग करना: जोड़ें`-c phpstan.neon`
 
 # एपीआई दस्तावेज़ीकरण
 
