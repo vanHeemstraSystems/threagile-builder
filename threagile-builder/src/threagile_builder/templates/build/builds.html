@@ -24,6 +24,7 @@
                         <td class="py-2 px-4">{{ build.description }}</td>
                         <td class="py-2 px-4">{{ build.code }}</td>
                         <td class="py-2 px-4">
+                            <a href="{{ url_for('build.view_build', build_id=build.id) }}" class="text-blue-500 hover:underline">View</a>
                             <a href="{{ url_for('build.edit_build', build_id=build.id) }}" class="text-blue-500 hover:underline">Edit</a>
                             <form action="{{ url_for('build.delete_build', build_id=build.id) }}" method="POST" style="display:inline;">
                                 <button type="submit" class="text-red-500 hover:underline">Delete</button>
