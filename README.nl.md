@@ -88,27 +88,6 @@ Uw code op uw eigen systeem operationeel krijgen.
     $ pytest tests/
     ```
 
-    Opmerking: PHPStan is een statische analysetool die bugs in uw PHP-code vindt zonder deze uit te voeren. Om PHPStan in een Docker-container uit te voeren:
-
-    Op Unix/Linux/macOS:
-
-    ```bash
-    $ cd threagile-builder
-    $ docker run --rm -v $(pwd):/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
-    ```
-
-    Op Windows:
-
-    ```bash
-    $ cd threagile-builder
-    $ docker run --rm -v %CD%:/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
-    ```
-
-    U kunt de analyse aanpassen door:
-
-    -   Regelniveaus instellen (0-9): Toevoegen`--level 8`
-    -   Een configuratiebestand gebruiken: Add`-c phpstan.neon`
-
 # API-documentatie
 
 Navigeer naar`http://127.0.0.1:5000/docs`in uw webbrowser, of download de openapi.json van`http://127.0.0.1:5000/openapi.json`.
@@ -135,7 +114,7 @@ pip install threagile-builder
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
@@ -146,7 +125,7 @@ pip install threagile-builder
 
 -   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
--   De[bouwen](.github/workflows/build.yml)GitHub-workflow laat zien hoe u:
+-   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
     -   gebruik de[app](https://hatch.pypa.io/latest/plugins/builder/app/)build target om zelfstandige distributies voor elk platform te bouwen
 
@@ -154,7 +133,7 @@ pip install threagile-builder
 
 `threagile-builder`wordt verspreid onder de voorwaarden van de[MET](https://spdx.org/licenses/MIT.html)licentie.
 
-## 100 - Inleiding
+## 100 - Introduction
 
 Zien[README.md](./100/README.md)
 
