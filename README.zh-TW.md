@@ -88,34 +88,13 @@
     $ pytest tests/
     ```
 
-    注意：PHPStan 是一個靜態分析工具，無需執行 PHP 程式碼即可發現其中的錯誤。要在 Docker 容器中運行 PHPStan：
-
-    在 Unix/Linux/macOS 上：
-
-    ```bash
-    $ cd threagile-builder
-    $ docker run --rm -v $(pwd):/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
-    ```
-
-    在 Windows 上：
-
-    ```bash
-    $ cd threagile-builder
-    $ docker run --rm -v %CD%:/app ghcr.io/phpstan/phpstan analyse /app/src --level 8 -c phpstan.neon
-    ```
-
-    您可以透過以下方式自訂分析：
-
-    -   設定規則等級（0-9）：新增`--level 8`
-    -   使用設定檔：新增`-c phpstan.neon`
-
 # API文件
 
 導航至`http://127.0.0.1:5000/docs`在您的網頁瀏覽器中，或從下列位置下載 openapi.json`http://127.0.0.1:5000/openapi.json`.
 
 # 指標
 
-讓 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
+讓像 Prometheus 這樣的工具刮擦`http://127.0.0.1:9464/metrics`.
 
 **_新的_**
 
