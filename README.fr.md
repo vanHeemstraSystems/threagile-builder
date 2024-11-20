@@ -1,6 +1,6 @@
 constructeur de menaces
 
-# Threagile Builder
+# Constructeur dangereux
 
 |          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -25,7 +25,7 @@ Faire en sorte que votre code soit opérationnel sur votre propre système.
 1.  Processus d'installation :
     ```bash
     $ cd threagile-builder
-    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
+    $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
@@ -133,7 +133,7 @@ pip install threagile-builder
 
 `threagile-builder`est distribué selon les termes du[AVEC](https://spdx.org/licenses/MIT.html)licence.
 
-## 100 - Présentation
+## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
@@ -141,7 +141,7 @@ Voir[README.md](./100/README.md)
 
 Voir[README.md](./200/README.md)
 
-## 300 - Construire notre application
+## 300 - Créer notre application
 
 Voir[README.md](./300/README.md)
 
