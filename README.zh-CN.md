@@ -45,7 +45,7 @@
 4.  API参考
 5.  构建和测试：
 
-    To build your code, use:
+    要构建您的代码，请使用：
 
     ```bash
     $ cd threagile-builder
@@ -96,7 +96,7 @@
 
 让 Prometheus 这样的工具刮擦`http://127.0.0.1:9464/metrics`.
 
-**_ NEW _**
+**_新的_**
 
 **目录**
 
