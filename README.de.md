@@ -16,7 +16,7 @@ Threagile-Builder
 -   [Referenzen](./REFERENCES.md)
 -   [Dokumentation](./DOCUMENTATION.md)
 
-**Zusammenfassung**
+**Executive Summary**
 
 Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 
@@ -25,7 +25,7 @@ Bringen Sie Ihren Code auf Ihrem eigenen System zum Laufen.
 1.  Installationsprozess:
     ```bash
     $ cd threagile-builder
-    $ hatch version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
+    $ hatch --version # optional, will print the version of our package to the terminal without modifying the source directory (e.g. `0.0.1`).
     # Without hatch: $ python src/threagile_builder/app.py
     $ hatch env create # optional, if the default env already exists you will be told
     $ hatch shell # spawn a shell within an environment
