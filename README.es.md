@@ -34,11 +34,11 @@ Poner en funcionamiento su código en su propio sistema.
     # Version: 0.0.1 # it takes this from src/threagile_builder/__about__.py
     # ...
     (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
-    (threagile-builder) $ exit # type `exit` to leave the environment
-    $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    $ hatch run pip install -r requirements.txt # pipx won't do this
-    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
-    $ hatch run python src/threagile_builder/app.py # starts the app 
+    (threagile-builder) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    (threagile-builder) $ pip install -r requirements.txt # pipx won't do this
+    (threagile-builder) $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    (threagile-builder) $ python src/threagile_builder/app.py # starts the app
+    (threagile-builder) $ exit # optional, type `exit` to leave the environment
     ```
 2.  Dependencias de software
 3.  Últimos lanzamientos
@@ -94,7 +94,7 @@ Navegar a`http://127.0.0.1:5000/docs`en su navegador web, o descargue openapi.js
 
 # Métrica
 
-Dejemos que una herramienta como Prometeo raspe`http://127.0.0.1:9464/metrics`.
+Let a tool like Prometheus scrape `http://127.0.0.1:9464/metrics`.
 
 **_NUEVO_**
 
@@ -119,7 +119,7 @@ pip install threagile-builder
 ## Ambientes
 
 -   Definido claramente de forma independiente[`hatch.toml`](https://hatch.pypa.io/latest/intro/#configuration)
--   El`test`la matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
+-   El`test`La matriz utiliza el[contenedores-escotilla](https://github.com/ofek/hatch-containers)complemento para ejecutar cada entorno dentro de contenedores Docker; El uso se puede ver en el[prueba](.github/workflows/test.yml)flujo de trabajo de GitHub
 
 ## Construir
 
