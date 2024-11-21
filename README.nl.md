@@ -34,18 +34,18 @@ Uw code op uw eigen systeem operationeel krijgen.
     # Version: 0.0.1 # it takes this from src/threagile_builder/__about__.py
     # ...
     (threagile-builder) $ python -c "import sys;print(sys.executable)" # optional, see where your environment's python is located
-    (threagile-builder) $ exit # type `exit` to leave the environment
-    $ hatch run pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
-    $ hatch run pip install -r requirements.txt # pipx won't do this
-    $ hatch run python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
-    $ hatch run python src/threagile_builder/app.py # starts the app 
+    (threagile-builder) $ pip install --upgrade pip # optional, the `run` command allows you to execute commands in an environment as if you had already entered it.
+    (threagile-builder) $ pip install -r requirements.txt # pipx won't do this
+    (threagile-builder) $ python -m setuptools_scm # optional, display the version of our package and perform any side-effects like writing to a file. (here: `_version.py`)
+    (threagile-builder) $ python src/threagile_builder/app.py # starts the app
+    (threagile-builder) $ exit # optional, type `exit` to leave the environment
     ```
 2.  Software-afhankelijkheden
 3.  Nieuwste releases
-4.  API-referenties
+4.  API references
 5.  Bouwen en testen:
 
-    Om uw code samen te stellen, gebruikt u:
+    To build your code, use:
 
     ```bash
     $ cd threagile-builder
@@ -114,7 +114,7 @@ pip install threagile-builder
 
 ## Versiebron
 
--   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versiebronplug-in bepaalt de projectversie met behulp van Git-tags
+-   De[hatch-vcs](https://github.com/ofek/hatch-vcs)versie bronplug-in bepaalt de projectversie met behulp van Git-tags
 
 ## Omgevingen
 
