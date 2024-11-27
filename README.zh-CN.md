@@ -106,7 +106,7 @@
 -   [建造](#build)
 -   [执照](#license)
 
-## 安装
+## Installation
 
 ```console
 pip install threagile-builder
