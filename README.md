@@ -14,6 +14,7 @@ threagile-builder
 - [Glossary](./GLOSSARY.md)
 - [References](./REFERENCES.md)
 - [Documentation](./DOCUMENTATION.md)
+- [Telemetry](./TELEMETRY.md)
 
 **Executive Summary**
 
