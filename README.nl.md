@@ -15,6 +15,7 @@ threagile-bouwer
 -   [Glossarium](./GLOSSARY.md)
 -   [Referenties](./REFERENCES.md)
 -   [Documentatie](./DOCUMENTATION.md)
+-   [Telemetrie](./TELEMETRY.md)
 
 **Samenvatting**
 
@@ -42,10 +43,10 @@ Uw code op uw eigen systeem operationeel krijgen.
     ```
 2.  Software-afhankelijkheden
 3.  Nieuwste releases
-4.  API references
-5.  Bouwen en testen:
+4.  API-referenties
+5.  Build and Test:
 
-    To build your code, use:
+    Om uw code samen te stellen, gebruikt u:
 
     ```bash
     $ cd threagile-builder
@@ -123,7 +124,7 @@ pip install threagile-builder
 
 ## Bouwen
 
--   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs)bouw een hook-plug-in om een`_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
+-   Alle bouwdoelen gebruiken de[hatch-vcs](https://github.com/ofek/hatch-vcs) build hook plugin to ship a `_version.py`bestand zodat de versie tijdens runtime kan worden gebruikt
 -   Wielen gebruiken de[hatch-mypyc](https://github.com/ofek/hatch-mypyc)bouw hook-plug-in om eerst alle code mee te compileren[Mijnpyc](https://github.com/mypyc/mypyc)
 -   De[bouwen](.github/workflows/build.yml)De GitHub-workflow laat zien hoe u:
     -   gebruik[cibuildwiel](https://github.com/pypa/cibuildwheel)om binaire wielen voor elk platform te distribueren
