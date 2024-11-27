@@ -15,6 +15,7 @@
 -   [词汇表](./GLOSSARY.md)
 -   [参考](./REFERENCES.md)
 -   [文档](./DOCUMENTATION.md)
+-   [遥测](./TELEMETRY.md)
 
 **执行摘要**
 
@@ -106,7 +107,7 @@
 -   [建造](#build)
 -   [执照](#license)
 
-## Installation
+## 安装
 
 ```console
 pip install threagile-builder
